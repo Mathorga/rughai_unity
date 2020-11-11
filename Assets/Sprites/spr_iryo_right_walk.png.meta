@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 96f1fa2947b7c054ea5a367306d7ae92
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2609056632399456682
+    second: spr_iryo_right_walk_0
+  - first:
+      213: 6008285891939081422
+    second: spr_iryo_right_walk_1
+  - first:
+      213: 1729358978666544764
+    second: spr_iryo_right_walk_2
+  - first:
+      213: -1062634623961850299
+    second: spr_iryo_right_walk_3
+  - first:
+      213: 149409764679558166
+    second: spr_iryo_right_walk_4
+  - first:
+      213: 6721703256648786718
+    second: spr_iryo_right_walk_5
+  - first:
+      213: 8370439451065982924
+    second: spr_iryo_right_walk_6
+  - first:
+      213: -1280814820974604565
+    second: spr_iryo_right_walk_7
+  - first:
+      213: 3772730226805693400
+    second: spr_iryo_right_walk_8
+  - first:
+      213: 8194451743530765975
+    second: spr_iryo_right_walk_9
+  - first:
+      213: 1296915827274528615
+    second: spr_iryo_right_walk_10
+  - first:
+      213: -4372036917874955187
+    second: spr_iryo_right_walk_11
+  - first:
+      213: -128895661682374378
+    second: spr_iryo_right_walk_12
+  - first:
+      213: -5376518931922061409
+    second: spr_iryo_right_walk_13
+  - first:
+      213: -8118243341924983193
+    second: spr_iryo_right_walk_14
+  - first:
+      213: -4431559725828984681
+    second: spr_iryo_right_walk_15
+  - first:
+      213: -1683580142778814996
+    second: spr_iryo_right_walk_16
+  - first:
+      213: 965157929170244962
+    second: spr_iryo_right_walk_17
+  - first:
+      213: 7932671583962559953
+    second: spr_iryo_right_walk_18
+  - first:
+      213: -5200221715447934992
+    second: spr_iryo_right_walk_19
+  - first:
+      213: 3074408918944840683
+    second: spr_iryo_right_walk_20
+  - first:
+      213: -1534809809721568100
+    second: spr_iryo_right_walk_21
+  - first:
+      213: 5282747143382335117
+    second: spr_iryo_right_walk_22
+  - first:
+      213: 5404664641952305266
+    second: spr_iryo_right_walk_23
+  - first:
+      213: -176707077778320273
+    second: spr_iryo_right_walk_24
+  - first:
+      213: 5590756819430075280
+    second: spr_iryo_right_walk_25
+  - first:
+      213: 7154941350109915626
+    second: spr_iryo_right_walk_26
+  - first:
+      213: 8105638690701104151
+    second: spr_iryo_right_walk_27
+  - first:
+      213: -8495250767019688229
+    second: spr_iryo_right_walk_28
+  - first:
+      213: 5567543530984121637
+    second: spr_iryo_right_walk_29
+  - first:
+      213: 6326873632037723944
+    second: spr_iryo_right_walk_30
+  - first:
+      213: -4189283066555378764
+    second: spr_iryo_right_walk_31
+  - first:
+      213: 2035552830112489486
+    second: spr_iryo_right_walk_32
+  - first:
+      213: -2321712520937483483
+    second: spr_iryo_right_walk_33
+  - first:
+      213: -3170110934878247858
+    second: spr_iryo_right_walk_34
+  - first:
+      213: 8052024919362928659
+    second: spr_iryo_right_walk_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9eb0d0f2b353420800000000000000
+      internalID: 2609056632399456682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc150a7f28b16350800000000000000
+      internalID: 6008285891939081422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e3d8c14daeff710800000000000000
+      internalID: 1729358978666544764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e19b88073c041f0800000000000000
+      internalID: -1062634623961850299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61423bda36fc21200800000000000000
+      internalID: 149409764679558166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e132322bf79484d50800000000000000
+      internalID: 6721703256648786718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf14be0556c92470800000000000000
+      internalID: 8370439451065982924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beec0c4d4b1a93ee0800000000000000
+      internalID: -1280814820974604565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbd12a072e6b5430800000000000000
+      internalID: 3772730226805693400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e4b36d17a88b170800000000000000
+      internalID: 8194451743530765975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767b744d2129ff110800000000000000
+      internalID: 1296915827274528615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_iryo_right_walk_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c6b2556976353c0800000000000000
+      internalID: -4372036917874955187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2150 @@
+fileFormatVersion: 2
+guid: 65d01d48e26afc342ba222b7f8075004
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5886080166535486093
+    second: RughaiOut_0
+  - first:
+      213: 226231245715701831
+    second: RughaiOut_1
+  - first:
+      213: 7111524834760463495
+    second: RughaiOut_2
+  - first:
+      213: -6077800272387915714
+    second: RughaiOut_3
+  - first:
+      213: -8835192634308179576
+    second: RughaiOut_4
+  - first:
+      213: 3048929483451437697
+    second: RughaiOut_5
+  - first:
+      213: 6206511739512605130
+    second: RughaiOut_6
+  - first:
+      213: -8552561106094849913
+    second: RughaiOut_7
+  - first:
+      213: 7334362086008710257
+    second: RughaiOut_8
+  - first:
+      213: -9168958665544810557
+    second: RughaiOut_9
+  - first:
+      213: -3968754806125139195
+    second: RughaiOut_10
+  - first:
+      213: -6199836458787735734
+    second: RughaiOut_11
+  - first:
+      213: 7235611633433693955
+    second: RughaiOut_12
+  - first:
+      213: -3581477259257631108
+    second: RughaiOut_13
+  - first:
+      213: -5008013960635331094
+    second: RughaiOut_14
+  - first:
+      213: 1642128955434033618
+    second: RughaiOut_15
+  - first:
+      213: -3881335011639139415
+    second: RughaiOut_16
+  - first:
+      213: 1679034312905396629
+    second: RughaiOut_17
+  - first:
+      213: -1198200740486582282
+    second: RughaiOut_18
+  - first:
+      213: -5227433229517385767
+    second: RughaiOut_19
+  - first:
+      213: 5712576708182516345
+    second: RughaiOut_20
+  - first:
+      213: -3005294247762673395
+    second: RughaiOut_21
+  - first:
+      213: -1936718782781827855
+    second: RughaiOut_22
+  - first:
+      213: 8706821592032507111
+    second: RughaiOut_23
+  - first:
+      213: -3316652664823911287
+    second: RughaiOut_24
+  - first:
+      213: 8931770139607758405
+    second: RughaiOut_25
+  - first:
+      213: 6589258939481592079
+    second: RughaiOut_26
+  - first:
+      213: -5007620480280452581
+    second: RughaiOut_27
+  - first:
+      213: 470622936585946166
+    second: RughaiOut_28
+  - first:
+      213: 8488556929797327244
+    second: RughaiOut_29
+  - first:
+      213: -9112953928128736352
+    second: RughaiOut_30
+  - first:
+      213: -6143795962186765058
+    second: RughaiOut_31
+  - first:
+      213: 3959397700250520008
+    second: RughaiOut_32
+  - first:
+      213: -3415785748386657294
+    second: RughaiOut_33
+  - first:
+      213: 3832599455966982956
+    second: RughaiOut_34
+  - first:
+      213: 801571882673940311
+    second: RughaiOut_35
+  - first:
+      213: 2828672756985968025
+    second: RughaiOut_36
+  - first:
+      213: 9089693669695896511
+    second: RughaiOut_37
+  - first:
+      213: 4893212250914277553
+    second: RughaiOut_38
+  - first:
+      213: 1452666974631216167
+    second: RughaiOut_39
+  - first:
+      213: 617367276845317708
+    second: RughaiOut_40
+  - first:
+      213: -8519801095393280182
+    second: RughaiOut_41
+  - first:
+      213: -9001910058262521710
+    second: RughaiOut_42
+  - first:
+      213: -1130266991107573659
+    second: RughaiOut_43
+  - first:
+      213: -4429325038953071950
+    second: RughaiOut_44
+  - first:
+      213: 5439707773571811815
+    second: RughaiOut_45
+  - first:
+      213: -5175983025912098464
+    second: RughaiOut_46
+  - first:
+      213: -3661166133635497770
+    second: RughaiOut_47
+  - first:
+      213: 8446291700509400698
+    second: RughaiOut_48
+  - first:
+      213: -7642318839871487491
+    second: RughaiOut_49
+  - first:
+      213: 206621029232341440
+    second: RughaiOut_50
+  - first:
+      213: 2501198923855424241
+    second: RughaiOut_51
+  - first:
+      213: -3805595964660573991
+    second: RughaiOut_52
+  - first:
+      213: 7498065043940365166
+    second: RughaiOut_53
+  - first:
+      213: -552471549564650721
+    second: RughaiOut_54
+  - first:
+      213: -3142561594611946031
+    second: RughaiOut_55
+  - first:
+      213: 8346703290540736885
+    second: RughaiOut_56
+  - first:
+      213: -2318107392004761139
+    second: RughaiOut_57
+  - first:
+      213: -3999367721887794050
+    second: RughaiOut_58
+  - first:
+      213: 8586660166783070368
+    second: RughaiOut_59
+  - first:
+      213: -8169443568954327423
+    second: RughaiOut_60
+  - first:
+      213: 8216298060827075890
+    second: RughaiOut_61
+  - first:
+      213: -5810869120757331539
+    second: RughaiOut_62
+  - first:
+      213: 2669653229037327479
+    second: RughaiOut_63
+  - first:
+      213: 4469547835406324024
+    second: RughaiOut_64
+  - first:
+      213: 5483991002633398175
+    second: RughaiOut_65
+  - first:
+      213: -3793288066651199617
+    second: RughaiOut_66
+  - first:
+      213: 2990559414575702480
+    second: RughaiOut_67
+  - first:
+      213: 8750509193332189375
+    second: RughaiOut_68
+  - first:
+      213: 5902342840819576994
+    second: RughaiOut_69
+  - first:
+      213: 604273820372163883
+    second: RughaiOut_70
+  - first:
+      213: 5234288125000166944
+    second: RughaiOut_71
+  - first:
+      213: -600364066006938987
+    second: RughaiOut_72
+  - first:
+      213: 4762651308817557116
+    second: RughaiOut_73
+  - first:
+      213: -3269486575782572597
+    second: RughaiOut_74
+  - first:
+      213: -857229499726218109
+    second: RughaiOut_0
+  - first:
+      213: -2242219099547898321
+    second: RughaiOut_1
+  - first:
+      213: -7005125579477469662
+    second: RughaiOut_2
+  - first:
+      213: -437326347049463667
+    second: RughaiOut_3
+  - first:
+      213: -8907551430089110397
+    second: RughaiOut_4
+  - first:
+      213: -3969214969139025582
+    second: RughaiOut_5
+  - first:
+      213: 4618741822404997520
+    second: RughaiOut_6
+  - first:
+      213: 4999883262266314547
+    second: RughaiOut_7
+  - first:
+      213: 2784650456867387945
+    second: RughaiOut_8
+  - first:
+      213: -8269152992149892932
+    second: RughaiOut_9
+  - first:
+      213: 6192594577945614994
+    second: RughaiOut_10
+  - first:
+      213: 5518914604272215854
+    second: RughaiOut_11
+  - first:
+      213: -9120554839605634076
+    second: RughaiOut_12
+  - first:
+      213: -5101313751227912555
+    second: RughaiOut_13
+  - first:
+      213: 6631830192219245130
+    second: RughaiOut_14
+  - first:
+      213: 2467872597343686287
+    second: RughaiOut_15
+  - first:
+      213: 857242223444431677
+    second: RughaiOut_16
+  - first:
+      213: -5777418483539857838
+    second: RughaiOut_17
+  - first:
+      213: -9183365251033665147
+    second: RughaiOut_18
+  - first:
+      213: -66587354897748700
+    second: RughaiOut_19
+  - first:
+      213: 5652972064818306252
+    second: RughaiOut_20
+  - first:
+      213: 6334839956855011741
+    second: RughaiOut_21
+  - first:
+      213: -5572497668106656022
+    second: RughaiOut_22
+  - first:
+      213: 3682696592601067924
+    second: RughaiOut_23
+  - first:
+      213: -544750737935719328
+    second: RughaiOut_24
+  - first:
+      213: -5896797163618568791
+    second: RughaiOut_25
+  - first:
+      213: -5739533034673918396
+    second: RughaiOut_26
+  - first:
+      213: 1627858322686864701
+    second: RughaiOut_27
+  - first:
+      213: -6160062339039050196
+    second: RughaiOut_28
+  - first:
+      213: 5331905378634534698
+    second: RughaiOut_29
+  - first:
+      213: 2035282359908042628
+    second: RughaiOut_30
+  - first:
+      213: 4287942391479120192
+    second: RughaiOut_31
+  - first:
+      213: 5321939460977016084
+    second: RughaiOut_32
+  - first:
+      213: -7341112411403798448
+    second: RughaiOut_33
+  - first:
+      213: -8677946670974355602
+    second: RughaiOut_34
+  - first:
+      213: 8544344412305125748
+    second: RughaiOut_35
+  - first:
+      213: 2521081798281959298
+    second: RughaiOut_36
+  - first:
+      213: -8372783678647721253
+    second: RughaiOut_37
+  - first:
+      213: 5763134013171391843
+    second: RughaiOut_38
+  - first:
+      213: -4144673463228240709
+    second: RughaiOut_39
+  - first:
+      213: -5897180502767393122
+    second: RughaiOut_40
+  - first:
+      213: -4379489643379247943
+    second: RughaiOut_41
+  - first:
+      213: 5818059116951410098
+    second: RughaiOut_42
+  - first:
+      213: -626915918546071270
+    second: RughaiOut_43
+  - first:
+      213: -1336446230279658515
+    second: RughaiOut_44
+  - first:
+      213: -737337929203532143
+    second: RughaiOut_45
+  - first:
+      213: 2593238476382397703
+    second: RughaiOut_46
+  - first:
+      213: 2709955690694451682
+    second: RughaiOut_47
+  - first:
+      213: -9021300624892525590
+    second: RughaiOut_48
+  - first:
+      213: -5398218884985998528
+    second: RughaiOut_49
+  - first:
+      213: 4381264511916847788
+    second: RughaiOut_50
+  - first:
+      213: -5428285042862960182
+    second: RughaiOut_51
+  - first:
+      213: -6840467888927150774
+    second: RughaiOut_52
+  - first:
+      213: 3998522686057953136
+    second: RughaiOut_53
+  - first:
+      213: -5318771521273904473
+    second: RughaiOut_54
+  - first:
+      213: 6871785344479071297
+    second: RughaiOut_55
+  - first:
+      213: -1619683456993582079
+    second: RughaiOut_56
+  - first:
+      213: -7942522785781051695
+    second: RughaiOut_57
+  - first:
+      213: -3994638951248005279
+    second: RughaiOut_58
+  - first:
+      213: -5128133589296904779
+    second: RughaiOut_59
+  - first:
+      213: 5467373343996252509
+    second: RughaiOut_60
+  - first:
+      213: 1513438147262015375
+    second: RughaiOut_61
+  - first:
+      213: -7486398290316132473
+    second: RughaiOut_62
+  - first:
+      213: -3483601766860473672
+    second: RughaiOut_63
+  - first:
+      213: -3450755476683186569
+    second: RughaiOut_64
+  - first:
+      213: -8680587368271080993
+    second: RughaiOut_65
+  - first:
+      213: -8307529528904221575
+    second: RughaiOut_66
+  - first:
+      213: -318588833682212553
+    second: RughaiOut_67
+  - first:
+      213: 3951986205819701106
+    second: RughaiOut_68
+  - first:
+      213: -6601018583472135741
+    second: RughaiOut_69
+  - first:
+      213: 2323636634815697215
+    second: RughaiOut_70
+  - first:
+      213: 6867856148023654577
+    second: RughaiOut_71
+  - first:
+      213: -3149806979278503911
+    second: RughaiOut_72
+  - first:
+      213: -6893536351741482845
+    second: RughaiOut_73
+  - first:
+      213: 6380630682705761238
+    second: RughaiOut_74
+  - first:
+      213: -4497153602818815139
+    second: RughaiOut_75
+  - first:
+      213: -4672311355672311601
+    second: RughaiOut_76
+  - first:
+      213: -8295202913707256922
+    second: RughaiOut_77
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RughaiOut_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c35d1df428a14f0800000000000000
+      internalID: -857229499726218109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ee9d6db9902e0e0800000000000000
+      internalID: -2242219099547898321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2263e34766bc8ce90800000000000000
+      internalID: -7005125579477469662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d809231210e4ee9f0800000000000000
+      internalID: -437326347049463667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c04072b25026480800000000000000
+      internalID: -8907551430089110397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2592e4fe3048ae8c0800000000000000
+      internalID: -3969214969139025582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_6
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091b0b16731191040800000000000000
+      internalID: 4618741822404997520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f0ec52657236540800000000000000
+      internalID: 4999883262266314547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 193
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ab53936d015a620800000000000000
+      internalID: 2784650456867387945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb01c8d5a211e3d80800000000000000
+      internalID: -8269152992149892932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a557875f380f550800000000000000
+      internalID: 6192594577945614994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e276c55979f179c40800000000000000
+      internalID: 5518914604272215854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_12
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb16d632b74d6180800000000000000
+      internalID: -9120554839605634076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_13
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59eae32db2e7439b0800000000000000
+      internalID: -5101313751227912555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_14
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a40f14c6ef80c50800000000000000
+      internalID: 6631830192219245130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e479b4d05af3220800000000000000
+      internalID: 2467872597343686287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d331fd6a24985eb00800000000000000
+      internalID: 857242223444431677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 169
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ea4d1df7c72dfa0800000000000000
+      internalID: -5777418483539857838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581f871b5f12e8080800000000000000
+      internalID: -9183365251033665147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d69cc472f631ff0800000000000000
+      internalID: -66587354897748700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc93b86424637e40800000000000000
+      internalID: 5652972064818306252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_21
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d993b49906fd9e750800000000000000
+      internalID: 6334839956855011741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_22
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae66fcc25e28aa2b0800000000000000
+      internalID: -5572497668106656022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49137890a019b1330800000000000000
+      internalID: 3682696592601067924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_24
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064a53e0718a078f0800000000000000
+      internalID: -544750737935719328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_25
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5fbf5e83e5a2ea0800000000000000
+      internalID: -5896797163618568791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_26
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 145
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e24a34d151950b0800000000000000
+      internalID: -5739533034673918396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3de96c0580579610800000000000000
+      internalID: 1627858322686864701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_28
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26c057a0ff038aa0800000000000000
+      internalID: -6160062339039050196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_29
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f818531bbbef940800000000000000
+      internalID: 5331905378634534698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48700ffd586ce3c10800000000000000
+      internalID: 2035282359908042628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041b375f2e4d18b30800000000000000
+      internalID: 4287942391479120192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_32
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d3baf2eb35bd940800000000000000
+      internalID: 5321939460977016084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_33
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058b01e18212f1a90800000000000000
+      internalID: -7341112411403798448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_34
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e673ac00b7db19780800000000000000
+      internalID: -8677946670974355602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_35
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4717a0e19fb939670800000000000000
+      internalID: 8544344412305125748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_36
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2879c4cc98eacf220800000000000000
+      internalID: 2521081798281959298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_37
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2a30dea95edcb80800000000000000
+      internalID: -8372783678647721253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_38
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d5d00c9d3caff40800000000000000
+      internalID: 5763134013171391843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_39
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcea42d1792b76c0800000000000000
+      internalID: -4144673463228240709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_40
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96a03cc391092ea0800000000000000
+      internalID: -5897180502767393122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_41
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4b0e47f5de833c0800000000000000
+      internalID: -4379489643379247943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_42
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b59c1401f5edb050800000000000000
+      internalID: 5818059116951410098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_43
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11160b2b4fbc47f0800000000000000
+      internalID: -626915918546071270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_44
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de365cefb3df37de0800000000000000
+      internalID: -1336446230279658515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19eb66a5f0374c5f0800000000000000
+      internalID: -737337929203532143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_46
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705e5aa97a80df320800000000000000
+      internalID: 2593238476382397703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_47
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e124ecb752bb9520800000000000000
+      internalID: 2709955690694451682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_48
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae38549e0e6edc280800000000000000
+      internalID: -9021300624892525590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_49
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043ba9c668ca515b0800000000000000
+      internalID: -5398218884985998528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_50
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca234d35cd06dcc30800000000000000
+      internalID: 4381264511916847788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_51
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac15698838bdaa4b0800000000000000
+      internalID: -5428285042862960182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_52
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4de70782b6c111a0800000000000000
+      internalID: -6840467888927150774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_53
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07733d8a23b9d7730800000000000000
+      internalID: 3998522686057953136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_54
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a241014b7def26b0800000000000000
+      internalID: -5318771521273904473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_55
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c096ecc5c7d5f50800000000000000
+      internalID: 6871785344479071297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_56
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10422513a7ab589e0800000000000000
+      internalID: -1619683456993582079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_57
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de031d8b9d76c190800000000000000
+      internalID: -7942522785781051695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_58
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1677ce0d9013098c0800000000000000
+      internalID: -3994638951248005279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_59
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b58539aba535d8b0800000000000000
+      internalID: -5128133589296904779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_60
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d511657c61300eb40800000000000000
+      internalID: 5467373343996252509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_61
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87e315f9ffc00510800000000000000
+      internalID: 1513438147262015375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_62
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 49
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f7d9a6b68fa1890800000000000000
+      internalID: -7486398290316132473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_63
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 25
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8babb5366a2c7afc0800000000000000
+      internalID: -3483601766860473672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_64
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 25
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e90954d247c10d0800000000000000
+      internalID: -3450755476683186569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_65
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 25
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd19570c7cb588780800000000000000
+      internalID: -8680587368271080993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_66
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 25
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c789c98e9b5bc80800000000000000
+      internalID: -8307529528904221575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_67
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 25
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73937fac425249bf0800000000000000
+      internalID: -318588833682212553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_68
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 25
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2778023048648d630800000000000000
+      internalID: 3951986205819701106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1246072987464a0800000000000000
+      internalID: -6601018583472135741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_70
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31164d45373f3020800000000000000
+      internalID: 2323636634815697215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_71
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8be6777c68f4f50800000000000000
+      internalID: 6867856148023654577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_72
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9100f01ad33a944d0800000000000000
+      internalID: -3149806979278503911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_73
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8e43c263d3550a0800000000000000
+      internalID: -6893536351741482845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RughaiOut_74
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d392a5cccd8c8850800000000000000
+      internalID: 6380630682705761238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
