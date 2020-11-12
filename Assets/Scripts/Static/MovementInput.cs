@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public static class MovementInput {
-    public static float threshold = 0.25f;
+    private static float threshold = 0.25f;
 
     // Returns the normalized input data (with maximum magnitude of 1).
     public static Vector2 GetMovement() {
@@ -25,17 +23,9 @@ public static class MovementInput {
         }
 
         // Compute the angle of the input vector.
-        float dir = AngleBetween(Vector2.zero, input);
+        float dir = Vector2Converter.AngleBetween(Vector2.zero, input);
 
         // Return a normalized vector.
-        return PolarToCartesian(dir * (Mathf.PI / 180), speed);
-    }
-
-    static float AngleBetween(Vector2 v1, Vector2 v2) {
-     return Mathf.Atan2(v2.y - v1.y, v2.x - v1.x) * (180 / Mathf.PI);
-    }
-
-    private static Vector2 PolarToCartesian(float angle, float magnitude) {
-        return new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * magnitude;
+        return Vector2Converter.PolarToCartesian(dir, speed);
     }
 }
