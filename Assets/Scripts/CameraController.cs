@@ -13,8 +13,6 @@ public class CameraController : MonoBehaviour {
     void FixedUpdate() {
         float dir = Vector2Converter.AngleBetween(this.transform.position, this.target.position);
         float len = Vector2.Distance(this.transform.position, this.target.position) * this.speed;
-        Debug.Log("Dir " + dir);
-        Debug.Log("Len " + len);
 
         this.transform.position = (Vector2) this.transform.position + Vector2Converter.PolarToCartesian(dir, len);
     }
