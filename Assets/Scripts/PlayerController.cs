@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
     public float speed;
+    public MovementInput input;
 
     private Rigidbody2D rb;
     private Vector2 moveVector;
@@ -13,7 +15,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        this.moveVector = MovementInput.GetMovement();
+        this.moveVector = this.input.GetMovement();
     }
 
     void FixedUpdate() {
