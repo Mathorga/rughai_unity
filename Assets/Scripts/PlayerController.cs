@@ -14,12 +14,14 @@ public class PlayerController : MonoBehaviour {
 
     // Actual moving speed.
     private float moveSpeed;
+    private float walkSpeed;
     private Vector2 moveForce;
     private float idleThreshold = 0.1f;
     private float walkThreshold = 0.9f;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
+        this.walkSpeed = this.speed / 2.5f;
     }
 
     void FixedUpdate() {
@@ -67,7 +69,7 @@ public class PlayerController : MonoBehaviour {
             this.faceY = this.rb.velocity.y;
             if (this.input.moveLen < walkThreshold ||
                 this.input.walk) {
-                this.moveSpeed = this.speed / 2;
+                this.moveSpeed = this.walkSpeed;
             } else {
                 this.moveSpeed = this.speed;
             }
