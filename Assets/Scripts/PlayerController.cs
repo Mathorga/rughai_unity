@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
     public float speed;
-    public MovementInput input;
+    public PlayerInput input;
     public Animator animator;
 
     private Rigidbody2D rb;
@@ -15,20 +15,16 @@ public class PlayerController : MonoBehaviour {
     // Actual moving speed.
     private float moveSpeed;
     private Vector2 moveForce;
-    private float speedFactor;
+    private float idleThreshold = 0.1f;
+    private float walkThreshold = 0.9f;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
     }
 
-    void Update() {
-        // this.moveVector = Vector2Converter.PolarToCartesian(this.input.GetMovement().x, this.input.GetMovement().y);
-        this.input.ReadInput();
-        this.ComputeMovement();
-    }
-
     void FixedUpdate() {
         this.Animate();
+        this.ComputeForce();
         this.rb.AddForce(this.moveForce);
     }
 
@@ -40,14 +36,15 @@ public class PlayerController : MonoBehaviour {
         this.animator.SetFloat("FaceY", this.faceY);
 
         // Set animation state.
-        if (this.rb.velocity.magnitude < 0.1 * maxVelocity) {
+        if (this.rb.velocity.magnitude < idleThreshold * maxVelocity) {
             this.animator.Play("Stand");
         } else {
             // Set facing.
             this.faceX = this.rb.velocity.x;
             this.faceY = this.rb.velocity.y;
 
-            if (this.rb.velocity.magnitude < 0.6 * maxVelocity) {
+            if (this.rb.velocity.magnitude < walkThreshold * maxVelocity ||
+                this.input.walk) {
                 // Get current animation progress.
                 float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
                 float animationProgress = animationTime - Mathf.Floor(animationTime);
@@ -58,19 +55,18 @@ public class PlayerController : MonoBehaviour {
                 float animationProgress = animationTime - Mathf.Floor(animationTime);
                 this.animator.Play("Run", 0, animationProgress);
             }
-
-
         }
     }
 
-    void ComputeMovement() {
-        if (this.input.moveLen <= 0) {
+    void ComputeForce() {
+        if (this.input.moveLen <= idleThreshold) {
             this.moveSpeed = 0;
         } else {
             // Set facing.
             this.faceX = this.rb.velocity.x;
             this.faceY = this.rb.velocity.y;
-            if (this.input.moveLen < 0.6) {
+            if (this.input.moveLen < walkThreshold ||
+                this.input.walk) {
                 this.moveSpeed = this.speed / 2;
             } else {
                 this.moveSpeed = this.speed;

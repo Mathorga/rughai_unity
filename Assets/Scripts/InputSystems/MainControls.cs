@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/InputSystems/MainInput.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/InputSystems/MainControls.inputactions'
 
 using System;
 using System.Collections;
@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @MainInput : IInputActionCollection, IDisposable
+public class @MainControls : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @MainInput()
+    public @MainControls()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""MainInput"",
+    ""name"": ""MainControls"",
     ""maps"": [
         {
             ""name"": ""Player"",
@@ -23,6 +23,14 @@ public class @MainInput : IInputActionCollection, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""87678759-9044-4bd7-853b-adf236bc0f08"",
                     ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""WalkTrigger"",
+                    ""type"": ""Value"",
+                    ""id"": ""1019b82b-c777-496e-867c-ab9d5162bf93"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -93,6 +101,28 @@ public class @MainInput : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e88bace7-c905-4355-9bf9-b17c24289924"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""WalkTrigger"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bf4cd7d0-64fd-4086-816b-c1714e9fb167"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""WalkTrigger"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -207,6 +237,7 @@ public class @MainInput : IInputActionCollection, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        m_Player_WalkTrigger = m_Player.FindAction("WalkTrigger", throwIfNotFound: true);
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_Move = m_Camera.FindAction("Move", throwIfNotFound: true);
@@ -260,11 +291,13 @@ public class @MainInput : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
+    private readonly InputAction m_Player_WalkTrigger;
     public struct PlayerActions
     {
-        private @MainInput m_Wrapper;
-        public PlayerActions(@MainInput wrapper) { m_Wrapper = wrapper; }
+        private @MainControls m_Wrapper;
+        public PlayerActions(@MainControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
+        public InputAction @WalkTrigger => m_Wrapper.m_Player_WalkTrigger;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -277,6 +310,9 @@ public class @MainInput : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                @WalkTrigger.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWalkTrigger;
+                @WalkTrigger.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWalkTrigger;
+                @WalkTrigger.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWalkTrigger;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -284,6 +320,9 @@ public class @MainInput : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @WalkTrigger.started += instance.OnWalkTrigger;
+                @WalkTrigger.performed += instance.OnWalkTrigger;
+                @WalkTrigger.canceled += instance.OnWalkTrigger;
             }
         }
     }
@@ -295,8 +334,8 @@ public class @MainInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Camera_Move;
     public struct CameraActions
     {
-        private @MainInput m_Wrapper;
-        public CameraActions(@MainInput wrapper) { m_Wrapper = wrapper; }
+        private @MainControls m_Wrapper;
+        public CameraActions(@MainControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Camera_Move;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
@@ -342,6 +381,7 @@ public class @MainInput : IInputActionCollection, IDisposable
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnWalkTrigger(InputAction.CallbackContext context);
     }
     public interface ICameraActions
     {

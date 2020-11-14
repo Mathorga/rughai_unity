@@ -2128,7 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50156fb0263e942409bbf7fbd2de65dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 12
   input: {fileID: 1454058317}
   animator: {fileID: 1454058316}
 --- !u!95 &1454058316
@@ -2162,7 +2162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a712c55f36b434cbcf464ce581dc4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 0.25
 --- !u!1 &2097108221
 GameObject:
   m_ObjectHideFlags: 0
