@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour {
     private MainControls controls;
@@ -45,7 +44,7 @@ public class PlayerInput : MonoBehaviour {
     }
 
     private void SetMoveDirection(Vector2 moveVector) {
-        this.moveDir = Vector2Converter.AngleBetween(Vector2.zero, moveVector);
+        this.moveDir = Utils.AngleBetween(Vector2.zero, moveVector);
     }
 
     public void SetMoveLength(Vector2 moveVector) {

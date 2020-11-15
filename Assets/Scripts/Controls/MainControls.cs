@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/InputSystems/MainControls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/Controls/MainControls.inputactions'
 
 using System;
 using System.Collections;
@@ -41,7 +41,7 @@ public class @MainControls : IInputActionCollection, IDisposable
                     ""id"": ""0c879d07-cbe3-4305-bbbd-f9c8af643104"",
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""StickDeadzone"",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
@@ -137,6 +137,14 @@ public class @MainControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Test"",
+                    ""type"": ""Value"",
+                    ""id"": ""19b48c9c-c2cd-449b-b05e-8c5602992880"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -145,7 +153,7 @@ public class @MainControls : IInputActionCollection, IDisposable
                     ""id"": ""e18e189f-0ae0-4e6b-8087-0c822dd9a75d"",
                     ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""StickDeadzone"",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
@@ -205,6 +213,17 @@ public class @MainControls : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2c2210fe-2207-4354-9e96-db7a25d73970"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Test"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -241,6 +260,7 @@ public class @MainControls : IInputActionCollection, IDisposable
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_Move = m_Camera.FindAction("Move", throwIfNotFound: true);
+        m_Camera_Test = m_Camera.FindAction("Test", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -332,11 +352,13 @@ public class @MainControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Camera;
     private ICameraActions m_CameraActionsCallbackInterface;
     private readonly InputAction m_Camera_Move;
+    private readonly InputAction m_Camera_Test;
     public struct CameraActions
     {
         private @MainControls m_Wrapper;
         public CameraActions(@MainControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Camera_Move;
+        public InputAction @Test => m_Wrapper.m_Camera_Test;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -349,6 +371,9 @@ public class @MainControls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
+                @Test.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
+                @Test.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
+                @Test.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
             }
             m_Wrapper.m_CameraActionsCallbackInterface = instance;
             if (instance != null)
@@ -356,6 +381,9 @@ public class @MainControls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @Test.started += instance.OnTest;
+                @Test.performed += instance.OnTest;
+                @Test.canceled += instance.OnTest;
             }
         }
     }
@@ -386,5 +414,6 @@ public class @MainControls : IInputActionCollection, IDisposable
     public interface ICameraActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnTest(InputAction.CallbackContext context);
     }
 }

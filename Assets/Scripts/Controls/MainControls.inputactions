@@ -1,5 +1,5 @@
 {
-    "name": "MainInput",
+    "name": "MainControls",
     "maps": [
         {
             "name": "Player",
@@ -28,7 +28,7 @@
                     "id": "0c879d07-cbe3-4305-bbbd-f9c8af643104",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "StickDeadzone",
                     "groups": "Gamepad",
                     "action": "Move",
                     "isComposite": false,
@@ -124,6 +124,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Test",
+                    "type": "Value",
+                    "id": "19b48c9c-c2cd-449b-b05e-8c5602992880",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -132,7 +140,7 @@
                     "id": "e18e189f-0ae0-4e6b-8087-0c822dd9a75d",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "StickDeadzone",
                     "groups": "Gamepad",
                     "action": "Move",
                     "isComposite": false,
@@ -192,6 +200,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2c2210fe-2207-4354-9e96-db7a25d73970",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Test",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

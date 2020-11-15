@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public static class Vector2Converter {
+public static class Utils {
     public static float AngleBetween(Vector2 v1, Vector2 v2) {
      return Mathf.Atan2(v2.y - v1.y, v2.x - v1.x) * (180 / Mathf.PI);
     }

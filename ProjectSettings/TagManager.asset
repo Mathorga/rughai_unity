@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sides
+    uniqueID: 1730991525
+    locked: 0
   - name: Ground
     uniqueID: 975521763
     locked: 0
