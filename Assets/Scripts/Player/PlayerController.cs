@@ -39,8 +39,10 @@ public class PlayerController : MonoBehaviour {
         this.animator.SetFloat("FaceY", this.faceY);
 
         // Set animation state.
-        if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity) {
+        if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
+            this.moveSpeed < this.walkSpeed) {
             // Current velocity is below slow walk, so stand.
+            // Current move speed is also checked in order to be able to walk against walls.
             this.animator.Play("Stand");
         } else {
             // Get current animation progress.
@@ -72,10 +74,6 @@ public class PlayerController : MonoBehaviour {
         if (this.input.moveLen <= walkThreshold) {
             this.moveSpeed = 0;
         } else {
-            // Set facing.
-            this.faceX = this.moveForce.x;
-            this.faceY = this.moveForce.y;
-
             if (this.input.moveLen < runThreshold ||
                 this.input.walk) {
                 this.moveSpeed = this.walkSpeed;
@@ -85,5 +83,11 @@ public class PlayerController : MonoBehaviour {
         }
 
         this.moveForce = Utils.PolarToCartesian(this.input.moveDir, this.moveSpeed);
+
+        if (this.moveSpeed > 0) {
+            // Set facing.
+            this.faceX = this.moveForce.x;
+            this.faceY = this.moveForce.y;
+        }
     }
 }

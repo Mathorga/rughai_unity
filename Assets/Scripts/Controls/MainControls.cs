@@ -20,7 +20,7 @@ public class @MainControls : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""87678759-9044-4bd7-853b-adf236bc0f08"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
@@ -30,7 +30,7 @@ public class @MainControls : IInputActionCollection, IDisposable
                     ""name"": ""WalkTrigger"",
                     ""type"": ""Value"",
                     ""id"": ""1019b82b-c777-496e-867c-ab9d5162bf93"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -49,7 +49,7 @@ public class @MainControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""WASD"",
-                    ""id"": ""9a368b85-5fb2-4be3-9909-0d5eb72342d3"",
+                    ""id"": ""975a04d1-e484-4a05-a442-697da264cb49"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -60,44 +60,44 @@ public class @MainControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""b26cd615-5b9d-4de8-9dbd-61139c710be6"",
+                    ""id"": ""1e240ca4-c896-44ab-b522-6207af6c8781"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""4e8e3e97-5db8-4240-b646-1cea24bf56a7"",
+                    ""id"": ""03453bf1-56d6-4bf0-9194-a6c222ca337c"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""eb4eb044-3f4f-4597-80e3-6fcc4eda7fcb"",
+                    ""id"": ""e7dc495a-6380-4c60-bfd2-02f85a72e37f"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""9f973214-5e4d-4e7a-b054-556e51c7a390"",
+                    ""id"": ""a2b971cf-8b83-4567-afe3-2bacd573649f"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -132,17 +132,9 @@ public class @MainControls : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""54356845-372b-48ad-af64-6cdfa649744b"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Test"",
-                    ""type"": ""Value"",
-                    ""id"": ""19b48c9c-c2cd-449b-b05e-8c5602992880"",
-                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -161,18 +153,18 @@ public class @MainControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Arrows"",
-                    ""id"": ""d1dea2a4-3345-4d86-991d-5f208ff5b49d"",
+                    ""id"": ""be34ed34-be3e-43ad-a3e3-4cae814955c1"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""05e6b754-42fb-4fe6-9ed9-f01910a38eb7"",
+                    ""id"": ""63ccc091-ea47-4938-b962-285dabfe65b7"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -183,7 +175,7 @@ public class @MainControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""1a840293-1d76-4554-b996-eda1eebcca78"",
+                    ""id"": ""21833087-6176-46ca-b3ef-f12eeebcb403"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -194,36 +186,25 @@ public class @MainControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""caf571b2-9d0e-4da0-ba49-fc5a17068f49"",
+                    ""id"": ""26d90ea0-ca28-4e2b-9f6c-99b5191c577b"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard;Gamepad"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""e7ee6e8d-99d8-45d3-8a61-26b12290aba4"",
+                    ""id"": ""a30fafa0-12c6-43b6-bdd1-07ea9a805297"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2c2210fe-2207-4354-9e96-db7a25d73970"",
-                    ""path"": ""<Gamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Test"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -260,7 +241,6 @@ public class @MainControls : IInputActionCollection, IDisposable
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_Move = m_Camera.FindAction("Move", throwIfNotFound: true);
-        m_Camera_Test = m_Camera.FindAction("Test", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -352,13 +332,11 @@ public class @MainControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Camera;
     private ICameraActions m_CameraActionsCallbackInterface;
     private readonly InputAction m_Camera_Move;
-    private readonly InputAction m_Camera_Test;
     public struct CameraActions
     {
         private @MainControls m_Wrapper;
         public CameraActions(@MainControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Camera_Move;
-        public InputAction @Test => m_Wrapper.m_Camera_Test;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -371,9 +349,6 @@ public class @MainControls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
-                @Test.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
-                @Test.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
-                @Test.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
             }
             m_Wrapper.m_CameraActionsCallbackInterface = instance;
             if (instance != null)
@@ -381,9 +356,6 @@ public class @MainControls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
-                @Test.started += instance.OnTest;
-                @Test.performed += instance.OnTest;
-                @Test.canceled += instance.OnTest;
             }
         }
     }
@@ -414,6 +386,5 @@ public class @MainControls : IInputActionCollection, IDisposable
     public interface ICameraActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnTest(InputAction.CallbackContext context);
     }
 }
