@@ -55,7 +55,9 @@ public class PlayerController : MonoBehaviour {
                 this.animator.speed = 0.5f;
 
                 // Current velocity is above slow walk and below walk, so slow walk.
-                this.animator.Play("Walk", 0, animationProgress);
+                if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
+                    this.animator.Play("Walk", 0, animationProgress);
+                }
             } else {
                 // Set standard speed for standard walk and run animations.
                 this.animator.speed = 1;
@@ -63,10 +65,14 @@ public class PlayerController : MonoBehaviour {
                 if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity ||
                     this.input.walk) {
                     // Current velocity is above walk and below run (or walk is triggered), so walk.
-                    this.animator.Play("Walk", 0, animationProgress);
+                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
+                        this.animator.Play("Walk", 0, animationProgress);
+                    }
                 } else {
                     // Current velocity is above run, so run.
-                    this.animator.Play("Run", 0, animationProgress);
+                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Run")) {
+                        this.animator.Play("Run", 0, animationProgress);
+                    }
                 }
             }
         }
