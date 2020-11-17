@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour {
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.walkSpeed = this.speed / 2.5f;
-        this.animator.speed = 3f;
     }
 
     void FixedUpdate() {
@@ -36,15 +35,19 @@ public class PlayerController : MonoBehaviour {
         float maxVelocity = this.speed / this.rb.drag;
 
         // Set facing for direction control.
-        this.animator.SetFloat("FaceX", Mathf.Clamp(this.faceX, -1, 1));
-        this.animator.SetFloat("FaceY", Mathf.Clamp(this.faceY, -1, 1));
+        // this.animator.SetFloat("FaceX", Mathf.Clamp(this.faceX, -1, 1));
+        // this.animator.SetFloat("FaceY", Mathf.Clamp(this.faceY, -1, 1));
+        this.animator.SetFloat("FaceX", this.faceX);
+        this.animator.SetFloat("FaceY", this.faceY);
 
         // Set animation state.
         if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
             this.moveSpeed < this.walkSpeed) {
             // Current velocity is below slow walk, so stand.
             // Current move speed is also checked in order to be able to walk against walls.
-            this.animator.Play("Stand");
+            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Stand")) {
+                this.animator.Play("Stand");
+            }
         } else {
             // Get current animation progress.
             float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
