@@ -8,24 +8,15 @@ public class CameraTargetController : MonoBehaviour {
     public CameraInput input;
     public Vector2 offset;
 
-    private bool blocked;
-
     void Start() {
         this.transform.position = this.pole.position;
-        this.blocked = false;
     }
 
     void FixedUpdate() {
-        if (!this.blocked) {
-            this.transform.position = (Vector2) this.pole.transform.position + Utils.PolarToCartesian(this.input.moveDir, this.input.moveLen * this.extension) +  this.offset;
-        }
+        this.transform.position = (Vector2) this.pole.transform.position + Utils.PolarToCartesian(this.input.moveDir, this.input.moveLen * this.extension) +  this.offset;
     }
 
     void OnDrawGizmos() {
         Gizmos.DrawIcon(this.transform.position, "CameraTarget.png");
-    }
-
-    public void ToggleBlocked() {
-        this.blocked = true;
     }
 }
