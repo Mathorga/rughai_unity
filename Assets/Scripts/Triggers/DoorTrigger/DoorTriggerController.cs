@@ -10,7 +10,8 @@ public class DoorTriggerController : MonoBehaviour {
         // other.transform.position = this.transform.position;
         if (other.CompareTag("Player")) {
             //TODO Scene transition.
-            SceneManager.LoadScene(this.nextScene);
+            this.StartCoroutine(this.LoadScene());
+            // SceneManager.LoadScene(this.nextScene);
         }
     }
 
@@ -22,4 +23,8 @@ public class DoorTriggerController : MonoBehaviour {
         Debug.Log("Exit " + other.gameObject.name);
     }
     
+    IEnumerator LoadScene() {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(this.nextScene);
+    }
 }

@@ -15,8 +15,4 @@ public class CameraTargetController : MonoBehaviour {
     void FixedUpdate() {
         this.transform.position = (Vector2) this.pole.transform.position + Utils.PolarToCartesian(this.input.moveDir, this.input.moveLen * this.extension) +  this.offset;
     }
-
-    void OnDrawGizmos() {
-        Gizmos.DrawIcon(this.transform.position, "CameraTarget.png");
-    }
 }
