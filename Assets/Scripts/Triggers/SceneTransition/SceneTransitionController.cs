@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DoorTriggerController : MonoBehaviour {
+public class SceneTransitionController : MonoBehaviour {
     public string nextScene;
+    public Animator sceneAnimator;
 
     void OnTriggerEnter2D(Collider2D other) {
-        // other.transform.position = this.transform.position;
         if (other.CompareTag("Player")) {
-            //TODO Scene transition.
             this.StartCoroutine(this.LoadScene());
-            // SceneManager.LoadScene(this.nextScene);
         }
     }
 
@@ -20,10 +18,12 @@ public class DoorTriggerController : MonoBehaviour {
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        Debug.Log("Exit " + other.gameObject.name);
+        // Debug.Log("Exit " + other.gameObject.name);
     }
     
     IEnumerator LoadScene() {
+        this.sceneAnimator.SetTrigger("FadeOut");
+        //this.sceneAnimator.Play("FadeOut");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(this.nextScene);
     }
