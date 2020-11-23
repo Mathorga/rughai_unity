@@ -8,7 +8,7 @@ public class CameraTargetController : MonoBehaviour {
     public CameraInput input;
     public Vector2 offset;
 
-    void Start() {
+    void Awake() {
         this.transform.position = this.pole.position;
     }
 

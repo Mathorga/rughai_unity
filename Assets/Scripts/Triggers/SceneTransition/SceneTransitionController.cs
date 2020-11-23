@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class SceneTransitionController : MonoBehaviour {
     public string nextScene;
     public Animator sceneAnimator;
+    public Vector2 nextPlayerPosition;
+    public Vector2Value playerPosition;
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
+            this.playerPosition.value = this.nextPlayerPosition;
             this.StartCoroutine(this.LoadScene());
         }
     }

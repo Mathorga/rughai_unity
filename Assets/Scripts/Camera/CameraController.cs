@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour {
 
     private float zPosition = -10f;
 
-    void Awake() {
+    void Start() {
         this.transform.position = new Vector3(this.target.position.x, this.target.position.y, this.zPosition);
     }
 
