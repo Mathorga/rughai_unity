@@ -22,11 +22,11 @@ public class PlayerController : MonoBehaviour {
     private float runThreshold = 0.9f;
 
     void Awake() {
+        this.transform.position = this.startPosition.value;
         this.rb = this.GetComponent<Rigidbody2D>();
         this.walkSpeed = this.speed / 2.5f;
         this.faceX = 0;
         this.faceY = -1;
-        this.transform.position = this.startPosition.value;
     }
 
     void FixedUpdate() {

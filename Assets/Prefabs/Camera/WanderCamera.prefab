@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 9127963460757448011}
   - component: {fileID: 9127963460757448116}
   - component: {fileID: 9127963460757448118}
-  - component: {fileID: 9127963460757448117}
   - component: {fileID: 9127963460757448010}
+  - component: {fileID: 9127963460757448117}
   m_Layer: 0
   m_Name: WanderCamera
   m_TagString: MainCamera
@@ -85,20 +85,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9127963460757448119}
   m_Enabled: 1
---- !u!114 &9127963460757448117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9127963460757448119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaadf33026d6d4b468a16a67a5239f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.05
-  target: {fileID: 0}
 --- !u!114 &9127963460757448010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,3 +105,17 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &9127963460757448117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127963460757448119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaadf33026d6d4b468a16a67a5239f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.05
+  target: {fileID: 0}

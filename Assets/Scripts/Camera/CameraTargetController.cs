@@ -9,7 +9,7 @@ public class CameraTargetController : MonoBehaviour {
     public Vector2 offset;
 
     void Awake() {
-        this.transform.position = this.pole.position;
+        this.transform.position = (Vector2) this.pole.position + this.offset;
     }
 
     void FixedUpdate() {
