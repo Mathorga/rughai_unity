@@ -39,11 +39,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Sides
+  - name: UnderTiles
     uniqueID: 1730991525
     locked: 0
-  - name: Ground
+  - name: GroundTiles
     uniqueID: 975521763
+    locked: 0
+  - name: AboveTiles
+    uniqueID: 1128589351
     locked: 0
   - name: Default
     uniqueID: 0
