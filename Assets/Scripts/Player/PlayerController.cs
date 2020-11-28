@@ -32,7 +32,9 @@ public class PlayerController : MonoBehaviour {
     void FixedUpdate() {
         this.ComputeForce();
         this.Animate();
-        this.rb.AddForce(this.moveForce);
+        if (this.moveForce.magnitude > 0f) {
+            this.rb.AddForce(this.moveForce);
+        }
     }
 
     void Animate() {

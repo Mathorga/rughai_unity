@@ -13,4 +13,11 @@ public static class Utils {
         // Compute.
         return new Vector2(Mathf.Cos(radAngle), Mathf.Sin(radAngle)) * magnitude;
     }
+
+    public static bool PointInsideCollider(Collider2D collider, Vector2 point) {
+        Vector2 closest = collider.ClosestPoint(point);
+
+        // Because closest=point if point is inside - not clear from docs I feel
+        return closest == point;
+    }
 }
