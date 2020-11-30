@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
     private MainControls controls;
+    public float walkThreshold = 0.1f;
+    public float runThreshold  = 0.9f;
     public float moveDir {
         get;
         private set;

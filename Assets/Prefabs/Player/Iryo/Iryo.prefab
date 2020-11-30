@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3917716970757086646}
   - component: {fileID: 6496907040287462473}
   - component: {fileID: 6496907040287462479}
+  - component: {fileID: 3239950128817349321}
   m_Layer: 0
   m_Name: Iryo
   m_TagString: Untagged
@@ -193,7 +194,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50156fb0263e942409bbf7fbd2de65dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  input: {fileID: 6496907040287462473}
-  animator: {fileID: 6496907040287462472}
   startPosition: {fileID: 0}
+  facing: {fileID: 0}
+  stats: {fileID: 0}
+--- !u!114 &3239950128817349321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6496907040287462466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202aa23b76a0694c992bf4e5fb38e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facing: {fileID: 0}
+  stats: {fileID: 0}

@@ -27252,6 +27252,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3239950128817349321, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: facing
+      value: 
+      objectReference: {fileID: 11400000, guid: d4fb4fa8fb09d294ab9d8c94affb8a53,
+        type: 2}
+    - target: {fileID: 3239950128817349321, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: bc55c7f81d64d804d88abf505bd5ee91,
+        type: 2}
+    - target: {fileID: 5032518904736295658, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: speed
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 6496907040287462466, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
       propertyPath: m_Name
@@ -27266,6 +27283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496907040287462476, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6496907040287462477, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
@@ -27327,6 +27349,18 @@ PrefabInstance:
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 11400000, guid: 268337dce2221bb4c89c5fcebce9a38e,
+        type: 2}
+    - target: {fileID: 6496907040287462479, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: facing
+      value: 
+      objectReference: {fileID: 11400000, guid: d4fb4fa8fb09d294ab9d8c94affb8a53,
+        type: 2}
+    - target: {fileID: 6496907040287462479, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: bc55c7f81d64d804d88abf505bd5ee91,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e447597bd08274dab3063b88737979, type: 3}

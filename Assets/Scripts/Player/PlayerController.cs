@@ -4,108 +4,47 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
-    public float speed;
-    public PlayerInput input;
-    public Animator animator;
     public Vector2Value startPosition;
+    public Vector2Value facing;
+    public PlayerStats stats;
 
     private Rigidbody2D rb;
-    private float faceX;
-    private float faceY;
+    private PlayerInput input;
 
     // Actual moving speed.
-    private float moveSpeed;
-    private float walkSpeed;
     private Vector2 moveForce;
-    private float slowWalkThreshold = 0.01f;
-    private float walkThreshold = 0.1f;
-    private float runThreshold = 0.9f;
 
     void Awake() {
         this.transform.position = this.startPosition.value;
         this.rb = this.GetComponent<Rigidbody2D>();
-        this.walkSpeed = this.speed / 2.5f;
-        this.faceX = 0;
-        this.faceY = -1;
+        this.input = this.GetComponent<PlayerInput>();
     }
 
     void FixedUpdate() {
         this.ComputeForce();
-        this.Animate();
         if (this.moveForce.magnitude > 0f) {
             this.rb.AddForce(this.moveForce);
         }
     }
 
-    void Animate() {
-        float maxVelocity = this.speed / this.rb.drag;
-
-        // Set facing for direction control.
-        this.animator.SetFloat("FaceX", this.faceX);
-        this.animator.SetFloat("FaceY", this.faceY);
-
-        // Set animation state.
-        if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
-            this.moveSpeed < this.walkSpeed) {
-            // Set standard speed for standard walk and run animations.
-            this.animator.speed = 0.5f;
-
-            // Current velocity is below slow walk, so stand.
-            // Current move speed is also checked in order to be able to walk against walls.
-            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Stand")) {
-                this.animator.Play("Stand");
-            }
-        } else {
-            // Get current animation progress.
-            float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-            float animationProgress = animationTime - Mathf.Floor(animationTime);
-
-            if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
-                // In order to achieve slow walk, the standard walk animation is played at slower speed.
-                this.animator.speed = 0.5f;
-
-                // Current velocity is above slow walk and below walk, so slow walk.
-                if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
-                    this.animator.Play("Walk", 0, animationProgress);
-                }
-            } else {
-                // Set standard speed for standard walk and run animations.
-                this.animator.speed = 1;
-
-                if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity ||
-                    this.input.walk) {
-                    // Current velocity is above walk and below run (or walk is triggered), so walk.
-                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
-                        this.animator.Play("Walk", 0, animationProgress);
-                    }
-                } else {
-                    // Current velocity is above run, so run.
-                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Run")) {
-                        this.animator.Play("Run", 0, animationProgress);
-                    }
-                }
-            }
-        }
-    }
-
     void ComputeForce() {
-        if (this.input.moveLen <= walkThreshold) {
-            this.moveSpeed = 0;
+        if (this.input.moveLen <= this.input.walkThreshold) {
+            this.stats.moveSpeed = 0f;
         } else {
-            if (this.input.moveLen < runThreshold ||
+            if (this.input.moveLen < this.input.runThreshold ||
                 this.input.walk) {
-                this.moveSpeed = this.walkSpeed;
+                this.stats.moveSpeed = this.stats.walkSpeed;
             } else {
-                this.moveSpeed = this.speed;
+                this.stats.moveSpeed = this.stats.speed;
             }
         }
 
-        this.moveForce = Utils.PolarToCartesian(this.input.moveDir, this.moveSpeed);
+        this.moveForce = Utils.PolarToCartesian(this.input.moveDir, this.stats.moveSpeed);
 
-        if (this.moveSpeed > 0) {
+        if (this.stats.moveSpeed > 0f) {
             // Set facing.
-            this.faceX = this.moveForce.x;
-            this.faceY = this.moveForce.y;
+            this.facing.value.x = this.moveForce.x;
+            this.facing.value.y = this.moveForce.y;
         }
     }
 }
