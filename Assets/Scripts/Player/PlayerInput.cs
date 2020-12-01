@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
     private MainControls controls;
-    public float walkThreshold = 0.1f;
-    public float runThreshold  = 0.9f;
     public float moveDir {
         get;
         private set;
@@ -15,6 +13,10 @@ public class PlayerInput : MonoBehaviour {
         private set;
     }
     public bool walk {
+        get;
+        private set;
+    }
+    public bool interact {
         get;
         private set;
     }
@@ -35,6 +37,12 @@ public class PlayerInput : MonoBehaviour {
 
         // Check for walk trigger end.
         this.controls.Player.WalkTrigger.canceled += (context) => this.SetWalkTrigger(false);
+
+        // Check for interact start.
+        this.controls.Player.Interact.started += (context) => this.SetInteract(true);
+
+        // Check for interact end.
+        this.controls.Player.Interact.canceled += (context) => this.SetInteract(false);
     }
 
     private void OnEnable() {
@@ -55,5 +63,10 @@ public class PlayerInput : MonoBehaviour {
 
     public void SetWalkTrigger(bool value) {
         this.walk = value;
+    }
+
+    public void SetInteract(bool value) {
+        Debug.Log("Interact " + value);
+        this.interact = value;
     }
 }

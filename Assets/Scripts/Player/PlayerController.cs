@@ -1,18 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.InputSystem;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public Vector2Value startPosition;
-    public Vector2Value facing;
     public PlayerStats stats;
 
+    private float walkThreshold = 0.1f;
+    private float runThreshold  = 0.6f;
     private Rigidbody2D rb;
     private PlayerInput input;
-
-    // Actual moving speed.
-    private Vector2 moveForce;
 
     void Awake() {
         this.transform.position = this.startPosition.value;
@@ -22,16 +17,16 @@ public class PlayerController : MonoBehaviour {
 
     void FixedUpdate() {
         this.ComputeForce();
-        if (this.moveForce.magnitude > 0f) {
-            this.rb.AddForce(this.moveForce);
+        if (this.stats.moveForce.magnitude > 0f) {
+            this.rb.AddForce(this.stats.moveForce);
         }
     }
 
     void ComputeForce() {
-        if (this.input.moveLen <= this.input.walkThreshold) {
+        if (this.input.moveLen <= this.walkThreshold) {
             this.stats.moveSpeed = 0f;
         } else {
-            if (this.input.moveLen < this.input.runThreshold ||
+            if (this.input.moveLen < this.runThreshold ||
                 this.input.walk) {
                 this.stats.moveSpeed = this.stats.walkSpeed;
             } else {
@@ -39,12 +34,6 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        this.moveForce = Utils.PolarToCartesian(this.input.moveDir, this.stats.moveSpeed);
-
-        if (this.stats.moveSpeed > 0f) {
-            // Set facing.
-            this.facing.value.x = this.moveForce.x;
-            this.facing.value.y = this.moveForce.y;
-        }
+        this.stats.moveForce = Utils.PolarToCartesian(this.input.moveDir, this.stats.moveSpeed);
     }
 }

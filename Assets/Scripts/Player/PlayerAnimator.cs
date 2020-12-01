@@ -1,40 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour {
-    public Vector2Value facing;
     public PlayerStats stats;
 
     // Threshold from stand to slow walk animation.
-    public float slowWalkThreshold = 0.01f;
+    private float slowWalkThreshold = 0.01f;
 
     // Threshold from slow walk to walk animation.
-    public float walkThreshold = 0.1f;
+    private float walkThreshold = 0.1f;
 
     // Threshold from walk to run animation.
-    public float runThreshold = 0.4f;
+    private float runThreshold = 0.5f;
 
     private Rigidbody2D rb;
     private Animator animator;
-    private PlayerInput input;
 
     void Awake() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
-        this.input = this.GetComponent<PlayerInput>();
     }
 
     void FixedUpdate() {
         this.Animate();
     }
-
+    
     void Animate() {
         float maxVelocity = this.stats.speed / this.rb.drag;
 
         // Set facing for direction control.
-        this.animator.SetFloat("FaceX", this.facing.value.x);
-        this.animator.SetFloat("FaceY", this.facing.value.y);
+        if (this.rb.velocity.magnitude > 0) {
+            // Use velocity if > 0.
+            this.animator.SetFloat("FaceX", this.rb.velocity.x);
+            this.animator.SetFloat("FaceY", this.rb.velocity.y);
+        } else if (this.stats.moveSpeed > 0) {
+            // Use moveSpeed otherwise.
+            this.animator.SetFloat("FaceX", this.stats.moveForce.x);
+            this.animator.SetFloat("FaceY", this.stats.moveForce.y);
+        }
 
         // Set animation state.
         if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
@@ -64,8 +66,7 @@ public class PlayerAnimator : MonoBehaviour {
                 // Set standard speed for standard walk and run animations.
                 this.animator.speed = 1f;
 
-                if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity ||
-                    this.input.walk) {
+                if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity) {
                     // Current velocity is above walk and below run (or walk is triggered), so walk.
                     if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
                         this.animator.Play("Walk", 0, animationProgress);

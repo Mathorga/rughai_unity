@@ -195,7 +195,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {fileID: 0}
-  facing: {fileID: 0}
   stats: {fileID: 0}
 --- !u!114 &3239950128817349321
 MonoBehaviour:
@@ -209,5 +208,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8202aa23b76a0694c992bf4e5fb38e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facing: {fileID: 0}
   stats: {fileID: 0}

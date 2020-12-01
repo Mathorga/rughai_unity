@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
   speed: 19
-  walkSpeed: 8
+  walkSpeed: 9

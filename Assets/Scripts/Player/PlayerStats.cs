@@ -15,4 +15,10 @@ public class PlayerStats : ScriptableObject {
         get;
         set;
     }
+
+    // Current moving force.
+    public Vector2 moveForce {
+        get;
+        set;
+    }
 }
