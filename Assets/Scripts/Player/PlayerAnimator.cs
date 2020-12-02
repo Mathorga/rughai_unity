@@ -28,11 +28,11 @@ public class PlayerAnimator : MonoBehaviour {
         float maxVelocity = this.stats.speed / this.rb.drag;
 
         // Set facing for direction control.
-        if (this.rb.velocity.magnitude > 0) {
+        if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
             // Use velocity if > 0.
             this.animator.SetFloat("FaceX", this.rb.velocity.x);
             this.animator.SetFloat("FaceY", this.rb.velocity.y);
-        } else if (this.stats.moveSpeed > 0) {
+        } else if (this.stats.moveSpeed > this.slowWalkThreshold) {
             // Use moveSpeed otherwise.
             this.animator.SetFloat("FaceX", this.stats.moveForce.x);
             this.animator.SetFloat("FaceY", this.stats.moveForce.y);
