@@ -15,14 +15,6 @@ public class SceneTransitionController : MonoBehaviour {
             this.StartCoroutine(this.LoadScene());
         }
     }
-
-    void OnTriggerStay2D(Collider2D other) {
-        // Debug.Log("Stay " + other);
-    }
-
-    void OnTriggerExit2D(Collider2D other) {
-        // Debug.Log("Exit " + other.gameObject.name);
-    }
     
     IEnumerator LoadScene() {
         this.sceneAnimator.SetTrigger("FadeOut");

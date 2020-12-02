@@ -15,15 +15,16 @@ public class FallTrigger : MonoBehaviour {
         FallController otherController = other.gameObject.GetComponent<FallController>();
 
         // Check if other's position is inside collider.
-        if (Utils.PointInsideCollider(this.boxCollider, otherTransform.position)) {
+        if (Utils.PointInsideCollider(this.boxCollider, (Vector2) otherTransform.position + other.offset)) {
             if (other.GetType() == typeof(CapsuleCollider2D)) {
+                otherController.SetCapsuleHit();
                 // Only set flag if not alredy set.
                 if (!otherController.falling) {
                     otherController.SetGravity(true);
                     otherController.falling = true;
                 }
             } else if (other.GetType() == typeof(CircleCollider2D)) {
-                otherController.SetSortingLayer("Fall");
+                otherController.SetCircleHit();
             }
         }
     }
