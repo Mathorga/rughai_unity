@@ -19,7 +19,7 @@ public class FallController : MonoBehaviour {
         this.spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
 
-    public void SetGravity(bool on) {
+    public void SetGravity() {
         this.rb.gravityScale = 2f;
     }
 
@@ -34,10 +34,30 @@ public class FallController : MonoBehaviour {
     public void SetCapsuleHit() {
         this.capsuleHit = true;
         
+        if (!this.falling) {
+            this.SetGravity();
+            this.falling = true;
+        }
+
         if (this.circleHit) {
             this.SetSortingLayer("Fall");
         }
     }
+
+    // public void SetFalling() {
+    //     // Only set flag if not alredy set.
+    //     if (!this.falling) {
+    //         this.SetGravity();
+    //         this.falling = true;
+    //     }
+    //     if (!this.falling) {
+    //         this.falling = true;
+    //         this.SetGravity(true);
+    //         if (this.capsuleHit && this.circleHit) {
+    //             this.SetSortingLayer("Fall");
+    //         }
+    //     }
+    // }
 
     private void SetSortingLayer(string layerName) {
         this.spriteRenderer.sortingLayerName = layerName;
