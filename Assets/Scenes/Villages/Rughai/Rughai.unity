@@ -28642,21 +28642,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9127963460757448010, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448010, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_RefResolutionX
-      value: 320
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448010, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_RefResolutionY
-      value: 240
-      objectReference: {fileID: 0}
     - target: {fileID: 9127963460757448011, guid: eca4d869b812ce44c8393c6306ed9c33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28710,36 +28695,6 @@ PrefabInstance:
     - target: {fileID: 9127963460757448011, guid: eca4d869b812ce44c8393c6306ed9c33,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448116, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: orthographic size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448116, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448116, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448116, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448116, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127963460757448116, guid: eca4d869b812ce44c8393c6306ed9c33,
-        type: 3}
-      propertyPath: m_ForceIntoRT
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9127963460757448117, guid: eca4d869b812ce44c8393c6306ed9c33,
