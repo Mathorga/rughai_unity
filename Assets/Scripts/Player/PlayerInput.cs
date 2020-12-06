@@ -66,7 +66,6 @@ public class PlayerInput : MonoBehaviour {
     }
 
     public void SetInteract(bool value) {
-        Debug.Log("Interact " + value);
         this.interact = value;
     }
 }
