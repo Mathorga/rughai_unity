@@ -4114,6 +4114,7 @@ GameObject:
   - component: {fileID: 712329390}
   - component: {fileID: 712329389}
   - component: {fileID: 712329391}
+  - component: {fileID: 712329392}
   m_Layer: 0
   m_Name: Duk
   m_TagString: Untagged
@@ -4176,7 +4177,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7940438845065056756, guid: b67669d1f61cb3c4481e97da06d81953,
+  m_Sprite: {fileID: 7139367421436818657, guid: 3c3ccabd932363047aec92fb6278c572,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4266,6 +4267,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &712329392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712329384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb6e910af25bb34a990603973aa7b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
 --- !u!1001 &714036113
 PrefabInstance:
   m_ObjectHideFlags: 0

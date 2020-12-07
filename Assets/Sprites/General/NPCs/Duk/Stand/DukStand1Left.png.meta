@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: b67669d1f61cb3c4481e97da06d81953
+guid: 3c3ccabd932363047aec92fb6278c572
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7940438845065056756
-    second: DuckStandSide_0
+      213: -6415081097575686401
+    second: DukStand1Left_0
   - first:
-      213: 8378392157385695625
-    second: DuckStandSide_1
+      213: 7139367421436818657
+    second: DukStand1Left_1
   - first:
-      213: 5834750069182291419
-    second: DuckStandSide_2
+      213: -7389329123400281346
+    second: DukStand1Left_2
   - first:
-      213: -6876846215398375583
-    second: DuckStandSide_3
+      213: -8839350345673676161
+    second: DukStand1Left_3
   - first:
-      213: 1437829939796708127
-    second: DuckStandSide_4
+      213: -6490840712456027824
+    second: DukStand1Left_4
   - first:
-      213: -2107853249983155754
-    second: DuckStandSide_5
+      213: -4081146410477406232
+    second: DukStand1Left_5
+  - first:
+      213: -4462157058560689369
+    second: DukStand1Left_6
+  - first:
+      213: 1182238309660245328
+    second: DukStand1Left_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +111,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DuckStandSide_0
+      name: DukStand1Left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +125,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f1d0d03f0b123e60800000000000000
-      internalID: 7940438845065056756
+      spriteID: ffe9da5fabd09f6a0800000000000000
+      internalID: -6415081097575686401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuckStandSide_1
+      name: DukStand1Left_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 981a4e9c647064470800000000000000
-      internalID: 8378392157385695625
+      spriteID: 1e4fcb308d0241360800000000000000
+      internalID: 7139367421436818657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuckStandSide_2
+      name: DukStand1Left_2
       rect:
         serializedVersion: 2
         x: 64
@@ -161,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdddbca264239f050800000000000000
-      internalID: 5834750069182291419
+      spriteID: ef217470054d37990800000000000000
+      internalID: -7389329123400281346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuckStandSide_3
+      name: DukStand1Left_3
       rect:
         serializedVersion: 2
         x: 96
@@ -182,14 +188,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16fb03c5dc88090a0800000000000000
-      internalID: -6876846215398375583
+      spriteID: f7ae4e881b1545580800000000000000
+      internalID: -8839350345673676161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuckStandSide_4
+      name: DukStand1Left_4
       rect:
         serializedVersion: 2
         x: 128
@@ -203,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1b010956b234f310800000000000000
-      internalID: 1437829939796708127
+      spriteID: 0514a6013c6ebe5a0800000000000000
+      internalID: -6490840712456027824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuckStandSide_5
+      name: DukStand1Left_5
       rect:
         serializedVersion: 2
         x: 160
@@ -224,8 +230,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d1f91413a66fb2e0800000000000000
-      internalID: -2107853249983155754
+      spriteID: 8e7322766fadc57c0800000000000000
+      internalID: -4081146410477406232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DukStand1Left_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bfc78fbcb3312c0800000000000000
+      internalID: -4462157058560689369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DukStand1Left_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d38279a77286010800000000000000
+      internalID: 1182238309660245328
       vertices: []
       indices: 
       edges: []
