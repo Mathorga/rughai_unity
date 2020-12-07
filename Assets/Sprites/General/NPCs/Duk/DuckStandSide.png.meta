@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 82de110cc98cde34f8822ff14125e439
+guid: b67669d1f61cb3c4481e97da06d81953
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8121290900878290512
-    second: tmp_0
+      213: 7940438845065056756
+    second: DuckStandSide_0
   - first:
-      213: -8715306892963088161
-    second: tmp_1
+      213: 8378392157385695625
+    second: DuckStandSide_1
   - first:
-      213: 3285372386610102560
-    second: tmp_2
+      213: 5834750069182291419
+    second: DuckStandSide_2
   - first:
-      213: 5731820529808228541
-    second: tmp_3
+      213: -6876846215398375583
+    second: DuckStandSide_3
+  - first:
+      213: 1437829939796708127
+    second: DuckStandSide_4
+  - first:
+      213: -2107853249983155754
+    second: DuckStandSide_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,85 +105,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tmp_0
+      name: DuckStandSide_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05e6670cb0f94b070800000000000000
-      internalID: 8121290900878290512
+      spriteID: 4f1d0d03f0b123e60800000000000000
+      internalID: 7940438845065056756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tmp_1
+      name: DuckStandSide_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd8fb687e820d0780800000000000000
-      internalID: -8715306892963088161
+      spriteID: 981a4e9c647064470800000000000000
+      internalID: 8378392157385695625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tmp_2
+      name: DuckStandSide_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 021c5ca67ccf79d20800000000000000
-      internalID: 3285372386610102560
+      spriteID: bdddbca264239f050800000000000000
+      internalID: 5834750069182291419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tmp_3
+      name: DuckStandSide_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db0c28347648b8f40800000000000000
-      internalID: 5731820529808228541
+      spriteID: 16fb03c5dc88090a0800000000000000
+      internalID: -6876846215398375583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckStandSide_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b010956b234f310800000000000000
+      internalID: 1437829939796708127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckStandSide_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1f91413a66fb2e0800000000000000
+      internalID: -2107853249983155754
       vertices: []
       indices: 
       edges: []
