@@ -26,6 +26,18 @@ TextureImporter:
   - first:
       213: 7633055165500313903
     second: DukWalkRight_7
+  - first:
+      213: -5395958671643859024
+    second: DukWalkRight_8
+  - first:
+      213: -3760385835961845064
+    second: DukWalkRight_9
+  - first:
+      213: 2369008690334151100
+    second: DukWalkRight_10
+  - first:
+      213: 2386031849327531544
+    second: DukWalkRight_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -286,6 +298,90 @@ TextureImporter:
       bones: []
       spriteID: f215b9a3b3f0ee960800000000000000
       internalID: 7633055165500313903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DukWalkRight_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7aaf95d24bd15b0800000000000000
+      internalID: -5395958671643859024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DukWalkRight_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba751d610d60dbc0800000000000000
+      internalID: -3760385835961845064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DukWalkRight_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb13e213ad860e020800000000000000
+      internalID: 2369008690334151100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DukWalkRight_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8169fe14353ec1120800000000000000
+      internalID: 2386031849327531544
       vertices: []
       indices: 
       edges: []
