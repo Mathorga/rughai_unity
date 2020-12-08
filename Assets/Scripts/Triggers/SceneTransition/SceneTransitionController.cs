@@ -15,10 +15,9 @@ public class SceneTransitionController : MonoBehaviour {
             this.StartCoroutine(this.LoadScene());
         }
     }
-    
+
     IEnumerator LoadScene() {
         this.sceneAnimator.SetTrigger("FadeOut");
-        //this.sceneAnimator.Play("FadeOut");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(this.nextScene);
     }

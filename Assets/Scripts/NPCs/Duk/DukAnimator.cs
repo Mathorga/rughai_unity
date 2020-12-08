@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseAnimator : MonoBehaviour {
+public class DukAnimator : MonoBehaviour {
     public Stats stats;
 
     // Threshold from slow walk to walk animation.
@@ -32,7 +32,7 @@ public class BaseAnimator : MonoBehaviour {
 
         if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
             if (animationTime >= 1){
-                if (Random.Range(0.0f, 1.0f) > 0.01) {
+                if (Random.value > 0.01f) {
                     if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Stand0")) {
                         this.animator.Play("Stand0");
                     }

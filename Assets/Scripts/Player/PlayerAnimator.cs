@@ -2,6 +2,7 @@
 
 public class PlayerAnimator : MonoBehaviour {
     public PlayerStats stats;
+    public PlayerController controller;
 
     // Threshold from stand to slow walk animation.
     private float slowWalkThreshold = 0.01f;
@@ -35,10 +36,10 @@ public class PlayerAnimator : MonoBehaviour {
             // Use velocity if > 0.
             this.animator.SetFloat("FaceX", this.rb.velocity.x);
             this.animator.SetFloat("FaceY", this.rb.velocity.y);
-        } else if (this.stats.moveSpeed > this.slowWalkThreshold) {
+        } else if (this.controller.moveSpeed > this.slowWalkThreshold) {
             // Use moveSpeed otherwise.
-            this.animator.SetFloat("FaceX", this.stats.moveForce.x);
-            this.animator.SetFloat("FaceY", this.stats.moveForce.y);
+            this.animator.SetFloat("FaceX", this.controller.moveForce.x);
+            this.animator.SetFloat("FaceY", this.controller.moveForce.y);
         }
 
         if (this.fallController.falling) {
@@ -46,7 +47,7 @@ public class PlayerAnimator : MonoBehaviour {
         } else {
             // Set animation state.
             if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
-                this.stats.moveSpeed < this.stats.walkSpeed) {
+                this.controller.moveSpeed < this.stats.walkSpeed) {
                 // Set slower speed for stand animation.
                 this.animator.speed = 0.5f;
 
