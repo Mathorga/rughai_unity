@@ -14,12 +14,14 @@ public class FallTrigger : MonoBehaviour {
         Transform otherTransform = other.gameObject.transform;
         FallController otherController = other.gameObject.GetComponent<FallController>();
 
-        // Check if other's position is inside collider.
-        if (Utils.PointInsideCollider(this.boxCollider, (Vector2) otherTransform.position + other.offset)) {
-            if (other.GetType() == typeof(CapsuleCollider2D)) {
-                otherController.SetCapsuleHit();
-            } else if (other.GetType() == typeof(CircleCollider2D)) {
-                otherController.SetCircleHit();
+        if (otherController != null) {
+            // Check if other's position is inside collider.
+            if (Utils.PointInsideCollider(this.boxCollider, (Vector2) otherTransform.position + other.offset)) {
+                if (other.GetType() == typeof(CapsuleCollider2D)) {
+                    otherController.SetCapsuleHit();
+                } else if (other.GetType() == typeof(CircleCollider2D)) {
+                    otherController.SetCircleHit();
+                }
             }
         }
     }
