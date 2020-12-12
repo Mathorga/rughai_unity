@@ -23,6 +23,9 @@ public class RopeController : MonoBehaviour {
 
         // Loop through anchors, but the last one in order to compute distances and angles.
         for (int i = 0; i < this.anchors.Count - 1; i++) {
+            // Remove anchors from children.
+            this.anchors[i].transform.parent = null;
+
             // Compute distance.
             this.distances.Add(this.anchors[i + 1].transform.position - this.anchors[i].transform.position);
             Debug.Log("Distance " + this.distances[i]);
@@ -30,9 +33,14 @@ public class RopeController : MonoBehaviour {
             // Compute angle.
             this.angles.Add(Utils.AngleBetween(this.anchors[i].transform.position, this.anchors[i + 1].transform.position));
         }
+        // Remove last anchor from children.
+        this.anchors[this.anchors.Count - 1].transform.parent = null;
 
         // Loop through anchors in order to create segments in between.
         for (int i = 0; i < this.anchors.Count - 1; i++) {
+            // Reset anchor parent.
+            this.anchors[i].transform.parent = this.transform;
+
             // Compute the amount of segments to fill the distance between anchors.
             int amount = (int) (this.distances[i].magnitude * this.particlesPerUnit);
             Debug.Log("Magnitude " + this.distances[i].magnitude);
@@ -75,6 +83,8 @@ public class RopeController : MonoBehaviour {
             lastJoint.distance = 0f;
             lastJoint.frequency = 10f;
         }
+        // Reset last anchor parent.
+        this.anchors[this.anchors.Count - 1].transform.parent = this.transform;
     }
 
     void OnDrawGizmos() {

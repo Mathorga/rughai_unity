@@ -1,6 +1,15 @@
 ﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+    public enum State {
+        Idle,
+        Walk,
+        Run,
+        Fall,
+        Attack0,
+        Attack1
+    }
+
     public Vector2Value startPosition;
     public PlayerStats stats;
     public float moveSpeed {
@@ -8,6 +17,10 @@ public class PlayerController : MonoBehaviour {
         private set;
     }
     public Vector2 moveForce {
+        get;
+        private set;
+    }
+    public State state {
         get;
         private set;
     }

@@ -53,8 +53,8 @@ public class PlayerAnimator : MonoBehaviour {
 
                 // Current velocity is below slow walk, so stand.
                 // Current move speed is also checked in order to be able to walk against walls.
-                if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Stand")) {
-                    this.animator.Play("Stand");
+                if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) {
+                    this.animator.Play("Idle");
                 }
             } else {
                 // Get current animation progress.
