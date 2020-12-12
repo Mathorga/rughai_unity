@@ -20,6 +20,10 @@ public class PlayerInput : MonoBehaviour {
         get;
         private set;
     }
+    public bool attack {
+        get;
+        private set;
+    }
 
     private void Awake() {
         this.controls = new MainControls();
@@ -43,6 +47,12 @@ public class PlayerInput : MonoBehaviour {
 
         // Check for interact end.
         this.controls.Player.Interact.canceled += (context) => this.SetInteract(false);
+
+        // Check for attack start.
+        this.controls.Player.Attack.started += (context) => this.SetAttack(true);
+
+        // Check for attack end.
+        this.controls.Player.Attack.canceled += (context) => this.SetAttack(false);
     }
 
     private void OnEnable() {
@@ -67,5 +77,9 @@ public class PlayerInput : MonoBehaviour {
 
     public void SetInteract(bool value) {
         this.interact = value;
+    }
+
+    public void SetAttack(bool value) {
+        this.attack = value;
     }
 }

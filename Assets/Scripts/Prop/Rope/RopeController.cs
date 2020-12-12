@@ -28,7 +28,6 @@ public class RopeController : MonoBehaviour {
 
             // Compute distance.
             this.distances.Add(this.anchors[i + 1].transform.position - this.anchors[i].transform.position);
-            Debug.Log("Distance " + this.distances[i]);
 
             // Compute angle.
             this.angles.Add(Utils.AngleBetween(this.anchors[i].transform.position, this.anchors[i + 1].transform.position));
@@ -43,8 +42,6 @@ public class RopeController : MonoBehaviour {
 
             // Compute the amount of segments to fill the distance between anchors.
             int amount = (int) (this.distances[i].magnitude * this.particlesPerUnit);
-            Debug.Log("Magnitude " + this.distances[i].magnitude);
-            Debug.Log("Amount " + amount);
             float xStep = this.distances[i].x / amount;
             float yStep = this.distances[i].y / amount;
 

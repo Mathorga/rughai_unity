@@ -42,46 +42,59 @@ public class PlayerAnimator : MonoBehaviour {
             this.animator.SetFloat("FaceY", this.controller.moveForce.y);
         }
 
-        if (this.fallController.falling) {
-            this.animator.Play("Fall");
+        // Get current animation progress.
+        float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        float animationProgress = animationTime - Mathf.Floor(animationTime);
+
+        if (this.controller.state == PlayerController.State.Attack0) {
+            this.animator.speed = 1f;
+            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Attack1")) {
+                this.animator.Play("Attack1");
+            }
+
+            // Reset state after animation ends.
+            if (animationTime >= 1f) {
+                this.controller.SetState(PlayerController.State.Idle);
+            }
         } else {
-            // Set animation state.
-            if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
-                this.controller.moveSpeed < this.stats.walkSpeed) {
-                // Set slower speed for stand animation.
-                this.animator.speed = 0.5f;
-
-                // Current velocity is below slow walk, so stand.
-                // Current move speed is also checked in order to be able to walk against walls.
-                if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) {
-                    this.animator.Play("Idle");
-                }
+            if (this.fallController.falling) {
+                this.animator.Play("Fall");
             } else {
-                // Get current animation progress.
-                float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-                float animationProgress = animationTime - Mathf.Floor(animationTime);
-
-                if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
-                    // In order to achieve slow walk, the standard walk animation is played at slower speed.
+                // Set animation state.
+                if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
+                    this.controller.moveSpeed < this.stats.walkSpeed) {
+                    // Set slower speed for stand animation.
                     this.animator.speed = 0.5f;
 
-                    // Current velocity is above slow walk and below walk, so slow walk.
-                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
-                        this.animator.Play("Walk", 0, animationProgress);
+                    // Current velocity is below slow walk, so stand.
+                    // Current move speed is also checked in order to be able to walk against walls.
+                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) {
+                        this.animator.Play("Idle");
                     }
                 } else {
-                    // Set standard speed for standard walk and run animations.
-                    this.animator.speed = 1f;
 
-                    if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity) {
-                        // Current velocity is above walk and below run (or walk is triggered), so walk.
+                    if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
+                        // In order to achieve slow walk, the standard walk animation is played at slower speed.
+                        this.animator.speed = 0.5f;
+
+                        // Current velocity is above slow walk and below walk, so slow walk.
                         if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
                             this.animator.Play("Walk", 0, animationProgress);
                         }
                     } else {
-                        // Current velocity is above run, so run.
-                        if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Run")) {
-                            this.animator.Play("Run", 0, animationProgress);
+                        // Set standard speed for standard walk and run animations.
+                        this.animator.speed = 1f;
+
+                        if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity) {
+                            // Current velocity is above walk and below run (or walk is triggered), so walk.
+                            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
+                                this.animator.Play("Walk", 0, animationProgress);
+                            }
+                        } else {
+                            // Current velocity is above run, so run.
+                            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Run")) {
+                                this.animator.Play("Run", 0, animationProgress);
+                            }
                         }
                     }
                 }

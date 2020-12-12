@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d82b459068962c44a6589953a16fd89, type: 3}
   m_Name: DukStats
   m_EditorClassIdentifier: 
+  health: 5
   speed: 5
   walkSpeed: 3
