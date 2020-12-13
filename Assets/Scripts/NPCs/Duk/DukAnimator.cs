@@ -5,7 +5,7 @@ using UnityEngine;
 public class DukAnimator : MonoBehaviour {
     public Stats stats;
 
-    // Threshold from slow walk to walk animation.
+    // Threshold from stand to walk animation.
     private float walkThreshold = 0.05f;
 
     private Rigidbody2D rb;
@@ -23,12 +23,6 @@ public class DukAnimator : MonoBehaviour {
 
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.speed / this.rb.drag;
-
-        if (this.rb.velocity.magnitude > this.walkThreshold * maxVelocity) {
-            // Use velocity if > 0.
-            this.animator.SetFloat("FaceX", this.rb.velocity.x);
-            this.animator.SetFloat("FaceY", this.rb.velocity.y);
-        }
 
         if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
             if (animationTime >= 1){

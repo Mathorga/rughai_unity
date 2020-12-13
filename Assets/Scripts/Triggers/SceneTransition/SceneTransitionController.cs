@@ -11,6 +11,8 @@ public class SceneTransitionController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
+            PlayerInput playerInput = other.gameObject.GetComponent<PlayerInput>();
+            playerInput.Disable();
             this.playerPosition.value = this.nextPlayerPosition;
             this.StartCoroutine(this.LoadScene());
         }

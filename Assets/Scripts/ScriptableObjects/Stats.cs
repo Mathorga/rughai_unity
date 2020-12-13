@@ -10,6 +10,6 @@ public class Stats : ScriptableObject {
     // Speed stat.
     public float speed;
 
-    // Walk speed stat (depends on speed).
+    // Walk speed stat.
     public float walkSpeed;
 }

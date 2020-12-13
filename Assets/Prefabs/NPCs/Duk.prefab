@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3619604187650466198}
   - component: {fileID: 3619604187650466196}
   - component: {fileID: 7217740823070188765}
+  - component: {fileID: 964938104122445379}
   - component: {fileID: 3619604187650466187}
   m_Layer: 0
   m_Name: Duk
@@ -199,6 +200,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
+--- !u!114 &964938104122445379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619604187650466195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84d8d0803124894cb4ea98acd53f561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
+  threshold: 0.05
 --- !u!114 &3619604187650466187
 MonoBehaviour:
   m_ObjectHideFlags: 0
