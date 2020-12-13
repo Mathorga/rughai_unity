@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     public Vector2Value startPosition;
-    public PlayerStats stats;
     public float moveSpeed {
         get;
         private set;
@@ -33,6 +32,7 @@ public class PlayerController : MonoBehaviour {
     private float runThreshold  = 0.6f;
     private Rigidbody2D rb;
     private PlayerInput input;
+    private PlayerStats stats;
 
     public void SetState(State state) {
         this.state = state;
@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour {
         this.transform.position = this.startPosition.value;
         this.rb = this.GetComponent<Rigidbody2D>();
         this.input = this.GetComponent<PlayerInput>();
+        this.stats = this.GetComponent<PlayerStats>();
         this.state = State.Idle;
     }
 
@@ -81,15 +82,15 @@ public class PlayerController : MonoBehaviour {
 
     private void ComputeForce() {
         if (this.state == State.Attack0) {
-            this.moveSpeed = this.stats.walkSpeed / 2;
+            this.moveSpeed = this.stats.data.walkSpeed / 2;
         } else {
             if (this.state == State.Idle) {
                 this.moveSpeed = 0f;
             } else {
                 if (this.state == State.Walk) {
-                    this.moveSpeed = this.stats.walkSpeed;
+                    this.moveSpeed = this.stats.data.walkSpeed;
                 } else {
-                    this.moveSpeed = this.stats.speed;
+                    this.moveSpeed = this.stats.data.speed;
                 }
                 this.faceDir = this.input.moveDir;
             }

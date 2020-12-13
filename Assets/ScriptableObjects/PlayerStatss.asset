@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea079b859f047d4399a7f1720e68fb9, type: 3}
-  m_Name: PlayerPosition
+  m_Script: {fileID: 11500000, guid: 73aaa3dc6c302cc498bbd0d25a98338c, type: 3}
+  m_Name: PlayerStatss
   m_EditorClassIdentifier: 
-  value: {x: -22.5, y: -1.38}
+  health: 25
+  speed: 19
+  walkSpeed: 9

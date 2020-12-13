@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73aaa3dc6c302cc498bbd0d25a98338c, type: 3}
-  m_Name: PlayerStats
+  m_Script: {fileID: 11500000, guid: 1d82b459068962c44a6589953a16fd89, type: 3}
+  m_Name: IryoStats
   m_EditorClassIdentifier: 
   health: 25
   speed: 19

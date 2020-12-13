@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour {
-    public PlayerStats stats;
     public PlayerController controller;
 
     // Threshold from stand to slow walk animation.
@@ -16,11 +15,13 @@ public class PlayerAnimator : MonoBehaviour {
     private Rigidbody2D rb;
     private Animator animator;
     private FallController fallController;
+    private PlayerStats stats;
 
     void Awake() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
         this.fallController = this.GetComponent<FallController>();
+        this.stats = this.GetComponent<PlayerStats>();
     }
 
     void FixedUpdate() {
@@ -29,7 +30,7 @@ public class PlayerAnimator : MonoBehaviour {
     
     void Animate() {
         // Retrieve max velocity based on current speed and linear drag.
-        float maxVelocity = this.stats.speed / this.rb.drag;
+        float maxVelocity = this.stats.data.speed / this.rb.drag;
 
         // Set facing for direction control.
         if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
@@ -62,7 +63,7 @@ public class PlayerAnimator : MonoBehaviour {
             } else {
                 // Set animation state.
                 if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
-                    this.controller.moveSpeed < this.stats.walkSpeed) {
+                    this.controller.moveSpeed < this.stats.data.walkSpeed) {
                     // Set slower speed for stand animation.
                     this.animator.speed = 0.5f;
 

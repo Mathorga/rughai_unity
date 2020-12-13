@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class PlayerStats : Stats {
+public class PlayerStats : MonoBehaviour {
+    public Stats data;
 }

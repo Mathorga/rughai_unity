@@ -33,6 +33,14 @@ public class PlayerInput : MonoBehaviour {
         this.moveDir = dir;
     }
 
+    public void SetMoveDir(float dir) {
+        this.moveDir = dir;
+    }
+
+    public void SetMoveLen(float len) {
+        this.moveLen = len;
+    }
+
     private void Awake() {
         this.controls = new MainControls();
 
