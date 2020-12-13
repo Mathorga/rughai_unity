@@ -16,9 +16,14 @@ public class SceneTransitionController : MonoBehaviour {
         if (other.CompareTag("Player")) {
             PlayerStats playerStats = other.gameObject.GetComponent<PlayerStats>();
             PlayerInput playerInput = other.gameObject.GetComponent<PlayerInput>();
+
+            // Force movement direction and length.
             playerInput.SetMoveDir(this.dir);
             playerInput.SetMoveLen(0.2f);
+
+            // Disable input.
             playerInput.Disable();
+
             this.playerPosition.value = this.nextPlayerPosition;
             this.StartCoroutine(this.LoadScene());
         }
