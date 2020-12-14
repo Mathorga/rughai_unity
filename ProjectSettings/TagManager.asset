@@ -58,3 +58,6 @@ TagManager:
   - name: Foreground
     uniqueID: 2973042709
     locked: 0
+  - name: Silhouette
+    uniqueID: 3873554275
+    locked: 0
