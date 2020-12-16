@@ -55,6 +55,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: TopTiles
+    uniqueID: 2887443437
+    locked: 0
   - name: Foreground
     uniqueID: 2973042709
     locked: 0

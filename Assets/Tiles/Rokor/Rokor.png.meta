@@ -117,119 +117,41 @@ TextureImporter:
       213: 7553428847008101319
     second: Rokor_37
   - first:
-      213: 1651569738468651489
-    second: Rokor_0
+      213: 6408597822625977137
+    second: Rokor_38
   - first:
-      213: -3826611870837721336
-    second: Rokor_1
+      213: 208284225846882147
+    second: Rokor_39
   - first:
-      213: -4854335144279721375
-    second: Rokor_2
+      213: -5194441614867761814
+    second: Rokor_40
   - first:
-      213: -5884012586421824685
-    second: Rokor_3
+      213: -3699948395124447187
+    second: Rokor_41
   - first:
-      213: -7325089373303682480
-    second: Rokor_4
+      213: 84564315467168681
+    second: Rokor_42
   - first:
-      213: 936357962632693110
-    second: Rokor_5
+      213: -8459998478090335238
+    second: Rokor_43
   - first:
-      213: -611752831250535494
-    second: Rokor_6
+      213: 2572117037071448872
+    second: Rokor_44
   - first:
-      213: -976140675762894970
-    second: Rokor_7
+      213: -4055643542802962999
+    second: Rokor_45
   - first:
-      213: 2918194769112872561
-    second: Rokor_8
+      213: 4763282981168633906
+    second: Rokor_46
   - first:
-      213: -5676757809378418269
-    second: Rokor_9
+      213: -5136715162499631933
+    second: Rokor_47
   - first:
-      213: 8415355401540208673
-    second: Rokor_10
+      213: -8649872262693058528
+    second: Rokor_48
   - first:
-      213: 2504111380611285007
-    second: Rokor_11
-  - first:
-      213: -7744416946256338170
-    second: Rokor_12
-  - first:
-      213: -8020116566359226237
-    second: Rokor_13
-  - first:
-      213: 3845661939435948094
-    second: Rokor_14
-  - first:
-      213: -3606329943438020370
-    second: Rokor_15
-  - first:
-      213: 1067963015023595928
-    second: Rokor_16
-  - first:
-      213: 3458507941609917020
-    second: Rokor_17
-  - first:
-      213: -2236342751145132823
-    second: Rokor_18
-  - first:
-      213: 6863317436354297895
-    second: Rokor_19
-  - first:
-      213: -6859526907061208427
-    second: Rokor_20
-  - first:
-      213: -3256137166241437567
-    second: Rokor_21
-  - first:
-      213: 336158745166189176
-    second: Rokor_22
-  - first:
-      213: -7980855413043922196
-    second: Rokor_23
-  - first:
-      213: 1286695107275424223
-    second: Rokor_24
-  - first:
-      213: -6870890296261309179
-    second: Rokor_25
-  - first:
-      213: 3459453261787537787
-    second: Rokor_26
-  - first:
-      213: -8688535260391813345
-    second: Rokor_27
-  - first:
-      213: 7843117217835406253
-    second: Rokor_28
-  - first:
-      213: -4362689471479280718
-    second: Rokor_29
-  - first:
-      213: -1318047222299881849
-    second: Rokor_30
-  - first:
-      213: 469914149580420928
-    second: Rokor_31
-  - first:
-      213: -6025103989221816678
-    second: Rokor_32
-  - first:
-      213: 3867501828337206455
-    second: Rokor_33
-  - first:
-      213: 4753571592315950376
-    second: Rokor_34
-  - first:
-      213: -5512909584041746880
-    second: Rokor_35
-  - first:
-      213: -6228480086279938210
-    second: Rokor_36
-  - first:
-      213: 4179829109956927090
-    second: Rokor_37
+      213: -327588850174783075
+    second: Rokor_49
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -341,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e1753f3ded8be610800000000000000
-      internalID: 1651569738468651489
+      spriteID: a2afde0e866142bb0800000000000000
+      internalID: -4961816249749341654
       vertices: []
       indices: 
       edges: []
@@ -362,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 807bc6917c425eac0800000000000000
-      internalID: -3826611870837721336
+      spriteID: 4d4e8bbd6593ed8f0800000000000000
+      internalID: -513910262257359660
       vertices: []
       indices: 
       edges: []
@@ -383,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a3388d7efe1acb0800000000000000
-      internalID: -4854335144279721375
+      spriteID: 0446c456171cd79c0800000000000000
+      internalID: -3927770607222234048
       vertices: []
       indices: 
       edges: []
@@ -404,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 353566c3ab9c75ea0800000000000000
-      internalID: -5884012586421824685
+      spriteID: 1e26c5eb9342944d0800000000000000
+      internalID: -3149946633943489823
       vertices: []
       indices: 
       edges: []
@@ -425,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05ace34660e085a90800000000000000
-      internalID: -7325089373303682480
+      spriteID: 7a7efcf5170093a10800000000000000
+      internalID: 1889542005597398951
       vertices: []
       indices: 
       edges: []
@@ -446,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67584512b9c9efc00800000000000000
-      internalID: 936357962632693110
+      spriteID: f369d8d677ee67100800000000000000
+      internalID: 105533837996299839
       vertices: []
       indices: 
       edges: []
@@ -467,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abbe8fa8a0e9287f0800000000000000
-      internalID: -611752831250535494
+      spriteID: 79c32daef40f501b0800000000000000
+      internalID: -5690878328080024425
       vertices: []
       indices: 
       edges: []
@@ -488,8 +410,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 687c75a2a3d0472f0800000000000000
-      internalID: -976140675762894970
+      spriteID: 0eeebf17868137080800000000000000
+      internalID: -9190975577665048864
       vertices: []
       indices: 
       edges: []
@@ -509,8 +431,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17630666ea28f7820800000000000000
-      internalID: 2918194769112872561
+      spriteID: 3741a6592c19b5cc0800000000000000
+      internalID: -3721220402175142797
       vertices: []
       indices: 
       edges: []
@@ -530,8 +452,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a1231069da1831b0800000000000000
-      internalID: -5676757809378418269
+      spriteID: 103b34b83e34fae40800000000000000
+      internalID: 5669825100455850753
       vertices: []
       indices: 
       edges: []
@@ -551,8 +473,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1280877b62959c470800000000000000
-      internalID: 8415355401540208673
+      spriteID: cd606ddc6eb42dcb0800000000000000
+      internalID: -4840723194801944868
       vertices: []
       indices: 
       edges: []
@@ -572,8 +494,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f004957880460c220800000000000000
-      internalID: 2504111380611285007
+      spriteID: 36226ed67852ca250800000000000000
+      internalID: 5957177670698934883
       vertices: []
       indices: 
       edges: []
@@ -593,8 +515,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60320eda1dd468490800000000000000
-      internalID: -7744416946256338170
+      spriteID: 3c756c1f1a0d26a50800000000000000
+      internalID: 6512997405095778243
       vertices: []
       indices: 
       edges: []
@@ -614,8 +536,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 388ceeca972d2b090800000000000000
-      internalID: -8020116566359226237
+      spriteID: 623c8335c58cb8840800000000000000
+      internalID: 5227492091352367910
       vertices: []
       indices: 
       edges: []
@@ -635,8 +557,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e38c152a8298e5530800000000000000
-      internalID: 3845661939435948094
+      spriteID: f4cce95c7bfa40210800000000000000
+      internalID: 1298355796418939983
       vertices: []
       indices: 
       edges: []
@@ -656,8 +578,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee0b58a060eb3fdc0800000000000000
-      internalID: -3606329943438020370
+      spriteID: ee94702e3ab397540800000000000000
+      internalID: 5006098035856853486
       vertices: []
       indices: 
       edges: []
@@ -677,8 +599,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8919cbf24ba22de00800000000000000
-      internalID: 1067963015023595928
+      spriteID: ff175aedeb34f7790800000000000000
+      internalID: -7530225564881948161
       vertices: []
       indices: 
       edges: []
@@ -698,8 +620,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ac68026a61fff20800000000000000
-      internalID: 3458507941609917020
+      spriteID: 215e9e893519850d0800000000000000
+      internalID: -3433834927636224750
       vertices: []
       indices: 
       edges: []
@@ -719,8 +641,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ec79f1dd1ae6f0e0800000000000000
-      internalID: -2236342751145132823
+      spriteID: c11f544fa93246be0800000000000000
+      internalID: -1485022828695260900
       vertices: []
       indices: 
       edges: []
@@ -740,8 +662,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72084ae48d66f3f50800000000000000
-      internalID: 6863317436354297895
+      spriteID: 6d2c893161a0c0d50800000000000000
+      internalID: 6704745035182162646
       vertices: []
       indices: 
       edges: []
@@ -761,8 +683,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59af1611f901ec0a0800000000000000
-      internalID: -6859526907061208427
+      spriteID: 53be3099a6aed45e0800000000000000
+      internalID: -1923623722262729931
       vertices: []
       indices: 
       edges: []
@@ -782,8 +704,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1886b32cf70efc2d0800000000000000
-      internalID: -3256137166241437567
+      spriteID: 980cf018a0c4b3cd0800000000000000
+      internalID: -2577382753740799863
       vertices: []
       indices: 
       edges: []
@@ -803,8 +725,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87295c109964aa400800000000000000
-      internalID: 336158745166189176
+      spriteID: 7d1e4cd49628b4930800000000000000
+      internalID: 4128536872203117015
       vertices: []
       indices: 
       edges: []
@@ -824,8 +746,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cea73c5494e4e3190800000000000000
-      internalID: -7980855413043922196
+      spriteID: ed9e1808ea79fe930800000000000000
+      internalID: 4174722155331840478
       vertices: []
       indices: 
       edges: []
@@ -845,8 +767,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd1826302624bd110800000000000000
-      internalID: 1286695107275424223
+      spriteID: a996f71c9043c0cf0800000000000000
+      internalID: -284795459925481062
       vertices: []
       indices: 
       edges: []
@@ -866,8 +788,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50d8aa8dda1b5a0a0800000000000000
-      internalID: -6870890296261309179
+      spriteID: 0276e2c8269f8b5a0800000000000000
+      internalID: -6505175460082718944
       vertices: []
       indices: 
       edges: []
@@ -887,8 +809,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b71a9e1a962720030800000000000000
-      internalID: 3459453261787537787
+      spriteID: 21450d5f9726718f0800000000000000
+      internalID: -569878551884442606
       vertices: []
       indices: 
       edges: []
@@ -908,8 +830,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fc3e9e63f1c6780800000000000000
-      internalID: -8688535260391813345
+      spriteID: f7a25960202904560800000000000000
+      internalID: 7295991933738232447
       vertices: []
       indices: 
       edges: []
@@ -929,8 +851,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da354d41e8958dc60800000000000000
-      internalID: 7843117217835406253
+      spriteID: 4afa35a3a553a5b50800000000000000
+      internalID: 6582632466997292964
       vertices: []
       indices: 
       edges: []
@@ -950,8 +872,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bb042b4a0d9473c0800000000000000
-      internalID: -4362689471479280718
+      spriteID: 1ebf34a4cc2782a80800000000000000
+      internalID: -8491410875662205983
       vertices: []
       indices: 
       edges: []
@@ -971,14 +893,119 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78e00add80b55bde0800000000000000
-      internalID: -1318047222299881849
+      spriteID: 379d9044a1e404980800000000000000
+      internalID: -8556753417286329997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Rokor_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fcf8a148da27990800000000000000
+      internalID: -7389653255668642041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_32
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaee26410914d8ef0800000000000000
+      internalID: -104355129286529366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_33
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1573aee6ea492f5e0800000000000000
+      internalID: -1877274617754011823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_34
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80b4fa0255a5b870800000000000000
+      internalID: 8698040027125690506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_35
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 121
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baba82492e099b40800000000000000
+      internalID: 5447400794654161590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_36
       rect:
         serializedVersion: 2
         x: 1
@@ -992,14 +1019,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 047bba8ed68758600800000000000000
-      internalID: 469914149580420928
+      spriteID: 024611ba3409ad180800000000000000
+      internalID: -9089794277586672608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rokor_32
+      name: Rokor_37
       rect:
         serializedVersion: 2
         x: 35
@@ -1013,14 +1040,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9605ab18d7826ca0800000000000000
-      internalID: -6025103989221816678
+      spriteID: 7c33b1e348b23d860800000000000000
+      internalID: 7553428847008101319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rokor_33
+      name: Rokor_38
       rect:
         serializedVersion: 2
         x: 69
@@ -1034,14 +1061,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b486360c602ca530800000000000000
-      internalID: 3867501828337206455
+      spriteID: 13396f5f3c9efe850800000000000000
+      internalID: 6408597822625977137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rokor_34
+      name: Rokor_39
       rect:
         serializedVersion: 2
         x: 103
@@ -1055,14 +1082,119 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 825516e7d2418f140800000000000000
-      internalID: 4753571592315950376
+      spriteID: 36fabed5669f3e200800000000000000
+      internalID: 208284225846882147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rokor_35
+      name: Rokor_40
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65fc436fd2a9e7b0800000000000000
+      internalID: -5194441614867761814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_41
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28a45da98427acc0800000000000000
+      internalID: -3699948395124447187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_42
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab38100cce6c2100800000000000000
+      internalID: 84564315467168681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_43
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb8419053c089a80800000000000000
+      internalID: -8459998478090335238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_44
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 97
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bbf5b41def1b320800000000000000
+      internalID: 2572117037071448872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_45
       rect:
         serializedVersion: 2
         x: 1
@@ -1076,14 +1208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04e585421f53e73b0800000000000000
-      internalID: -5512909584041746880
+      spriteID: 9c56f9f7fa577b7c0800000000000000
+      internalID: -4055643542802962999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rokor_36
+      name: Rokor_46
       rect:
         serializedVersion: 2
         x: 35
@@ -1097,14 +1229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5f90b68c5eff89a0800000000000000
-      internalID: -6228480086279938210
+      spriteID: 238583962a49a1240800000000000000
+      internalID: 4763282981168633906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rokor_37
+      name: Rokor_47
       rect:
         serializedVersion: 2
         x: 69
@@ -1118,8 +1250,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ed1d80e6cb10a30800000000000000
-      internalID: 4179829109956927090
+      spriteID: 3c4b8d276c8b6b8b0800000000000000
+      internalID: -5136715162499631933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_48
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0280dad810b75f780800000000000000
+      internalID: -8649872262693058528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rokor_49
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 73
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9114f82dab247bf0800000000000000
+      internalID: -327588850174783075
       vertices: []
       indices: 
       edges: []

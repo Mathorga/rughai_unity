@@ -4,20 +4,34 @@ using UnityEngine;
 
 [ExecuteInEditMode]
 public class DepthController : MonoBehaviour {
-    void Update() {
-        Renderer renderer = this.GetComponent<Renderer>();
-        SpriteMask mask = this.GetComponent<SpriteMask>();
+    public bool rooted = false;
 
+    private Renderer drawer;
+    private SpriteMask mask;
+
+    void Start() {
+        this.drawer = this.GetComponent<Renderer>();
+        this.mask = this.GetComponent<SpriteMask>();
+        this.SetDepth();
+    }
+
+    void FixedUpdate() {
+        if (!this.rooted) {
+            this.SetDepth();
+        }
+    }
+
+    private void SetDepth() {
         int depth = (int) (this.transform.position.y * -22);
 
-        if (renderer != null) {
-            renderer.sortingOrder = depth;
+        if (this.drawer != null) {
+            this.drawer.sortingOrder = depth;
         }
-        if (mask != null) {
+        if (this.mask != null) {
             // mask.sortingOrder = (int) (this.transform.position.y * -22);
-            mask.isCustomRangeActive = true;
-            mask.backSortingOrder = depth - 1000;
-            mask.frontSortingOrder = depth - 1;
+            this.mask.isCustomRangeActive = true;
+            this.mask.backSortingOrder = depth - 1000;
+            this.mask.frontSortingOrder = depth - 1;
         }
     }
 }
