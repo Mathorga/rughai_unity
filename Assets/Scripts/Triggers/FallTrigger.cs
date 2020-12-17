@@ -17,6 +17,7 @@ public class FallTrigger : MonoBehaviour {
         if (otherController != null) {
             // Check if other's position is inside collider.
             if (Utils.PointInsideCollider(this.boxCollider, (Vector2) otherTransform.position + other.offset)) {
+                // otherController.SetSortingLayer("GroundTiles");
                 if (other.GetType() == typeof(CapsuleCollider2D)) {
                     otherController.SetCapsuleHit();
                 } else if (other.GetType() == typeof(CircleCollider2D)) {

@@ -9,6 +9,10 @@ public class DepthController : MonoBehaviour {
     private Renderer drawer;
     private SpriteMask mask;
 
+    public void SetRooted(bool rooted) {
+        this.rooted = rooted;
+    }
+
     void Start() {
         this.drawer = this.GetComponent<Renderer>();
         this.mask = this.GetComponent<SpriteMask>();

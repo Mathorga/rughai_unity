@@ -13,10 +13,12 @@ public class FallController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private DepthController depthController;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.spriteRenderer = this.GetComponent<SpriteRenderer>();
+        this.depthController = this.GetComponent<DepthController>();
     }
 
     public void SetGravity() {
@@ -44,7 +46,12 @@ public class FallController : MonoBehaviour {
         }
     }
 
-    private void SetSortingLayer(string layerName) {
+    public void SetSortingLayer(string layerName) {
+        if (this.depthController != null) {
+            this.depthController.SetRooted(true);
+        }
         this.spriteRenderer.sortingLayerName = layerName;
+        this.SetGravity();
+        this.falling = true;
     }
 }

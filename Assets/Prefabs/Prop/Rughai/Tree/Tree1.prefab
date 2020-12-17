@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83ec12c4c6c29b4a81f7b2cd21659c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rooted: 1
 --- !u!1 &7036064970300260127
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83ec12c4c6c29b4a81f7b2cd21659c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rooted: 0
 --- !u!331 &7600953416103229070
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -209,9 +211,9 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -421413021
   m_BackSortingLayerID: -421413021
-  m_FrontSortingLayer: 2
-  m_BackSortingLayer: 2
-  m_FrontSortingOrder: 0
-  m_BackSortingOrder: -200
+  m_FrontSortingLayer: 3
+  m_BackSortingLayer: 3
+  m_FrontSortingOrder: -1
+  m_BackSortingOrder: -1000
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
