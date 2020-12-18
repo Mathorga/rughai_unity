@@ -18,11 +18,12 @@ public class FallTrigger : MonoBehaviour {
             // Check if other's position is inside collider.
             if (Utils.PointInsideCollider(this.boxCollider, (Vector2) otherTransform.position + other.offset)) {
                 // otherController.SetSortingLayer("GroundTiles");
-                if (other.GetType() == typeof(CapsuleCollider2D)) {
-                    otherController.SetCapsuleHit();
-                } else if (other.GetType() == typeof(CircleCollider2D)) {
-                    otherController.SetCircleHit();
-                }
+                otherController.SetFalling();
+                // if (other.GetType() == typeof(CapsuleCollider2D)) {
+                //     otherController.SetCapsuleHit();
+                // } else if (other.GetType() == typeof(CircleCollider2D)) {
+                //     otherController.SetCircleHit();
+                // }
             }
         }
     }

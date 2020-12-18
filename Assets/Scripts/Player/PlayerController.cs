@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb;
     private PlayerInput input;
     private PlayerStats stats;
+    private FallController fallController;
 
     public void SetState(State state) {
         this.state = state;
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.input = this.GetComponent<PlayerInput>();
         this.stats = this.GetComponent<PlayerStats>();
+        this.fallController = this.GetComponent<FallController>();
         this.state = State.Idle;
     }
 
@@ -60,20 +62,26 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void SetState() {
-        if (this.state != State.Attack0 &&
-            this.state != State.Attack1 &&
-            this.state != State.Fall) {
-            if (this.input.attack) {
-                this.state = State.Attack0;
-            } else {
-                if (this.input.moveLen <= this.walkThreshold) {
-                    this.state = State.Idle;
+        if (this.fallController.falling) {
+            this.input.Disable();
+            this.state = State.Fall;
+        } else {
+            this.input.Enable();
+            if (this.state != State.Attack0 &&
+                this.state != State.Attack1 &&
+                this.state != State.Fall) {
+                if (this.input.attack) {
+                    this.state = State.Attack0;
                 } else {
-                    if (this.input.moveLen < this.runThreshold ||
-                        this.input.walk) {
-                        this.state = State.Walk;
+                    if (this.input.moveLen <= this.walkThreshold) {
+                        this.state = State.Idle;
                     } else {
-                        this.state = State.Run;
+                        if (this.input.moveLen < this.runThreshold ||
+                            this.input.walk) {
+                            this.state = State.Walk;
+                        } else {
+                            this.state = State.Run;
+                        }
                     }
                 }
             }
@@ -84,16 +92,14 @@ public class PlayerController : MonoBehaviour {
         if (this.state == State.Attack0) {
             this.moveSpeed = this.stats.data.walkSpeed / 2;
         } else {
-            if (this.state == State.Idle) {
-                this.moveSpeed = 0f;
+            if (this.state == State.Walk) {
+                this.moveSpeed = this.stats.data.walkSpeed;
+            } else if (this.state == State.Run) {
+                this.moveSpeed = this.stats.data.speed;
             } else {
-                if (this.state == State.Walk) {
-                    this.moveSpeed = this.stats.data.walkSpeed;
-                } else {
-                    this.moveSpeed = this.stats.data.speed;
-                }
-                this.faceDir = this.input.moveDir;
+                this.moveSpeed = 0f;
             }
+            this.faceDir = this.input.moveDir;
         }
 
         this.moveForce = Utils.PolarToCartesian(this.faceDir, this.moveSpeed);

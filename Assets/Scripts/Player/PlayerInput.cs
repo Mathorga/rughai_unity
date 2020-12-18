@@ -25,6 +25,10 @@ public class PlayerInput : MonoBehaviour {
         private set;
     }
 
+    public void Enable() {
+        this.controls.Enable();
+    }
+
     public void Disable() {
         float len = this.moveLen;
         float dir = this.moveDir;

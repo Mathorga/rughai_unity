@@ -8,9 +8,6 @@ public class FallController : MonoBehaviour {
         set;
     }
 
-    private bool circleHit;
-    private bool capsuleHit;
-
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private DepthController depthController;
@@ -21,37 +18,7 @@ public class FallController : MonoBehaviour {
         this.depthController = this.GetComponent<DepthController>();
     }
 
-    public void SetGravity() {
-        this.rb.gravityScale = 2f;
-    }
-
-    public void SetCircleHit() {
-        this.circleHit = true;
-        
-        if (this.capsuleHit) {
-            this.SetSortingLayer("Fall");
-        }
-    }
-
-    public void SetCapsuleHit() {
-        this.capsuleHit = true;
-        
-        if (!this.falling) {
-            this.SetGravity();
-            this.falling = true;
-        }
-
-        if (this.circleHit) {
-            this.SetSortingLayer("Fall");
-        }
-    }
-
-    public void SetSortingLayer(string layerName) {
-        if (this.depthController != null) {
-            this.depthController.SetRooted(true);
-        }
-        this.spriteRenderer.sortingLayerName = layerName;
-        this.SetGravity();
+    public void SetFalling() {
         this.falling = true;
     }
 }
