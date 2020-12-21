@@ -65,11 +65,11 @@ public class PlayerAnimator : MonoBehaviour {
                 childAnimator.speed = 1f;
             }
 
-            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Attack1")) {
-                this.animator.Play("Attack1");
+            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Attack0")) {
+                this.animator.Play("Attack0");
 
                 foreach (Animator childAnimator in this.childAnimators) {
-                    childAnimator.Play("Attack1");
+                    childAnimator.Play("Attack0");
                 }
             }
 

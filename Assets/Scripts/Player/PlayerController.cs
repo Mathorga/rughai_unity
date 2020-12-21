@@ -59,6 +59,12 @@ public class PlayerController : MonoBehaviour {
         if (this.moveForce.magnitude > 0f) {
             this.rb.AddForce(this.moveForce);
         }
+
+        // Cut velocity if in a static state.
+        if (this.state == State.Attack0 ||
+            this.state == State.Fall) {
+            this.rb.velocity = Vector2.zero;
+        }
     }
 
     private void SetState() {
@@ -89,18 +95,14 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void ComputeForce() {
-        if (this.state == State.Attack0) {
-            this.moveSpeed = this.stats.data.walkSpeed / 2;
+        if (this.state == State.Walk) {
+            this.moveSpeed = this.stats.data.walkSpeed;
+        } else if (this.state == State.Run) {
+            this.moveSpeed = this.stats.data.speed;
         } else {
-            if (this.state == State.Walk) {
-                this.moveSpeed = this.stats.data.walkSpeed;
-            } else if (this.state == State.Run) {
-                this.moveSpeed = this.stats.data.speed;
-            } else {
-                this.moveSpeed = 0f;
-            }
-            this.faceDir = this.input.moveDir;
+            this.moveSpeed = 0f;
         }
+        this.faceDir = this.input.moveDir;
 
         this.moveForce = Utils.PolarToCartesian(this.faceDir, this.moveSpeed);
     }
