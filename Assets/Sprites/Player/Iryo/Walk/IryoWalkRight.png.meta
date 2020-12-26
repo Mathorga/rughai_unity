@@ -3,150 +3,6 @@ guid: 96f1fa2947b7c054ea5a367306d7ae92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2609056632399456682
-    second: spr_iryo_right_walk_0
-  - first:
-      213: 6008285891939081422
-    second: spr_iryo_right_walk_1
-  - first:
-      213: 1729358978666544764
-    second: spr_iryo_right_walk_2
-  - first:
-      213: -1062634623961850299
-    second: spr_iryo_right_walk_3
-  - first:
-      213: 149409764679558166
-    second: spr_iryo_right_walk_4
-  - first:
-      213: 6721703256648786718
-    second: spr_iryo_right_walk_5
-  - first:
-      213: 8370439451065982924
-    second: spr_iryo_right_walk_6
-  - first:
-      213: -1280814820974604565
-    second: spr_iryo_right_walk_7
-  - first:
-      213: 3772730226805693400
-    second: spr_iryo_right_walk_8
-  - first:
-      213: 8194451743530765975
-    second: spr_iryo_right_walk_9
-  - first:
-      213: 1296915827274528615
-    second: spr_iryo_right_walk_10
-  - first:
-      213: -4372036917874955187
-    second: spr_iryo_right_walk_11
-  - first:
-      213: -128895661682374378
-    second: spr_iryo_right_walk_12
-  - first:
-      213: -5376518931922061409
-    second: spr_iryo_right_walk_13
-  - first:
-      213: -8118243341924983193
-    second: spr_iryo_right_walk_14
-  - first:
-      213: -4431559725828984681
-    second: spr_iryo_right_walk_15
-  - first:
-      213: -1683580142778814996
-    second: spr_iryo_right_walk_16
-  - first:
-      213: 965157929170244962
-    second: spr_iryo_right_walk_17
-  - first:
-      213: 7932671583962559953
-    second: spr_iryo_right_walk_18
-  - first:
-      213: -5200221715447934992
-    second: spr_iryo_right_walk_19
-  - first:
-      213: 3074408918944840683
-    second: spr_iryo_right_walk_20
-  - first:
-      213: -1534809809721568100
-    second: spr_iryo_right_walk_21
-  - first:
-      213: 5282747143382335117
-    second: spr_iryo_right_walk_22
-  - first:
-      213: 5404664641952305266
-    second: spr_iryo_right_walk_23
-  - first:
-      213: -176707077778320273
-    second: spr_iryo_right_walk_24
-  - first:
-      213: 5590756819430075280
-    second: spr_iryo_right_walk_25
-  - first:
-      213: 7154941350109915626
-    second: spr_iryo_right_walk_26
-  - first:
-      213: 8105638690701104151
-    second: spr_iryo_right_walk_27
-  - first:
-      213: -8495250767019688229
-    second: spr_iryo_right_walk_28
-  - first:
-      213: 5567543530984121637
-    second: spr_iryo_right_walk_29
-  - first:
-      213: 6326873632037723944
-    second: spr_iryo_right_walk_30
-  - first:
-      213: -4189283066555378764
-    second: spr_iryo_right_walk_31
-  - first:
-      213: 2035552830112489486
-    second: spr_iryo_right_walk_32
-  - first:
-      213: -2321712520937483483
-    second: spr_iryo_right_walk_33
-  - first:
-      213: -3170110934878247858
-    second: spr_iryo_right_walk_34
-  - first:
-      213: 8052024919362928659
-    second: spr_iryo_right_walk_35
-  - first:
-      213: -7207989375351391919
-    second: spr_iryo_right_walk_0
-  - first:
-      213: -4522514073698915655
-    second: spr_iryo_right_walk_1
-  - first:
-      213: -1199896293934194909
-    second: spr_iryo_right_walk_2
-  - first:
-      213: 1399253567890218085
-    second: spr_iryo_right_walk_3
-  - first:
-      213: -5584049054097514464
-    second: spr_iryo_right_walk_4
-  - first:
-      213: -2702184221368077607
-    second: spr_iryo_right_walk_5
-  - first:
-      213: -8966502101368136278
-    second: spr_iryo_right_walk_6
-  - first:
-      213: -3532209855355717955
-    second: spr_iryo_right_walk_7
-  - first:
-      213: -1395207741224006821
-    second: spr_iryo_right_walk_8
-  - first:
-      213: -8355405305727000896
-    second: spr_iryo_right_walk_9
-  - first:
-      213: -3234332284753218170
-    second: spr_iryo_right_walk_10
-  - first:
-      213: 2065691518815647608
-    second: spr_iryo_right_walk_11
-  - first:
       213: 2418730663124594073
     second: IryoWalkRight_0
   - first:
@@ -275,18 +131,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -299,7 +143,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,7 +164,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +185,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,7 +206,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,7 +227,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,7 +248,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,7 +269,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,7 +290,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,7 +311,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,7 +332,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,7 +353,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,7 +374,7 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666667}
+      pivot: {x: 0.5, y: 0.16666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 846267c0bce0f064e812f05a61ec8060
+guid: e024b059c81d64e42ad967570e3d59f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1345931068830663746
-    second: IryoWalkLeft_0
+      213: 3491726197154854641
+    second: IryoIdleLeft_0
   - first:
-      213: 3356788452882736049
-    second: IryoWalkLeft_1
+      213: 6866249140402975745
+    second: IryoIdleLeft_1
   - first:
-      213: -3929789600150923513
-    second: IryoWalkLeft_2
+      213: -2980298865369028094
+    second: IryoIdleLeft_2
   - first:
-      213: 3706476207027080586
-    second: IryoWalkLeft_3
+      213: 4371496159259596508
+    second: IryoIdleLeft_3
   - first:
-      213: -8818200856510132103
-    second: IryoWalkLeft_4
+      213: -1798164888150227166
+    second: IryoIdleLeft_4
   - first:
-      213: -4931898598149504928
-    second: IryoWalkLeft_5
+      213: 6295741820688100818
+    second: IryoIdleLeft_5
   - first:
-      213: 4827847262113053013
-    second: IryoWalkLeft_6
+      213: 4675016249839033209
+    second: IryoIdleLeft_6
   - first:
-      213: 7772054879820333373
-    second: IryoWalkLeft_7
+      213: -3153501017371860084
+    second: IryoIdleLeft_7
   - first:
-      213: 4829257866181125663
-    second: IryoWalkLeft_8
+      213: 2661249949287808882
+    second: IryoIdleLeft_8
   - first:
-      213: 8863063710727125343
-    second: IryoWalkLeft_9
+      213: 126546603674468484
+    second: IryoIdleLeft_9
   - first:
-      213: 9088061995808819447
-    second: IryoWalkLeft_10
+      213: -8020908083861556073
+    second: IryoIdleLeft_10
   - first:
-      213: 51232320279786457
-    second: IryoWalkLeft_11
+      213: -6862444593994488016
+    second: IryoIdleLeft_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IryoWalkLeft_0
+      name: IryoIdleLeft_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,20 +143,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebbbf2ee2da425de0800000000000000
-      internalID: -1345931068830663746
+      spriteID: 1f63752f97a157030800000000000000
+      internalID: 3491726197154854641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_1
+      name: IryoIdleLeft_1
       rect:
         serializedVersion: 2
         x: 32
@@ -164,20 +164,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b365381055b59e20800000000000000
-      internalID: 3356788452882736049
+      spriteID: 104fc09d631d94f50800000000000000
+      internalID: 6866249140402975745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_2
+      name: IryoIdleLeft_2
       rect:
         serializedVersion: 2
         x: 64
@@ -185,20 +185,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 707daf8fd259679c0800000000000000
-      internalID: -3929789600150923513
+      spriteID: 20aed25e8f9d3a6d0800000000000000
+      internalID: -2980298865369028094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_3
+      name: IryoIdleLeft_3
       rect:
         serializedVersion: 2
         x: 96
@@ -206,20 +206,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8d4948f87c007330800000000000000
-      internalID: 3706476207027080586
+      spriteID: cd617ad789caaac30800000000000000
+      internalID: 4371496159259596508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_4
+      name: IryoIdleLeft_4
       rect:
         serializedVersion: 2
         x: 128
@@ -227,20 +227,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9701ba5ba057f9580800000000000000
-      internalID: -8818200856510132103
+      spriteID: 227c932bf82ab07e0800000000000000
+      internalID: -1798164888150227166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_5
+      name: IryoIdleLeft_5
       rect:
         serializedVersion: 2
         x: 160
@@ -248,20 +248,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0604d05fa506e8bb0800000000000000
-      internalID: -4931898598149504928
+      spriteID: 2dd6fa364d7fe5750800000000000000
+      internalID: 6295741820688100818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_6
+      name: IryoIdleLeft_6
       rect:
         serializedVersion: 2
         x: 192
@@ -269,20 +269,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55937108185fff240800000000000000
-      internalID: 4827847262113053013
+      spriteID: 97b95da828ef0e040800000000000000
+      internalID: 4675016249839033209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_7
+      name: IryoIdleLeft_7
       rect:
         serializedVersion: 2
         x: 224
@@ -290,20 +290,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d31488e2cb2ebdb60800000000000000
-      internalID: 7772054879820333373
+      spriteID: c83a7bc58838c34d0800000000000000
+      internalID: -3153501017371860084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_8
+      name: IryoIdleLeft_8
       rect:
         serializedVersion: 2
         x: 256
@@ -311,20 +311,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f16ac7a5178f40340800000000000000
-      internalID: 4829257866181125663
+      spriteID: 27f73dd9ab8aee420800000000000000
+      internalID: 2661249949287808882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_9
+      name: IryoIdleLeft_9
       rect:
         serializedVersion: 2
         x: 288
@@ -332,20 +332,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f59bb838c7deffa70800000000000000
-      internalID: 8863063710727125343
+      spriteID: 4808c8f277591c100800000000000000
+      internalID: 126546603674468484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_10
+      name: IryoIdleLeft_10
       rect:
         serializedVersion: 2
         x: 320
@@ -353,20 +353,20 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f889ec0c384f1e70800000000000000
-      internalID: 9088061995808819447
+      spriteID: 7947f55289200b090800000000000000
+      internalID: -8020908083861556073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoWalkLeft_11
+      name: IryoIdleLeft_11
       rect:
         serializedVersion: 2
         x: 352
@@ -374,14 +374,14 @@ TextureImporter:
         width: 32
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.16666666}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d3bb4b168306b000800000000000000
-      internalID: 51232320279786457
+      spriteID: 037a8242003b3c0a0800000000000000
+      internalID: -6862444593994488016
       vertices: []
       indices: 
       edges: []
