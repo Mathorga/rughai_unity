@@ -35,7 +35,7 @@ public class DepthController : MonoBehaviour {
             // mask.sortingOrder = (int) (this.transform.position.y * -22);
             this.mask.isCustomRangeActive = true;
             this.mask.backSortingOrder = depth - 1000;
-            this.mask.frontSortingOrder = depth - 1;
+            this.mask.frontSortingOrder = depth;
         }
     }
 }
