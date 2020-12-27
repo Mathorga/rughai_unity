@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4201387401
+    locked: 0
   - name: UnderTiles
     uniqueID: 1730991525
     locked: 0
