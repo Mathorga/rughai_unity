@@ -28147,6 +28147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1467246345}
   offset: {x: 0, y: 2.0625}
+  speed: 0.1
 --- !u!1001 &1172950209051201376
 PrefabInstance:
   m_ObjectHideFlags: 0
