@@ -28146,8 +28146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1467246345}
-  offset: {x: 0, y: 2.0625}
-  speed: 0.1
+  speed: 0.05
 --- !u!1001 &1172950209051201376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28801,7 +28800,7 @@ PrefabInstance:
     - target: {fileID: 5215978658914033473, guid: ae35c92c81f403b4d90cb7cc46a7f645,
         type: 3}
       propertyPath: offset.y
-      value: 1.375
+      value: 0.6875
       objectReference: {fileID: 0}
     - target: {fileID: 5215978658914033473, guid: ae35c92c81f403b4d90cb7cc46a7f645,
         type: 3}
