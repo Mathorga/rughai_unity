@@ -4,37 +4,48 @@ using UnityEngine;
 
 public class Parallax2D : MonoBehaviour {
     public Transform target;
+    public Vector2 offset;
     public float speed;
+    public bool absolute;
 
     void Start() {
-        this.transform.position = this.target.position;
+        this.transform.position = (Vector2) this.target.position;
     }
 
     void FixedUpdate() {
-        float dir = Utils.AngleBetween(this.transform.position, this.target.position);
-        float len = Vector2.Distance(this.transform.position, this.target.position) * this.speed;
-        this.transform.position = (Vector2) this.transform.position + Utils.PolarToCartesian(dir, len);
+        if (this.absolute) {
+            this.MoveAbsolute();
+        } else {
+            this.MoveRelative();
+        }
+    }
 
+    void MoveRelative() {
         Transform anchor = this.target.GetComponent<CameraTargetController>().anchor;
-        Vector2 offset = (Vector2) anchor.position - (Vector2) this.target.position;
+
+        float dir = Utils.AngleBetween(this.transform.position, anchor.position);
+        float len = Vector2.Distance(this.transform.position, anchor.position) * this.speed;
+        this.transform.position = (Vector2) this.transform.position + Utils.PolarToCartesian(dir, len) + this.offset;
+
+        Vector2 anchorOffset = (Vector2) anchor.position - (Vector2) this.target.position;
 
         for (int i = 0; i < this.transform.childCount; i++) {
+            // Get child by its name.
             Transform childTransform = this.transform.Find(i.ToString());
-            // Vector2 targetPosition = new Vector2();
-            // targetPosition.x = this.transform.position.x;
-            // targetPosition.y = (this.transform.position.y) + (offset.y * ((this.transform.childCount - i) * 0.1f));
-            // childTransform.position = targetPosition;
 
-            // Vector2 childPosition = new Vector2();
-            // childPosition.x = targetPosition.x;
-            // childPosition.y = this.transform.position.y + targetPosition.y;
-
-
-
-            dir = Utils.AngleBetween(Vector2.zero, offset);
-            len = (Vector2.Distance(Vector2.zero, offset) + (offset.magnitude * (this.transform.childCount - i))) * this.speed * 0.5f;
+            dir = Utils.AngleBetween(Vector2.zero, anchorOffset);
+            len = (Vector2.Distance(Vector2.zero, anchorOffset) + (anchorOffset.magnitude * (this.transform.childCount - i * 2f))) * this.speed * 0.5f;
 
             childTransform.position = (Vector2) this.transform.position + Utils.PolarToCartesian(dir, len);
+        }
+    }
+
+    void MoveAbsolute() {
+        for (int i = 0; i < this.transform.childCount; i++) {
+            // Get child by its name.
+            Transform childTransform = this.transform.Find(i.ToString());
+
+            childTransform.position = this.target.position * 0.05f * (i + 20);
         }
     }
 }
