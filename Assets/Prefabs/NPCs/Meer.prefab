@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1728954279239257510}
   - component: {fileID: 1728954279239257507}
   - component: {fileID: 4911508821925915252}
+  - component: {fileID: 7804537773975808574}
   m_Layer: 0
   m_Name: Meer
   m_TagString: Untagged
@@ -121,6 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83ec12c4c6c29b4a81f7b2cd21659c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rooted: 0
 --- !u!70 &1728954279239257510
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -170,6 +172,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
   threshold: 0.05
+--- !u!114 &7804537773975808574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728954279239257509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876e7e9cc420bbb40a6c60bbd2b01a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 0}
 --- !u!1 &2358906477384987819
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +255,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -421413021
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 6162212019450955698, guid: 1622c155d11c4024094b601f7650e48c,
     type: 3}
@@ -266,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83ec12c4c6c29b4a81f7b2cd21659c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rooted: 0
 --- !u!95 &7862590848059829334
 Animator:
   serializedVersion: 3
