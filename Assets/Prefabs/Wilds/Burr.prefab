@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 518176885177068484}
   - component: {fileID: 518176885177068482}
   - component: {fileID: 518176885177068483}
+  - component: {fileID: 2417282130966018454}
   m_Layer: 0
   m_Name: Burr
   m_TagString: Untagged
@@ -170,3 +171,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
   threshold: 0.05
+--- !u!114 &2417282130966018454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518176885177068489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938e067ba66abfb4abe0177ff742f78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
