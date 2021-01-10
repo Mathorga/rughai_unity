@@ -540,7 +540,7 @@ MonoBehaviour:
   target: {fileID: 0}
   offset: {x: 0, y: 0.1}
   speed: 0.05
-  absolute: 0
+  absolute: 1
 --- !u!1 &9014459488428010930
 GameObject:
   m_ObjectHideFlags: 0
