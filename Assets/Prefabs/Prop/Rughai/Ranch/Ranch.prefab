@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 8768566936765003274}
   - component: {fileID: 6890471933882170889}
   - component: {fileID: 2739304911080770479}
+  - component: {fileID: 31920811302643528}
   m_Layer: 0
   m_Name: Ranch
   m_TagString: Untagged
@@ -268,3 +269,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -1}
   m_Size: {x: 2, y: 0.6875}
   m_Direction: 1
+--- !u!114 &31920811302643528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036468426901315603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d22e189555f3e8438d778b9220af421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

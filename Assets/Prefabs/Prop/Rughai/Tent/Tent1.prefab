@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5751842126965310039}
   - component: {fileID: 9045792704701822148}
   - component: {fileID: 578348201985604574}
+  - component: {fileID: 3915922789623935544}
   m_Layer: 0
   m_Name: Tent1
   m_TagString: Untagged
@@ -140,3 +141,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rooted: 0
   offset: 0
+--- !u!114 &3915922789623935544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925385377013081506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d22e189555f3e8438d778b9220af421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
