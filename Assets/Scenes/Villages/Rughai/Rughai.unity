@@ -40015,33 +40015,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1094885785299051091, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2200119908561724054, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2200119908561724054, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3239950128817349321, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: stats
-      value: 
-      objectReference: {fileID: 11400000, guid: bc55c7f81d64d804d88abf505bd5ee91,
-        type: 2}
-    - target: {fileID: 3239950128817349321, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: facing
-      value: 
-      objectReference: {fileID: 11400000, guid: d4fb4fa8fb09d294ab9d8c94affb8a53,
-        type: 2}
     - target: {fileID: 4486190685028644503, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
       propertyPath: m_BackSortingOrder
@@ -40066,31 +40039,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6496907040287462467, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6496907040287462467, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6496907040287462476, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6496907040287462476, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6496907040287462476, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6496907040287462477, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
@@ -40164,12 +40112,6 @@ PrefabInstance:
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 11400000, guid: 268337dce2221bb4c89c5fcebce9a38e,
-        type: 2}
-    - target: {fileID: 6745456745785873254, guid: 96e447597bd08274dab3063b88737979,
-        type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: ee7f13a64be34c8459ee2900cf0441e2,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e447597bd08274dab3063b88737979, type: 3}

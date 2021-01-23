@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 2939517555110687284}
   - component: {fileID: 2939517555110687285}
   - component: {fileID: 2939517555110687274}
+  - component: {fileID: 8268461775870523651}
   - component: {fileID: 3905399246332139785}
   - component: {fileID: 2939517555110687275}
+  - component: {fileID: 4529513647049524303}
   m_Layer: 0
   m_Name: Tent0Down
   m_TagString: Untagged
@@ -110,6 +112,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 1.375}
   m_EdgeRadius: 0
+--- !u!70 &8268461775870523651
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939517555110687286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.34375}
+  m_Size: {x: 1, y: 0.6875}
+  m_Direction: 1
 --- !u!331 &3905399246332139785
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -156,7 +174,7 @@ SpriteMask:
   m_FrontSortingLayer: 3
   m_BackSortingLayer: 3
   m_FrontSortingOrder: 0
-  m_BackSortingOrder: 0
+  m_BackSortingOrder: -1000
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
 --- !u!114 &2939517555110687275
@@ -172,3 +190,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rooted: 0
+  offset: 0
+--- !u!114 &4529513647049524303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939517555110687286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d22e189555f3e8438d778b9220af421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

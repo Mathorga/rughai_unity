@@ -6,11 +6,13 @@ using UnityEngine;
 public class PlayerInteractor : MonoBehaviour {
     public float interactionOffset;
     public GameObject interactionSignType;
+    public Vector2 signPositionOffset;
 
     private CircleCollider2D interactionCollider;
     private PlayerInput input;
     private Transform otherTransform;
     private GameObject interactionSign;
+    private bool interacted = false;
 
     void Start() {
         this.interactionCollider = this.GetComponent<CircleCollider2D>();
@@ -24,19 +26,21 @@ public class PlayerInteractor : MonoBehaviour {
 
         if (this.otherTransform != null) {
             if (this.input.interact) {
-                // Instantiate(this.interactionSignType, this.transform.position, Quaternion.identity);
-                // Debug.Log("Instantiated AF " + this.interactionSignType.ToString());
+                this.otherTransform.GetComponent<Interaction>().run = true;
+                this.input.interact = false;
             }
         }
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        //TODO Check if other is an interactable.
         if (other.isTrigger) {
-            if (this.interactionSign == null) {
-                this.otherTransform = other.transform;
-                Vector3 offset = new Vector3(other.offset.x, other.offset.y, 0.0f);
-                this.interactionSign = Instantiate(this.interactionSignType, other.transform.position + offset, Quaternion.identity);
+            // Check if other has an interaction.
+            if (other.GetComponent<Interaction>() != null) {
+                if (this.interactionSign == null) {
+                    Vector3 offset = other.offset + this.signPositionOffset;
+                    this.otherTransform = other.transform;
+                    this.interactionSign = Instantiate(this.interactionSignType, other.transform.position + offset, Quaternion.identity);
+                }
             }
         }
     }

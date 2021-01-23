@@ -18,7 +18,7 @@ public class PlayerInput : MonoBehaviour {
     }
     public bool interact {
         get;
-        private set;
+        set;
     }
     public bool attack {
         get;
