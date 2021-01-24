@@ -7,9 +7,11 @@ public class CameraTargetController : MonoBehaviour {
     public Transform anchor;
     public CameraInput input;
     public Vector2 offset;
+    public Vector2Value startPosition;
 
     void Awake() {
-        this.transform.position = (Vector2) this.anchor.position + this.offset;
+        this.transform.position = this.startPosition.value + this.offset;
+        // this.transform.position = (Vector2) this.anchor.position + this.offset;
     }
 
     void FixedUpdate() {

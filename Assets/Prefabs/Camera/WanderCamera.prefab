@@ -119,3 +119,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   target: {fileID: 0}
+  startPosition: {fileID: 11400000, guid: 268337dce2221bb4c89c5fcebce9a38e, type: 2}

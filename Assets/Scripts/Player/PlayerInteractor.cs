@@ -12,7 +12,6 @@ public class PlayerInteractor : MonoBehaviour {
     private PlayerInput input;
     private Transform otherTransform;
     private GameObject interactionSign;
-    private bool interacted = false;
 
     void Start() {
         this.interactionCollider = this.GetComponent<CircleCollider2D>();

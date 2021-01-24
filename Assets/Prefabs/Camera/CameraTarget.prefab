@@ -82,3 +82,4 @@ MonoBehaviour:
   anchor: {fileID: 0}
   input: {fileID: 5215978658914033472}
   offset: {x: 0, y: 0.6875}
+  startPosition: {fileID: 11400000, guid: 268337dce2221bb4c89c5fcebce9a38e, type: 2}
