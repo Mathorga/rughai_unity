@@ -45,7 +45,10 @@ public class Parallax2D : MonoBehaviour {
             // Get child by its name.
             Transform childTransform = this.transform.Find(i.ToString());
 
-            childTransform.position = this.target.position * ((i * this.speed) + 1);
+            // float xPos = this.target.position.x * (((-i) * this.speed) + 1);
+            // float yPos = this.target.position.y * ((i * this.speed) + 1);
+            // childTransform.position = new Vector2(xPos, yPos);
+            childTransform.position = this.target.position * (((-i) * this.speed) + 1);
         }
     }
 }
