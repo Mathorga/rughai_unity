@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
     private MainControls controls;
+    private bool active;
     public float moveDir {
         get;
         private set;
@@ -26,10 +27,12 @@ public class PlayerInput : MonoBehaviour {
     }
 
     public void Enable() {
+        this.active = true;
         this.controls.Enable();
     }
 
     public void Disable() {
+        this.active = false;
         float len = this.moveLen;
         float dir = this.moveDir;
         this.controls.Disable();
@@ -47,6 +50,7 @@ public class PlayerInput : MonoBehaviour {
 
     private void Awake() {
         this.controls = new MainControls();
+        this.active = true;
 
         // Check for movement change.
         this.controls.Player.Move.performed += (context) => this.SetMoveDirection(context.ReadValue<Vector2>());
@@ -84,22 +88,32 @@ public class PlayerInput : MonoBehaviour {
     }
 
     private void SetMoveDirection(Vector2 moveVector) {
-        this.moveDir = Utils.AngleBetween(Vector2.zero, moveVector);
+        if (this.active) {
+            this.moveDir = Utils.AngleBetween(Vector2.zero, moveVector);
+        }
     }
 
     public void SetMoveLength(Vector2 moveVector) {
-        this.moveLen = Mathf.Clamp(moveVector.magnitude, 0, 1);
+        if (this.active) {
+            this.moveLen = Mathf.Clamp(moveVector.magnitude, 0, 1);
+        }
     }
 
     public void SetWalkTrigger(bool value) {
-        this.walk = value;
+        if (this.active) {
+            this.walk = value;
+        }
     }
 
     public void SetInteract(bool value) {
-        this.interact = value;
+        if (this.active) {
+            this.interact = value;
+        }
     }
 
     public void SetAttack(bool value) {
-        this.attack = value;
+        if (this.active) {
+            this.attack = value;
+        }
     }
 }

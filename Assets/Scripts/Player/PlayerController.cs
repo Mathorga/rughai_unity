@@ -69,10 +69,10 @@ public class PlayerController : MonoBehaviour {
 
     private void SetState() {
         if (this.fallController.falling) {
-            this.input.Disable();
+            // this.input.Disable();
             this.state = State.Fall;
         } else {
-            this.input.Enable();
+            // this.input.Enable();
             if (this.state != State.Attack0 &&
                 this.state != State.Attack1 &&
                 this.state != State.Fall) {

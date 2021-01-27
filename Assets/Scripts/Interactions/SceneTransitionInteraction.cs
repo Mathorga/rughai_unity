@@ -12,9 +12,7 @@ public class SceneTransitionInteraction : Interaction {
     void FixedUpdate() {
         if (this.run) {
             // Interact.
-            Debug.Log("Anselmoide Anemocomoro " + this.gameObject.ToString());
-
-            //TODO Disable input.
+            this.startInteractionAction();
 
             this.playerPosition.value = this.nextPlayerPosition;
             this.StartCoroutine(this.LoadScene());

@@ -13,7 +13,7 @@ public class PlayerInteractor : MonoBehaviour {
     private Transform otherTransform;
     private GameObject interactionSign;
 
-    void Start() {
+    void Awake() {
         this.interactionCollider = this.GetComponent<CircleCollider2D>();
         this.input = this.GetComponent<PlayerInput>();
     }
@@ -25,7 +25,16 @@ public class PlayerInteractor : MonoBehaviour {
 
         if (this.otherTransform != null) {
             if (this.input.interact) {
-                this.otherTransform.GetComponent<Interaction>().run = true;
+                // Retrieve interaction component from other.
+                Interaction otherInteraction = this.otherTransform.GetComponent<Interaction>();
+
+                // Enable interaction start.
+                otherInteraction.run = true;
+
+                // Register callback method for interaction start.
+                otherInteraction.startInteractionAction += this.DisableInput;
+
+                // Turn off interaction input, so that it's not triggered indefinitely.
                 this.input.interact = false;
             }
         }
@@ -34,7 +43,8 @@ public class PlayerInteractor : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if (other.isTrigger) {
             // Check if other has an interaction.
-            if (other.GetComponent<Interaction>() != null) {
+            Interaction otherInteraction = other.GetComponent<Interaction>();
+            if (otherInteraction != null) {
                 if (this.interactionSign == null) {
                     Vector3 offset = other.offset + this.signPositionOffset;
                     this.otherTransform = other.transform;
@@ -45,10 +55,15 @@ public class PlayerInteractor : MonoBehaviour {
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        //TODO Check if other is an interactable.
         if (other.isTrigger) {
+            //TODO Check if other is an interactable.
             this.otherTransform = null;
             Destroy(this.interactionSign);
         }
+    }
+
+    void DisableInput() {
+        this.input.SetMoveLen(0.0f);
+        this.input.Disable();
     }
 }
