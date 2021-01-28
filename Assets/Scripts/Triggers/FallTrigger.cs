@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FallTrigger : MonoBehaviour {
+    public Animator sceneAnimator;
     private BoxCollider2D boxCollider;
 
     void Start() {

@@ -84,6 +84,11 @@ public class PlayerAnimator : MonoBehaviour {
                 foreach (Animator childAnimator in this.childAnimators) {
                     childAnimator.Play("Fall");
                 }
+
+                // Reset state after animation ends.
+                if (animationTime >= 1f) {
+                    this.controller.SetState(PlayerController.State.Idle);
+                }
             } else {
                 // Set animation state.
                 if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity &&
