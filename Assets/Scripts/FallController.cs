@@ -20,5 +20,10 @@ public class FallController : MonoBehaviour {
 
     public void SetFalling() {
         this.falling = true;
+        // this.rb.gravityScale = 1;
     }
+
+    // public void SetSortingLayer(string sortingLayerName) {
+    //     this.spriteRenderer.sortingLayerName = sortingLayerName;
+    // }
 }

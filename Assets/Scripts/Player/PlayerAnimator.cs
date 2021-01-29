@@ -79,6 +79,12 @@ public class PlayerAnimator : MonoBehaviour {
             }
         } else {
             if (this.fallController.falling) {
+                // Set slower speed for stand animation.
+                this.animator.speed = 0.5f;
+
+                foreach (Animator childAnimator in this.childAnimators) {
+                    childAnimator.speed = 0.5f;
+                }
                 this.animator.Play("Fall");
 
                 foreach (Animator childAnimator in this.childAnimators) {
