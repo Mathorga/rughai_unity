@@ -64,3 +64,5 @@ MonoBehaviour:
   sceneAnimator: {fileID: 0}
   nextPlayerPosition: {x: 0, y: 0}
   playerPosition: {fileID: 11400000, guid: 268337dce2221bb4c89c5fcebce9a38e, type: 2}
+  nextPlayerFacing: {x: 0, y: 0}
+  playerFacing: {fileID: 11400000, guid: d4fb4fa8fb09d294ab9d8c94affb8a53, type: 2}

@@ -3,6 +3,7 @@
 public class PlayerAnimator : MonoBehaviour {
     public PlayerController controller;
     public Animator[] childAnimators;
+    public Vector2Value startFacing;
 
     // Threshold from stand to slow walk animation.
     private float slowWalkThreshold = 0.01f;
@@ -23,6 +24,8 @@ public class PlayerAnimator : MonoBehaviour {
         this.animator = this.GetComponent<Animator>();
         this.fallController = this.GetComponent<FallController>();
         this.stats = this.GetComponent<PlayerStats>();
+        this.animator.SetFloat("FaceX", this.startFacing.value.x);
+        this.animator.SetFloat("FaceY", this.startFacing.value.y);
     }
 
     void FixedUpdate() {

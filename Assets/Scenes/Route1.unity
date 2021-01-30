@@ -27404,6 +27404,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 4029872941988367739, guid: 79dc4e61b3a55ad42abde529b27c56c0,
         type: 3}
+      propertyPath: nextPlayerFacing.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029872941988367739, guid: 79dc4e61b3a55ad42abde529b27c56c0,
+        type: 3}
       propertyPath: nextPlayerPosition.x
       value: 6.5
       objectReference: {fileID: 0}

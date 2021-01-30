@@ -8,6 +8,8 @@ public class SceneTransitionInteraction : Interaction {
     public Animator sceneAnimator;
     public Vector2 nextPlayerPosition;
     public Vector2Value playerPosition;
+    public Vector2 nextPlayerFacing;
+    public Vector2Value playerFacing;
 
     void FixedUpdate() {
         if (this.run) {
@@ -15,6 +17,7 @@ public class SceneTransitionInteraction : Interaction {
             this.startInteractionAction();
 
             this.playerPosition.value = this.nextPlayerPosition;
+            this.playerFacing.value = this.nextPlayerFacing;
             this.StartCoroutine(this.LoadScene());
 
             // Reset trigger after interaction is complete.

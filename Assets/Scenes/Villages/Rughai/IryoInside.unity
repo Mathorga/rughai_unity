@@ -6391,13 +6391,18 @@ PrefabInstance:
       objectReference: {fileID: 602057924}
     - target: {fileID: 7879994936090233771, guid: 78f0b713822c2e24da9ada6b9d41ef18,
         type: 3}
+      propertyPath: nextPlayerFacing.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879994936090233771, guid: 78f0b713822c2e24da9ada6b9d41ef18,
+        type: 3}
       propertyPath: nextPlayerPosition.x
-      value: 4.4
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 7879994936090233771, guid: 78f0b713822c2e24da9ada6b9d41ef18,
         type: 3}
       propertyPath: nextPlayerPosition.y
-      value: 1.4
+      value: 1.71875
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78f0b713822c2e24da9ada6b9d41ef18, type: 3}

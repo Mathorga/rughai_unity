@@ -347,7 +347,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {fileID: 0}
-  input: {fileID: 6496907040287462473}
 --- !u!114 &3239950128817349321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +362,7 @@ MonoBehaviour:
   controller: {fileID: 6496907040287462479}
   childAnimators:
   - {fileID: 3455518863044487244}
+  startFacing: {fileID: 11400000, guid: d4fb4fa8fb09d294ab9d8c94affb8a53, type: 2}
 --- !u!114 &7862757527975364077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,4 +379,3 @@ MonoBehaviour:
   interactionSignType: {fileID: 5312771666620185, guid: fa5f167e249b71343a27822d9beaf7a8,
     type: 3}
   signPositionOffset: {x: 0, y: 1}
-  input: {fileID: 6496907040287462473}
