@@ -263,7 +263,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.275
 --- !u!95 &6496907040287462472
 Animator:
   serializedVersion: 3
@@ -334,6 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357db5666669d524fb056abff1285018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 1.71875
 --- !u!114 &6496907040287462479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200c2bb870f6b1c4590da0fefa0bb9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionOffset: 0.6875
+  interactionOffset: 0.55
   interactionSignType: {fileID: 5312771666620185, guid: fa5f167e249b71343a27822d9beaf7a8,
     type: 3}
   signPositionOffset: {x: 0, y: 1}

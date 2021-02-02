@@ -61,8 +61,8 @@ public class PlayerController : MonoBehaviour {
         }
 
         // Cut velocity if in a static state.
-        if (this.state == State.Attack0 ||
-            this.state == State.Fall) {
+        if (this.state == State.Attack0) {// ||
+            // this.state == State.Fall) {
             this.rb.velocity = Vector2.zero;
         }
     }

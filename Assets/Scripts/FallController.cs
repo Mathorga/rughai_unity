@@ -8,6 +8,8 @@ public class FallController : MonoBehaviour {
         set;
     }
 
+    public float height;
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private DepthController depthController;
@@ -20,10 +22,10 @@ public class FallController : MonoBehaviour {
 
     public void SetFalling() {
         this.falling = true;
-        // this.rb.gravityScale = 1;
+        this.rb.gravityScale = 1;
     }
 
-    // public void SetSortingLayer(string sortingLayerName) {
-    //     this.spriteRenderer.sortingLayerName = sortingLayerName;
-    // }
+    public void SetSortingLayer(string sortingLayerName) {
+        this.spriteRenderer.sortingLayerName = sortingLayerName;
+    }
 }
