@@ -25,9 +25,16 @@ public class FallTrigger : MonoBehaviour {
                     otherController.SetFalling();
                 }
 
-                if (otherController.falling &&
-                    Utils.PointInsideCollider(this.boxCollider, new Vector2(fallingPosition.x, fallingPosition.y + otherController.height))) {
-                    otherController.SetSortingLayer("Fall");
+                if (otherController.falling) {
+                    // Check if the whole body is in a fall collider.
+                    RaycastHit2D hit = Physics2D.Raycast(new Vector2(otherTransform.position.x, otherTransform.position.y + otherController.height),
+                                                        Vector2.up,
+                                                        otherTransform.position.y + otherController.height);
+                    if (hit.collider != null) {
+                        if (hit.collider.gameObject.tag == "FallTrigger") {
+                            otherController.SetSortingLayer("Fall");
+                        }
+                    }
                 }
             }
         }
