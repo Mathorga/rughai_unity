@@ -36,24 +36,26 @@ public class PlayerAnimator : MonoBehaviour {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.data.speed / this.rb.drag;
 
-        // Set facing for direction control.
-        if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
-            // Use velocity if > 0.
-            this.animator.SetFloat("FaceX", this.rb.velocity.x);
-            this.animator.SetFloat("FaceY", this.rb.velocity.y);
+        if (this.controller.state != PlayerController.State.Fall) {
+            // Set facing for direction control.
+            if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
+                // Use velocity if > 0.
+                this.animator.SetFloat("FaceX", this.rb.velocity.x);
+                this.animator.SetFloat("FaceY", this.rb.velocity.y);
 
-            foreach (Animator childAnimator in this.childAnimators) {
-                childAnimator.SetFloat("FaceX", this.rb.velocity.x);
-                childAnimator.SetFloat("FaceY", this.rb.velocity.y);
-            }
-        } else if (this.controller.moveSpeed > this.slowWalkThreshold) {
-            // Use moveSpeed otherwise.
-            this.animator.SetFloat("FaceX", this.controller.moveForce.x);
-            this.animator.SetFloat("FaceY", this.controller.moveForce.y);
+                foreach (Animator childAnimator in this.childAnimators) {
+                    childAnimator.SetFloat("FaceX", this.rb.velocity.x);
+                    childAnimator.SetFloat("FaceY", this.rb.velocity.y);
+                }
+            } else if (this.controller.moveSpeed > this.slowWalkThreshold) {
+                // Use moveSpeed otherwise.
+                this.animator.SetFloat("FaceX", this.controller.moveForce.x);
+                this.animator.SetFloat("FaceY", this.controller.moveForce.y);
 
-            foreach (Animator childAnimator in this.childAnimators) {
-                childAnimator.SetFloat("FaceX", this.controller.moveForce.x);
-                childAnimator.SetFloat("FaceY", this.controller.moveForce.y);
+                foreach (Animator childAnimator in this.childAnimators) {
+                    childAnimator.SetFloat("FaceX", this.controller.moveForce.x);
+                    childAnimator.SetFloat("FaceY", this.controller.moveForce.y);
+                }
             }
         }
 

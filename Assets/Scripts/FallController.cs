@@ -22,7 +22,9 @@ public class FallController : MonoBehaviour {
 
     public void SetFalling() {
         this.falling = true;
+        this.rb.velocity /= 2;
         this.rb.gravityScale = 1;
+        this.rb.drag = 1;
     }
 
     public void SetSortingLayer(string sortingLayerName) {

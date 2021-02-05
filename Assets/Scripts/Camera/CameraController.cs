@@ -5,11 +5,14 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
     public float speed;
     public Transform target;
+    // public Vector2Value startPosition;
 
     private float zPosition = -10f;
 
     void Start() {
         // this.transform.position = this.startPosition.value;
+
+        // Vector2 startPosition = this.target.position
         this.transform.position = new Vector3(this.target.position.x, this.target.position.y, this.zPosition);
     }
 
