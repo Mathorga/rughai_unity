@@ -76,8 +76,5 @@ public class FallController : MonoBehaviour {
 
         // Turn falling off.
         this.SetFalling(false);
-
-        // Unset temp safe position.
-        this.safePosition = Vector2.zero;
     }
 }
