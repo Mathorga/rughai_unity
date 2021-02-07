@@ -10,24 +10,37 @@ public class FallTrigger : MonoBehaviour {
         this.boxCollider = this.GetComponent<BoxCollider2D>();
     }
 
-    void OnTriggerStay2D(Collider2D other) {
-        // If other collider is a trigger it's not taken into account.
-        if (!other.isTrigger) {
+    void OnTriggerEnter2D(Collider2D other) {
+        // If other is not a capsule collider it's not taken into account.
+        if (other is CapsuleCollider2D) {
             // Retrieve other's fall controller.
             Transform otherTransform = other.gameObject.transform;
             FallController otherController = other.gameObject.GetComponent<FallController>();
-            // Debug.DrawLine(new Vector3(otherTransform.position.x, otherTransform.position.y + (otherController.height / 2)),
-            //                new Vector3(otherTransform.position.x, otherTransform.position.y + otherController.height));
+
+            if (otherController != null) {
+                if (!otherController.isFalling) {
+                    otherController.safePosition = otherTransform.position;
+                }
+            }
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other) {
+        // If other is not a capsule collider it's not taken into account.
+        if (other is CapsuleCollider2D) {
+            // Retrieve other's fall controller.
+            Transform otherTransform = other.gameObject.transform;
+            FallController otherController = other.gameObject.GetComponent<FallController>();
 
             if (otherController != null) {
                 Vector2 fallingPosition = (Vector2) otherTransform.position + other.offset;
                 // Check if other's position is inside collider.
-                if (!otherController.falling &&
+                if (!otherController.isFalling &&
                     Utils.PointInsideCollider(this.boxCollider, fallingPosition)) {
-                    otherController.SetFalling();
+                    otherController.SetFalling(true);
                 }
 
-                if (otherController.falling) {
+                if (otherController.isFalling) {
                     // Check if the whole body is in a fall collider.
                     // Retrieve layermask to filter raycast.
                     LayerMask mask = LayerMask.GetMask("FallTrigger");

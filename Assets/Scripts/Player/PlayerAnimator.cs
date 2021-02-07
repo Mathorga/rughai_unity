@@ -83,7 +83,7 @@ public class PlayerAnimator : MonoBehaviour {
                 this.controller.SetState(PlayerController.State.Idle);
             }
         } else {
-            if (this.fallController.falling) {
+            if (this.fallController.isFalling) {
                 // Set slower speed for stand animation.
                 this.animator.speed = 0.5f;
 
