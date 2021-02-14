@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public static class Utils {
+    public static float TILE_RATIO = 0.6875f;
+
     public static float AngleBetween(Vector2 v1, Vector2 v2) {
      return Mathf.Atan2(v2.y - v1.y, v2.x - v1.x) * (180 / Mathf.PI);
     }

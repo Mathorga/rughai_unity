@@ -90,10 +90,11 @@ public class RopeController : MonoBehaviour {
         foreach (Transform child in this.transform) {
             anchorTransforms.Add(child);
         }
+
         // Loop through anchors, but the last one in order to draw lines in between.
+        Gizmos.color = Color.yellow;
         for (int i = 0; i < anchorTransforms.Count - 1; i++) {
             // Draw line to the next one.
-            Gizmos.color = Color.yellow;
             Gizmos.DrawLine(anchorTransforms[i].transform.position, anchorTransforms[i + 1].transform.position);
         }
     }
