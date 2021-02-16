@@ -52,8 +52,4 @@ public class PathfindingField : MonoBehaviour {
         Gizmos.DrawLine(new Vector2(this.tileBounds.max.x, this.tileBounds.min.y),
                         new Vector2(this.tileBounds.min.x, this.tileBounds.min.y));
     }
-
-    void FixedUpdate() {
-        
-    }
 }
