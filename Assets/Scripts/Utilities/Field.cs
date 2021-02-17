@@ -4,34 +4,73 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Field<T> {
-    private Vector2 position;
-    private int width;
-    private int height;
-    private float cellWidth;
-    private float cellHeight;
+    public event EventHandler<OnFieldElementChangedEventArgs> OnFieldElementChanged;
+    public class OnFieldElementChangedEventArgs {
+        public int x;
+        public int y;
+    }
+
+    public Vector2 position {
+        get;
+        private set;
+    }
+    public int width {
+        get;
+        private set;
+    }
+    public int height {
+        get;
+        private set;
+    }
+    public float cellWidth {
+        get;
+        private set;
+    }
+    public float cellHeight {
+        get;
+        private set;
+    }
 
     private T[,] data;
 
-    Field(int width, int height, float cellWidth, float cellHeight, Func<T> constructor) {
+    public Field(int width, int height, float cellWidth, float cellHeight, Vector2 position, Func<Field<T>, int, int, T> constructor) {
+        // Set width and height.
         this.width = width;
         this.height = height;
 
+        // Set cell size.
         this.cellWidth = cellWidth;
         this.cellHeight = cellHeight;
 
+        // Set position.
+        this.position = position;
+
+        // Initialize data.
         this.data = new T[width, height];
 
         // Instantiate data.
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
-                this.data[i, j] = constructor();
+                this.data[i, j] = constructor(this, i, j);
             }
+        }
+    }
+
+    public void TriggerElementChanged(int x, int y) {
+        // Trigger element change event.
+        if (this.OnFieldElementChanged != null) {
+            this.OnFieldElementChanged(this, new OnFieldElementChangedEventArgs{x = x, y = y});
         }
     }
 
     public void SetElement(int x, int y, T value) {
         if (x >= 0  && y >= 0 && x < this.width && y < this.height) {
             this.data[x, y] = value;
+
+            // Trigger element change event.
+            if (this.OnFieldElementChanged != null) {
+                this.OnFieldElementChanged(this, new OnFieldElementChangedEventArgs{x = x, y = y});
+            }
         }
     }
 
