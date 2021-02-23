@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PathNode {
-    private const int STRAIGHT_COST = 10;
-    private const int DIAGONAL_COST = 14;
-
     private Field<PathNode> field;
     public int x {
         get;
@@ -27,7 +24,7 @@ public class PathNode {
     }
     public int hCost {
         get;
-        private set;
+        set;
     }
     public int fCost {
         get;
@@ -41,15 +38,47 @@ public class PathNode {
     }
 
     public List<PathNode> GetNeighbors() {
-        //TODO
-        return null;
-    }
+        List<PathNode> neighbors = new List<PathNode>();
 
-    public void ComputeHCost(PathNode goal) {
-        int xDistance = Mathf.Abs(this.x - goal.x);
-        int yDistance = Mathf.Abs(this.y - goal.y);
-        int remaining = Mathf.Abs(xDistance - yDistance);
-        this.hCost = STRAIGHT_COST * Mathf.Min(xDistance, yDistance) + DIAGONAL_COST * remaining;
+        if (this.x - 1 >= 0) {
+            // Left.
+            neighbors.Add(this.field.GetElement(this.x - 1, this.y));
+
+            if (this.y - 1 >= 0) {
+                // Top-left.
+                neighbors.Add(this.field.GetElement(this.x - 1, this.y - 1));
+            }
+            if (this.y + 1 < this.field.height) {
+                // Bottom-left.
+                neighbors.Add(this.field.GetElement(this.x - 1, this.y + 1));
+            }
+        }
+
+        if (this.x + 1 < this.field.width) {
+            // Right.
+            neighbors.Add(this.field.GetElement(this.x + 1, this.y));
+
+            if (this.y - 1 >= 0) {
+                // Top-right.
+                neighbors.Add(this.field.GetElement(this.x + 1, this.y - 1));
+            }
+            if (this.y + 1 < this.field.height) {
+                // Bottom-right.
+                neighbors.Add(this.field.GetElement(this.x + 1, this.y + 1));
+            }
+        }
+
+        if (this.y - 1 >= 0) {
+            // Top.
+            neighbors.Add(this.field.GetElement(this.x, this.y - 1));
+        }
+
+        if (this.y + 1 < this.field.height) {
+            // Bottom.
+            neighbors.Add(this.field.GetElement(this.x, this.y + 1));
+        }
+
+        return neighbors;
     }
 
     public void ComputeFCost() {

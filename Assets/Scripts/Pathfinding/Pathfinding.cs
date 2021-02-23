@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Pathfinding {
+    private const int STRAIGHT_COST = 10;
+    private const int DIAGONAL_COST = 14;
     public Field<PathNode> field {
         get;
         private set;
@@ -22,7 +24,7 @@ public class Pathfinding {
 
     }
 
-    private List<PathNode> ComputePath(int startX, int startY, int endX, int endY) {
+    public List<PathNode> ComputePath(int startX, int startY, int endX, int endY) {
         // Instantiate lists.
         this.openList = new List<PathNode>();
         this.closedList = new List<PathNode>();
@@ -43,7 +45,7 @@ public class Pathfinding {
         }
 
         startNode.gCost = 0;
-        startNode.ComputeHCost(endNode);
+        startNode.hCost = this.ComputeHCost(startNode, endNode);
         startNode.ComputeFCost();
 
         while (this.openList.Count > 0) {
@@ -55,15 +57,44 @@ public class Pathfinding {
             } else {
                 this.openList.Remove(currentNode);
                 this.closedList.Add(currentNode);
+
+                foreach (PathNode neighbor in currentNode.GetNeighbors()) {
+                    if (!closedList.Contains(neighbor)) {
+                        int tentativeGCost = currentNode.gCost + this.ComputeHCost(currentNode, neighbor);
+
+                        if (tentativeGCost < neighbor.gCost) {
+                            neighbor.previous = currentNode;
+                            neighbor.gCost = tentativeGCost;
+                            neighbor.hCost = this.ComputeHCost(neighbor, endNode);
+                            neighbor.ComputeFCost();
+
+                            if (!openList.Contains(neighbor)) {
+                                openList.Add(neighbor);
+                            }
+                        }
+                    }
+                }
             }
         }
 
-        return this.openList;
+        return null;
     }
 
     private List<PathNode> RetrievePath(PathNode end) {
-        //TODO
-        return null;
+        List<PathNode> path = new List<PathNode>();
+
+        // Trace back from end to start.
+        PathNode currentNode = end;
+        path.Add(currentNode);
+        while (currentNode.previous != null) {
+            path.Add(currentNode.previous);
+            currentNode = currentNode.previous;
+        }
+
+        // Reverse the found path in order to return it start to end.
+        path.Reverse();
+
+        return path;
     }
 
     private PathNode GetFastestNode(List<PathNode> nodes) {
@@ -76,5 +107,12 @@ public class Pathfinding {
         }
 
         return result;
+    }
+
+    private int ComputeHCost(PathNode start, PathNode end) {
+        int xDistance = Mathf.Abs(start.x - end.x);
+        int yDistance = Mathf.Abs(start.y - end.y);
+        int remaining = Mathf.Abs(xDistance - yDistance);
+        return STRAIGHT_COST * Mathf.Min(xDistance, yDistance) + DIAGONAL_COST * remaining;
     }
 }
