@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pathfinding {
     private const int STRAIGHT_COST = 10;
     private const int DIAGONAL_COST = 14;
+
     public Field<PathNode> field {
         get;
         private set;
@@ -13,15 +14,28 @@ public class Pathfinding {
     private List<PathNode> openList;
     private List<PathNode> closedList;
 
-    public Pathfinding(int width, int height) {
+    public static Pathfinding instance {
+        get;
+        private set;
+    }
+
+    public Pathfinding(Vector2 position, int width, int height) {
         this.field = new Field<PathNode>(width,
                                          height,
                                          1,
                                          Utils.TILE_RATIO,
-                                         Vector2.zero,
+                                         position,
                                          (Field<PathNode> field, int x, int y) => new PathNode(field, x, y));
-        
+        this.ComputeNeighbors();
+        instance = this;
+    }
 
+    private void ComputeNeighbors() {
+        for (int i = 0; i < this.field.width; i++) {
+            for (int j = 0; j < this.field.height; j++) {
+                this.field.GetElement(i, j).ComputeNeighbors();
+            }
+        }
     }
 
     public List<PathNode> ComputePath(int startX, int startY, int endX, int endY) {
@@ -58,18 +72,22 @@ public class Pathfinding {
                 this.openList.Remove(currentNode);
                 this.closedList.Add(currentNode);
 
-                foreach (PathNode neighbor in currentNode.GetNeighbors()) {
-                    if (!closedList.Contains(neighbor)) {
-                        int tentativeGCost = currentNode.gCost + this.ComputeHCost(currentNode, neighbor);
+                foreach (PathNode neighbor in currentNode.neighbors) {
+                    if (!neighbor.walkable) {
+                        closedList.Add(neighbor);
+                    } else {
+                        if (!closedList.Contains(neighbor)) {
+                            int tentativeGCost = currentNode.gCost + this.ComputeHCost(currentNode, neighbor);
 
-                        if (tentativeGCost < neighbor.gCost) {
-                            neighbor.previous = currentNode;
-                            neighbor.gCost = tentativeGCost;
-                            neighbor.hCost = this.ComputeHCost(neighbor, endNode);
-                            neighbor.ComputeFCost();
+                            if (tentativeGCost < neighbor.gCost) {
+                                neighbor.previous = currentNode;
+                                neighbor.gCost = tentativeGCost;
+                                neighbor.hCost = this.ComputeHCost(neighbor, endNode);
+                                neighbor.ComputeFCost();
 
-                            if (!openList.Contains(neighbor)) {
-                                openList.Add(neighbor);
+                                if (!openList.Contains(neighbor)) {
+                                    openList.Add(neighbor);
+                                }
                             }
                         }
                     }
@@ -78,6 +96,23 @@ public class Pathfinding {
         }
 
         return null;
+    }
+
+    public List<Vector2> ComputePath (Vector2 startPosition, Vector2 endPosition) {
+        Vector2Int startIndex = this.field.PositionToIndex(startPosition);
+        Vector2Int endIndex = this.field.PositionToIndex(endPosition);
+
+        List<PathNode> path = this.ComputePath(startIndex.x, startIndex.y, endIndex.x, endIndex.y);
+
+        List<Vector2> positionPath = new List<Vector2>();
+        if (path != null) {
+            foreach (PathNode node in path) {
+                positionPath.Add(this.field.IndexToPosition(node.x, node.y) + new Vector2(this.field.cellWidth, this.field.cellHeight) * 0.5f);
+            }
+        } else {
+            positionPath = null;
+        }
+        return positionPath;
     }
 
     private List<PathNode> RetrievePath(PathNode end) {
@@ -113,6 +148,6 @@ public class Pathfinding {
         int xDistance = Mathf.Abs(start.x - end.x);
         int yDistance = Mathf.Abs(start.y - end.y);
         int remaining = Mathf.Abs(xDistance - yDistance);
-        return STRAIGHT_COST * Mathf.Min(xDistance, yDistance) + DIAGONAL_COST * remaining;
+        return DIAGONAL_COST * Mathf.Min(xDistance, yDistance) + STRAIGHT_COST * remaining;
     }
 }

@@ -13,6 +13,11 @@ public class PathNode {
         private set;
     }
 
+    public bool walkable {
+        get;
+        private set;
+    }
+
     public PathNode previous {
         get;
         set;
@@ -31,13 +36,24 @@ public class PathNode {
         private set;
     }
 
+    public List<PathNode> neighbors {
+        get;
+        private set;
+    }
+
     public PathNode(Field<PathNode> field, int x, int y) {
         this.field = field;
         this.x = x;
         this.y = y;
+        this.walkable = true;
+
+        //TODO Check if walkable.
+        if (Physics2D.OverlapCircle(this.field.IndexToPosition(x, y), 0f) != null) {
+            this.walkable = false;
+        }
     }
 
-    public List<PathNode> GetNeighbors() {
+    public void ComputeNeighbors() {
         List<PathNode> neighbors = new List<PathNode>();
 
         if (this.x - 1 >= 0) {
@@ -78,7 +94,7 @@ public class PathNode {
             neighbors.Add(this.field.GetElement(this.x, this.y + 1));
         }
 
-        return neighbors;
+        this.neighbors = neighbors;
     }
 
     public void ComputeFCost() {
