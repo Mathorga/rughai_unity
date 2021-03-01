@@ -807,6 +807,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 504058484}
     m_Modifications:
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1454058313}
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 1382221579}
     - target: {fileID: 3619604187650466193, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
         type: 3}
       propertyPath: m_SortingOrder
@@ -8253,51 +8263,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2084913518295997442}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1248011186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1248011188}
-  - component: {fileID: 1248011187}
-  m_Layer: 0
-  m_Name: Pathfinding
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1248011187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248011186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 204ea26c7f80fe64993df2c4efedb606, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 1382221579}
-  target: {fileID: 1454058313}
---- !u!4 &1248011188
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248011186}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.637731, y: 6.070403, z: -33.257664}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1248355770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34591,6 +34556,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 504058484}
     m_Modifications:
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1454058313}
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 1382221579}
     - target: {fileID: 3619604187650466193, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
         type: 3}
       propertyPath: m_SortingOrder
@@ -35127,6 +35102,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 504058484}
     m_Modifications:
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1454058313}
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 1382221579}
     - target: {fileID: 3619604187650466193, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
         type: 3}
       propertyPath: m_SortingOrder
@@ -36460,6 +36445,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 504058484}
     m_Modifications:
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1454058313}
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 1382221579}
     - target: {fileID: 3619604187650466193, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
         type: 3}
       propertyPath: m_SortingOrder
@@ -39696,6 +39691,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 504058484}
     m_Modifications:
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1454058313}
+    - target: {fileID: 392325812457834165, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 1382221579}
     - target: {fileID: 3619604187650466193, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
         type: 3}
       propertyPath: m_SortingOrder

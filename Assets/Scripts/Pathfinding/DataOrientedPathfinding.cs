@@ -4,12 +4,20 @@ using UnityEngine;
 using Unity.Collections;
 using Unity.Mathematics;
 
-public class DOTSPathfinding : MonoBehaviour {
+public class DataOrientedPathfinding : MonoBehaviour {
     private const int STRAIGHT_COST = 10;
     private const int DIAGONAL_COST = 14;
 
+    void Start() {
+        float startTime = Time.realtimeSinceStartup;
+
+        this.ComputePath(new int2(0, 0), new int2(19, 19));
+
+        Debug.Log("Time: " + ((Time.realtimeSinceStartup - startTime) * 1000f));
+    }
+
     private void ComputePath(int2 start, int2 end) {
-        int2 fieldSize = new int2(4, 4);
+        int2 fieldSize = new int2(20, 20);
 
         NativeArray<PathNode> pathNodes = new NativeArray<PathNode>(fieldSize.x * fieldSize.y, Allocator.Temp);
 
@@ -112,6 +120,8 @@ public class DOTSPathfinding : MonoBehaviour {
         openList.Dispose();
         closedList.Dispose();
     }
+
+
 
     private NativeList<int2> RetrievePath(NativeArray<PathNode> pathNodes, PathNode endNode) {
         if (endNode.previous == -1) {

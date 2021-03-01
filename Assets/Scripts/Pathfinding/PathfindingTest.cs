@@ -19,13 +19,15 @@ public class PathfindingTest : MonoBehaviour {
     void Start() {
         this.tileBounds = this.tilemap.localBounds;
         this.pf = new Pathfinding(this.tileBounds.min, Mathf.FloorToInt(this.tileBounds.size.x), Mathf.FloorToInt(this.tileBounds.size.y / Utils.TILE_RATIO));
-        this.path = this.pf.ComputePath(0, 0, 45, 45);
-        this.UpdateVisuals();
+
+        // this.path = this.pf.ComputePath(0, 0, 45, 45);
+        // this.UpdateVisuals();
     }
 
     void FixedUpdate() {
+        Vector2Int startIndex = this.pf.field.PositionToIndex(this.transform.position);
         Vector2Int targetIndex = this.pf.field.PositionToIndex(this.target.position);
-        this.path = this.pf.ComputePath(0, 0, targetIndex.x, targetIndex.y);
+        this.path = this.pf.ComputePath(startIndex.x, startIndex.y, targetIndex.x, targetIndex.y);
         this.UpdateVisuals();
     }
 
