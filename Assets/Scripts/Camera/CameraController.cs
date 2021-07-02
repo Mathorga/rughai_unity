@@ -9,14 +9,14 @@ public class CameraController : MonoBehaviour {
 
     private float zPosition = -10f;
 
-    void Start() {
+    public void Start() {
         // this.transform.position = this.startPosition.value;
 
         // Vector2 startPosition = this.target.position
         this.transform.position = new Vector3(this.target.position.x, this.target.position.y, this.zPosition);
     }
 
-    void FixedUpdate() {
+    public void FixedUpdate() {
         float dir = Utils.AngleBetween(this.transform.position, this.target.position);
         float len = Vector2.Distance(this.transform.position, this.target.position) * this.speed;
 

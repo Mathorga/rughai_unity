@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Unity.Collections;
 using Unity.Mathematics;
 using Unity.Jobs;
@@ -13,12 +11,12 @@ public class DataOrientedPathfinding : MonoBehaviour {
     void FixedUpdate() {
         float startTime = Time.realtimeSinceStartup;
 
-        int jobCount = 20;
+        int jobCount = 5;
         NativeArray<JobHandle> jobHandles = new NativeArray<JobHandle>(jobCount, Allocator.TempJob);
         for (int i = 0; i < jobCount; i++) {
             ComputePathJob computePathJob = new ComputePathJob {
                 start = new int2(0, 0),
-                end = new int2(49, 49)
+                end = new int2(19, 19)
             };
             jobHandles[i] = computePathJob.Schedule();
         }
@@ -30,7 +28,6 @@ public class DataOrientedPathfinding : MonoBehaviour {
 
     [BurstCompile]
     private struct ComputePathJob : IJob {
-
         public int2 start;
         public int2 end;
         public void Execute() {
