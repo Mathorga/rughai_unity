@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -12,19 +13,31 @@ public class PathfindingField : MonoBehaviour {
         private set;
     }
 
+    public Field<DOTSPathNode> field {
+        get;
+        private set;
+    }
+
+    public int2 fieldSize {
+        get;
+        private set;
+    }
+
     void Start() {
         this.tileBounds = this.tilemap.localBounds;
-        // Debug.Log("center " + this.tileBounds.center);
-        // Debug.Log("xMin " + this.tileBounds.min.x);
-        // Debug.Log("xMax " + this.tileBounds.max.x);
-        // Debug.Log("yMin " + this.tileBounds.min.y);
-        // Debug.Log("yMax " + this.tileBounds.max.y);
-        // Debug.Log("xSize " + this.tileBounds.size.x);
-        // Debug.Log("ySize " + this.tileBounds.size.y / Utils.TILE_RATIO);
+        this.fieldSize = new int2(Mathf.FloorToInt(this.tileBounds.size.x), Mathf.FloorToInt(this.tileBounds.size.y / Utils.TILE_RATIO));
+        
+        // Bounds.size returns the size in game units.
+        this.field = new Field<DOTSPathNode>(Mathf.FloorToInt(this.tileBounds.size.x),
+                                             Mathf.FloorToInt(this.tileBounds.size.y / Utils.TILE_RATIO),
+                                             1,
+                                             Utils.TILE_RATIO,
+                                             this.tileBounds.min,
+                                             (Field<DOTSPathNode> field, int x, int y) => new DOTSPathNode());
     }
 
     void OnDrawGizmos() {
-        Gizmos.color = Color.blue;
+        Gizmos.color = Color.gray;
 
         for (int i = 0; i < this.tileBounds.size.x; i++) {
             Gizmos.DrawLine(new Vector2(this.tileBounds.min.x + i, this.tileBounds.min.y),

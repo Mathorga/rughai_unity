@@ -2,6 +2,7 @@
 using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
+using UnityEngine;
 
 // Defines a pathfinding job to be scheduled for a single pathfinding actor.
 [BurstCompile]
@@ -18,10 +19,12 @@ public struct ComputePathJob : IJob {
     // Destination point for the pathfinding algorithm.
     public int2 end;
 
+    public NativeArray<DOTSPathNode> pathNodes;
+
+    public NativeList<int2> result;
+
     // Runs the pathfinding algorithm on the given start and end points.
     public void Execute() {
-        NativeArray<DOTSPathNode> pathNodes = new NativeArray<DOTSPathNode>(this.fieldSize.x * this.fieldSize.y, Allocator.Temp);
-
         for (int i = 0; i < this.fieldSize.x; i++) {
             for (int j = 0; j < this.fieldSize.y; j++) {
                 DOTSPathNode node = new DOTSPathNode();
@@ -36,7 +39,7 @@ public struct ComputePathJob : IJob {
                 node.walkable = true;
                 node.previous = -1;
 
-                pathNodes[node.index] = node;
+                this.pathNodes[node.index] = node;
             }
         }
 
@@ -52,10 +55,10 @@ public struct ComputePathJob : IJob {
 
         int endNodeIndex = this.ComputeIndex(this.end.x, this.end.y, this.fieldSize.x);
 
-        DOTSPathNode startNode = pathNodes[this.ComputeIndex(this.start.x, this.start.y, this.fieldSize.x)];
+        DOTSPathNode startNode = this.pathNodes[this.ComputeIndex(this.start.x, this.start.y, this.fieldSize.x)];
         startNode.gCost = 0;
         startNode.ComputeFCost();
-        pathNodes[startNode.index] = startNode;
+        this.pathNodes[startNode.index] = startNode;
 
         NativeList<int> openList = new NativeList<int>(Allocator.Temp);
         NativeList<int> closedList = new NativeList<int>(Allocator.Temp);
@@ -65,8 +68,8 @@ public struct ComputePathJob : IJob {
         int count = 0;
 
         while (openList.Length > 0) {
-            int currentNodeIndex = this.GetFastestNodeIndex(openList, pathNodes);
-            DOTSPathNode currentNode = pathNodes[currentNodeIndex];
+            int currentNodeIndex = this.GetFastestNodeIndex(openList, this.pathNodes);
+            DOTSPathNode currentNode = this.pathNodes[currentNodeIndex];
 
             count++;
             if (count > 1000) {
@@ -94,7 +97,7 @@ public struct ComputePathJob : IJob {
                         int neighborIndex = this.ComputeIndex(neighborPosition.x, neighborPosition.y, this.fieldSize.x);
 
                         if (!closedList.Contains(neighborIndex)) {
-                            DOTSPathNode neighborNode = pathNodes[neighborIndex];
+                            DOTSPathNode neighborNode = this.pathNodes[neighborIndex];
 
                             if (neighborNode.walkable) {
                                 int2 currentNodePosition = new int2(currentNode.x, currentNode.y);
@@ -103,7 +106,7 @@ public struct ComputePathJob : IJob {
                                     neighborNode.previous = currentNodeIndex;
                                     neighborNode.gCost = tentativeGCost;
                                     neighborNode.ComputeFCost();
-                                    pathNodes[neighborIndex] = neighborNode;
+                                    this.pathNodes[neighborIndex] = neighborNode;
 
                                     if (!openList.Contains(neighborNode.index)) {
                                         openList.Add(neighborNode.index);
@@ -118,32 +121,25 @@ public struct ComputePathJob : IJob {
             }
         }
 
-        DOTSPathNode endNode = pathNodes[endNodeIndex];
-        if (endNode.previous != -1) {
-            NativeList<int2> path = this.RetrievePath(pathNodes, endNode);
-            path.Dispose();
-        }
+        DOTSPathNode endNode = this.pathNodes[endNodeIndex];
+        this.RetrievePath(this.pathNodes, endNode, this.result);
 
-        pathNodes.Dispose();
         neighborOffsets.Dispose();
         openList.Dispose();
         closedList.Dispose();
     }
     
-    private NativeList<int2> RetrievePath(NativeArray<DOTSPathNode> pathNodes, DOTSPathNode endNode) {
-        if (endNode.previous == -1) {
-            return new NativeList<int2>(Allocator.Temp);
-        } else {
-            NativeList<int2> path = new NativeList<int2>(Allocator.Temp);
-            path.Add(new int2(endNode.x, endNode.y));
+    private void RetrievePath(NativeArray<DOTSPathNode> pathNodes, DOTSPathNode endNode, NativeList<int2> result) {
+        if (endNode.previous != -1) {
+            // Start by adding the last node to the empty list.
+            result.Add(new int2(endNode.x, endNode.y));
 
             DOTSPathNode currentNode = endNode;
             while (currentNode.previous != -1) {
                 DOTSPathNode previousNode = pathNodes[currentNode.previous];
-                path.Add(new int2(previousNode.x, previousNode.y));
+                result.Add(new int2(previousNode.x, previousNode.y));
                 currentNode = previousNode;
             }
-            return path;
         }
     }
 
