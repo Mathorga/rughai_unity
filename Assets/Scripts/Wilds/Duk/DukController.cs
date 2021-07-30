@@ -1,9 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DukController : MonoBehaviour {
+    public enum State {Idle, Chase};
+
     public Stats stats;
+    public State state = State.Idle;
     public float moveSpeed {
         get;
         private set;
@@ -15,10 +17,13 @@ public class DukController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private bool active;
+    private Pathfinder pathfinder;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
+        this.pathfinder = this.GetComponent<Pathfinder>();
         this.active = false;
+        // this.state = State.Idle;
     }
 
     void FixedUpdate() {
@@ -29,6 +34,19 @@ public class DukController : MonoBehaviour {
     }
 
     void ComputeForce() {
+        switch (this.state) {
+            case State.Idle:
+                this.Idle();
+                break;
+            case State.Chase:
+                this.Chase();
+                break;
+            default:
+                break;
+        }
+    }
+
+    void Idle() {
         if (!this.active) {
             // Get random length and direction.
             float randomLen = Random.value;
@@ -52,5 +70,19 @@ public class DukController : MonoBehaviour {
         this.active = true;
         yield return new WaitForSeconds(1f);
         this.active = false;
+    }
+
+    void Chase() {
+        if (this.pathfinder != null) {
+            // Compute length and direction based on the next computed pathfinding step.
+            Vector2 position = this.transform.position;
+
+            float dir = Utils.AngleBetween(position, this.pathfinder.nextStep);
+
+            this.moveSpeed = this.stats.walkSpeed;
+
+            // Set move force based on computed move speed.
+            this.moveForce = Utils.PolarToCartesian(dir, this.moveSpeed);
+        }
     }
 }
