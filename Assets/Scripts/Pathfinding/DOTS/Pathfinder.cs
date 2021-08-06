@@ -42,7 +42,7 @@ public class Pathfinder : MonoBehaviour {
 
         float endTime = Time.realtimeSinceStartup;
 
-        Debug.Log("DOTSTime: " + ((endTime - startTime) * 1000f) + "ms");
+        // Debug.Log("DOTSTime: " + ((endTime - startTime) * 1000f) + "ms");
 
         // Schedule and complete the pathfinding job.
         JobHandle handle = computePathJob.Schedule();

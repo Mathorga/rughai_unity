@@ -29,7 +29,7 @@ public class Field<T> {
         private set;
     }
 
-    private T[,] data;
+    public T[,] data;
 
     public Field(int width, int height, float cellWidth, float cellHeight, Vector2 position, Func<Field<T>, int, int, T> constructor) {
         // Set width and height.

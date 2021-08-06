@@ -34,6 +34,14 @@ public class PathfindingField : MonoBehaviour {
                                              Utils.TILE_RATIO,
                                              this.tileBounds.min,
                                              (Field<DOTSPathNode> field, int x, int y) => new DOTSPathNode());
+
+        for (int i = 0; i < this.field.data.GetLength(0); i++) {
+            for (int j = 0; j < this.field.data.GetLength(1); j++) {
+                Collider2D[] hitColliders = Physics2D.OverlapPointAll(this.field.IndexToPosition(i, j));
+
+                this.field.data[i, j].walkable = hitColliders.Length > 0 ? false : true;
+            }
+        }
     }
 
     void OnDrawGizmos() {
@@ -64,5 +72,13 @@ public class PathfindingField : MonoBehaviour {
         // Top border.
         Gizmos.DrawLine(new Vector2(this.tileBounds.max.x, this.tileBounds.min.y),
                         new Vector2(this.tileBounds.min.x, this.tileBounds.min.y));
+
+        for (int i = 0; i < this.field.data.GetLength(0); i++) {
+            for (int j = 0; j < this.field.data.GetLength(1); j++) {
+                Gizmos.color = this.field.data[i, j].walkable ? Color.blue : Color.red;
+
+                Gizmos.DrawCube(new Vector3(this.field.IndexToPosition(i, j).x, this.field.IndexToPosition(i, j).y, 0f), new Vector3(0.5f, 0.5f, 0.5f));
+            }
+        }
     }
 }

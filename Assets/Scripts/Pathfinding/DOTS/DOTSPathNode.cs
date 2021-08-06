@@ -16,4 +16,8 @@ public struct DOTSPathNode {
     public void ComputeFCost() {
         this.fCost = this.gCost + this.hCost;
     }
+
+    public void SetWalkable(bool walkable) {
+        this.walkable = walkable;
+    }
 }
