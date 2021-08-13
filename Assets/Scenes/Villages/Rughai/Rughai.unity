@@ -1214,6 +1214,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 3619604187650466194, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3619604187650466195, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
         type: 3}
       propertyPath: m_Name

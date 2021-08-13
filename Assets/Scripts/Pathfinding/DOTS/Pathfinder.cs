@@ -21,10 +21,31 @@ public class Pathfinder : MonoBehaviour {
         Vector2Int end = this.pfField.field.PositionToIndex(this.target.position);
         Vector2Int start = this.pfField.field.PositionToIndex(this.transform.position);
 
-        // Debug.Log("Start: " + start.ToString() + " End: " + end.ToString());
-
         // Allocate all the nodes in the current field.
         NativeArray<DOTSPathNode> pathNodes = new NativeArray<DOTSPathNode>(fieldSize.x * fieldSize.y, Allocator.TempJob);
+        
+        // Populate nodes data.
+        for (int i = 0; i < fieldSize.x; i++) {
+            for (int j = 0; j < fieldSize.y; j++) {
+                DOTSPathNode node = new DOTSPathNode();
+                node.x = i;
+                node.y = j;
+                node.index = Utils.ComputeIndex(i, j, fieldSize.x);
+
+                node.gCost = int.MaxValue;
+                node.hCost = Utils.ComputeHCost(new int2(i, j), new int2(end.x, end.y));
+                node.ComputeFCost();
+
+                Collider2D[] hitColliders = Physics2D.OverlapPointAll(this.pfField.field.IndexToPosition(i, j));
+
+                node.walkable = hitColliders.Length > 0 ? false : true;
+                // node.walkable = true;
+
+                node.previous = -1;
+
+                pathNodes[node.index] = node;
+            }
+        }
 
         // The resulting path from start to end.
         NativeList<int2> result = new NativeList<int2>(Allocator.TempJob);
@@ -48,8 +69,12 @@ public class Pathfinder : MonoBehaviour {
         JobHandle handle = computePathJob.Schedule();
         handle.Complete();
 
+        for (int i = 0; i < result.Length; i++) {
+            Debug.Log("PATH " + i.ToString() + " " + result[i].ToString());
+        }
+
         if (result.Length > 1) {
-            this.nextStep = this.pfField.field.IndexToPosition(result[result.Length - 2].x, result[result.Length - 2].y);
+            this.nextStep = this.pfField.field.IndexToPosition(result[0].x, result[0].y);
         }
 
         pathNodes.Dispose();

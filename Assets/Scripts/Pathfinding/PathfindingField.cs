@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
+﻿using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -75,9 +73,9 @@ public class PathfindingField : MonoBehaviour {
 
         for (int i = 0; i < this.field.data.GetLength(0); i++) {
             for (int j = 0; j < this.field.data.GetLength(1); j++) {
-                Gizmos.color = this.field.data[i, j].walkable ? Color.blue : Color.red;
+                Gizmos.color = this.field.data[i, j].walkable ? new Color(0f, 0f, 1f, 0.2f) : new Color(1f, 0f, 0f, 0.2f);
 
-                Gizmos.DrawCube(new Vector3(this.field.IndexToPosition(i, j).x, this.field.IndexToPosition(i, j).y, 0f), new Vector3(0.5f, 0.5f, 0.5f));
+                Gizmos.DrawCube(new Vector3(this.field.IndexToPosition(i, j).x, this.field.IndexToPosition(i, j).y, 0f), new Vector3(1f, 0.6875f, 0.5f));
             }
         }
     }
