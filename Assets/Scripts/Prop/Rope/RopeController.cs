@@ -21,7 +21,7 @@ public class RopeController : MonoBehaviour {
             this.anchors.Add(child.gameObject);
         }
 
-        // Loop through anchors, but the last one in order to compute distances and angles.
+        // Loop through anchors but the last one, in order to compute distances and angles.
         for (int i = 0; i < this.anchors.Count - 1; i++) {
             // Remove anchors from children.
             this.anchors[i].transform.parent = null;
@@ -49,7 +49,6 @@ public class RopeController : MonoBehaviour {
             List<GameObject> ropeSegments = new List<GameObject>();
             for (int j = 0; j < amount; j++) {
                 GameObject ropeSegment = Instantiate(this.ropeSegmentType,
-                                                    //  new Vector2(this.anchors[i].transform.position.x + (j + 1) / 2f, this.anchors[i].transform.position.y),
                                                      new Vector2(this.anchors[i].transform.position.x + (j + 1) * xStep, this.anchors[i].transform.position.y + j * yStep),
                                                      Quaternion.identity);
                 ropeSegment.transform.parent = this.transform;
