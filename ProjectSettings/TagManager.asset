@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CameraTarget
   - FallTrigger
+  - Chaser
   layers:
   - Default
   - TransparentFX
