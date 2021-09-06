@@ -4,7 +4,7 @@ using Unity.Jobs;
 using Unity.Collections;
 using System.Collections.Generic;
 
-public class Pathfinder : MonoBehaviour {
+public class ChaserController : MonoBehaviour {
     public PathfindingField pfField;
     public Transform target;
 
@@ -37,11 +37,7 @@ public class Pathfinder : MonoBehaviour {
                 node.hCost = Utils.ComputeHCost(new int2(i, j), new int2(end.x, end.y));
                 node.ComputeFCost();
 
-                // Collider2D hitCollider = Physics2D.OverlapPoint(this.pfField.field.IndexToPosition(i, j));
-
-                // node.walkable = hitCollider != null ? false : true;
                 node.walkable = this.pfField.field.data[i, j].walkable;
-                // node.walkable = true;
 
                 node.previous = -1;
 

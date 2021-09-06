@@ -17,11 +17,11 @@ public class DukController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private bool active;
-    private Pathfinder pathfinder;
+    private ChaserController pathfinder;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
-        this.pathfinder = this.GetComponent<Pathfinder>();
+        this.pathfinder = this.GetComponent<ChaserController>();
         this.active = false;
         // this.state = State.Idle;
     }

@@ -2,7 +2,6 @@
 using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
-using UnityEngine;
 
 // Defines a pathfinding job to be scheduled for a single pathfinding actor.
 [BurstCompile]
@@ -25,7 +24,6 @@ public struct ComputePathJob : IJob {
 
     // Runs the pathfinding algorithm on the given start and end points.
     public void Execute() {
-
         NativeArray<int2> neighborOffsets = new NativeArray<int2>(8, Allocator.Temp);
         neighborOffsets[0] = new int2(-1, 0);
         neighborOffsets[1] = new int2(1, 0);
@@ -55,7 +53,7 @@ public struct ComputePathJob : IJob {
             DOTSPathNode currentNode = this.pathNodes[currentNodeIndex];
 
             count++;
-            if (count > 1000) {
+            if (count > 500) {
                 break;
             }
 
