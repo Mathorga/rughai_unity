@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CloudsManagerController : MonoBehaviour {
+    // Offset for positioning secondary type clouds.
+    private static Vector2 SECONDARY_OFFSET = new Vector2(2, 2 * Utils.TILE_RATIO);
 
     public int cloudsCount;
     public float cloudsSpeed;
@@ -29,13 +31,40 @@ public class CloudsManagerController : MonoBehaviour {
         this.clouds = new List<GameObject>();
 
         for (int i = 0; i < this.cloudsCount; i++) {
-            GameObject cloud = Instantiate(Random.Range(0, 10) > 2 ? this.primaryType : this.secondaryType,
-                                           new Vector2(Random.Range(this.bounds.center.x - this.bounds.extents.x, this.bounds.center.x + this.bounds.extents.x),
-                                                       Random.Range(this.bounds.center.y - this.bounds.extents.y, this.bounds.center.y + this.bounds.extents.y)),
-                                           Quaternion.identity);
-            cloud.transform.parent = this.transform;
-            cloud.GetComponent<CloudController>().speed = Random.Range(this.cloudsSpeed - 0.005f, this.cloudsSpeed + 0.005f);
-            this.clouds.Add(cloud);
+            Vector2 randomPosition = new Vector2(Random.Range(this.bounds.center.x - this.bounds.extents.x, this.bounds.center.x + this.bounds.extents.x),
+                                                 Random.Range(this.bounds.center.y - this.bounds.extents.y, this.bounds.center.y + this.bounds.extents.y));
+
+            // Create primary.
+            GameObject primary = Instantiate(this.primaryType, randomPosition, Quaternion.identity);
+            primary.transform.parent = this.transform;
+
+            // Create secondaries around the primary.
+            for (int j = 0; j < 3; j++) {
+                Vector2 randomOffset =  Vector2.zero;
+
+                int choice = Random.Range(0, 3);
+
+                switch(choice) {
+                    case 0:
+                        randomOffset = new Vector2(SECONDARY_OFFSET.x * Random.Range(-1.0f, 1.0f), -SECONDARY_OFFSET.y);
+                        break;
+                    case 1:
+                        randomOffset = new Vector2(SECONDARY_OFFSET.x * Random.Range(-1.0f, 1.0f), SECONDARY_OFFSET.y);
+                        break;
+                    case 2:
+                        randomOffset = new Vector2(-SECONDARY_OFFSET.x, SECONDARY_OFFSET.y * Random.Range(-1.0f, 1.0f));
+                        break;
+                    case 3:
+                        randomOffset = new Vector2(SECONDARY_OFFSET.x, SECONDARY_OFFSET.y * Random.Range(-1.0f, 1.0f));
+                        break;
+                }
+
+                GameObject secondary = Instantiate(this.secondaryType, randomPosition + randomOffset, Quaternion.identity);
+                secondary.transform.parent = primary.transform;
+            }
+
+            primary.GetComponent<CloudController>().speed = Random.Range(this.cloudsSpeed - 0.005f, this.cloudsSpeed + 0.005f);
+            this.clouds.Add(primary);
         }
     }
 
