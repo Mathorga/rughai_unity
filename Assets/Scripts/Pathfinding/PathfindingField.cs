@@ -28,7 +28,7 @@ public class PathfindingField : MonoBehaviour {
         // Bounds.size returns the size in game units.
         this.field = new Field<DOTSPathNode>(Mathf.FloorToInt(this.tileBounds.size.x),
                                              Mathf.FloorToInt(this.tileBounds.size.y / Utils.TILE_RATIO),
-                                             1,
+                                             1.0f,
                                              Utils.TILE_RATIO,
                                              this.tileBounds.min,
                                              (Field<DOTSPathNode> field, int x, int y) => new DOTSPathNode());

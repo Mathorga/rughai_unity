@@ -2,6 +2,7 @@
 using Unity.Mathematics;
 using Unity.Jobs;
 using Unity.Collections;
+using System.Collections.Generic;
 
 public class Pathfinder : MonoBehaviour {
     public PathfindingField pfField;
@@ -36,9 +37,10 @@ public class Pathfinder : MonoBehaviour {
                 node.hCost = Utils.ComputeHCost(new int2(i, j), new int2(end.x, end.y));
                 node.ComputeFCost();
 
-                Collider2D[] hitColliders = Physics2D.OverlapPointAll(this.pfField.field.IndexToPosition(i, j));
+                // Collider2D hitCollider = Physics2D.OverlapPoint(this.pfField.field.IndexToPosition(i, j));
 
-                node.walkable = hitColliders.Length > 0 ? false : true;
+                // node.walkable = hitCollider != null ? false : true;
+                node.walkable = this.pfField.field.data[i, j].walkable;
                 // node.walkable = true;
 
                 node.previous = -1;
@@ -69,11 +71,11 @@ public class Pathfinder : MonoBehaviour {
         JobHandle handle = computePathJob.Schedule();
         handle.Complete();
 
-        for (int i = 0; i < result.Length - 1; i++) {
-            Debug.DrawLine(this.pfField.field.IndexToPosition(result[i].x, result[i].y),
-                           this.pfField.field.IndexToPosition(result[i + 1].x, result[i + 1].y),
-                           new Color(((float) i) / result.Length, ((float) i) / result.Length, 0.0f));
-        }
+        // for (int i = 0; i < result.Length - 1; i++) {
+        //     Debug.DrawLine(this.pfField.field.IndexToPosition(result[i].x, result[i].y),
+        //                    this.pfField.field.IndexToPosition(result[i + 1].x, result[i + 1].y),
+        //                    new Color(((float) i) / result.Length, ((float) i) / result.Length, 0.0f));
+        // }
 
         if (result.Length > 1) {
             this.nextStep = this.pfField.field.IndexToPosition(result[result.Length - 2].x, result[result.Length - 2].y);

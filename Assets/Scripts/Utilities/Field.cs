@@ -96,7 +96,7 @@ public class Field<T> {
 
     public Vector2Int PositionToIndex(Vector2 position) {
         // Compute cell position relative to field position.
-        Vector2 relativePosition = (position - new Vector2(this.cellWidth * 0.5f, this.cellHeight * 0.5f)) - this.position;
+        Vector2 relativePosition = position - this.position;
 
         return new Vector2Int(Mathf.FloorToInt(relativePosition.x / this.cellWidth), Mathf.FloorToInt(relativePosition.y / this.cellHeight));
     }
