@@ -25,23 +25,6 @@ public struct ComputePathJob : IJob {
 
     // Runs the pathfinding algorithm on the given start and end points.
     public void Execute() {
-        // for (int i = 0; i < this.fieldSize.x; i++) {
-        //     for (int j = 0; j < this.fieldSize.y; j++) {
-        //         DOTSPathNode node = new DOTSPathNode();
-        //         node.x = i;
-        //         node.y = j;
-        //         node.index = this.ComputeIndex(i, j, this.fieldSize.x);
-
-        //         node.gCost = int.MaxValue;
-        //         node.hCost = this.ComputeHCost(new int2(i, j), this.end);
-        //         node.ComputeFCost();
-
-        //         node.walkable = true;
-        //         node.previous = -1;
-
-        //         this.pathNodes[node.index] = node;
-        //     }
-        // }
 
         NativeArray<int2> neighborOffsets = new NativeArray<int2>(8, Allocator.Temp);
         neighborOffsets[0] = new int2(-1, 0);

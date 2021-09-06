@@ -69,12 +69,14 @@ public class Pathfinder : MonoBehaviour {
         JobHandle handle = computePathJob.Schedule();
         handle.Complete();
 
-        for (int i = 0; i < result.Length; i++) {
-            Debug.Log("PATH " + i.ToString() + " " + result[i].ToString());
+        for (int i = 0; i < result.Length - 1; i++) {
+            Debug.DrawLine(this.pfField.field.IndexToPosition(result[i].x, result[i].y),
+                           this.pfField.field.IndexToPosition(result[i + 1].x, result[i + 1].y),
+                           new Color(((float) i) / result.Length, ((float) i) / result.Length, 0.0f));
         }
 
         if (result.Length > 1) {
-            this.nextStep = this.pfField.field.IndexToPosition(result[0].x, result[0].y);
+            this.nextStep = this.pfField.field.IndexToPosition(result[result.Length - 2].x, result[result.Length - 2].y);
         }
 
         pathNodes.Dispose();
