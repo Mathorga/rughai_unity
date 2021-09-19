@@ -29,6 +29,11 @@ public static class Utils {
     public static int ComputeIndex(int x, int y, int width) {
         return x + y * width;
     }
+
+    // Returns the given position offset by width. Useful for parallax scrolling.
+    public static Vector3 offsetPosition(Vector3 target, float offset) {
+        return target * offset;
+    }
     
 
     public static int ComputeHCost(int2 start, int2 end) {

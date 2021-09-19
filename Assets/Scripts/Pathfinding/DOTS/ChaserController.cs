@@ -73,7 +73,7 @@ public class ChaserController : MonoBehaviour {
         //                    new Color(((float) i) / result.Length, ((float) i) / result.Length, 0.0f));
         // }
 
-        if (result.Length > 1) {
+        if (result.Length > 2) {
             this.nextStep = this.pfField.field.IndexToPosition(result[result.Length - 2].x, result[result.Length - 2].y);
         }
 

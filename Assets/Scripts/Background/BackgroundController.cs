@@ -13,7 +13,7 @@ public class Parallax2D : MonoBehaviour {
             // Get child by its name.
             Transform childTransform = this.transform.Find(i.ToString());
 
-            childTransform.position = this.transform.position + (this.target.position * (((-i) * this.speed) + 1));
+            childTransform.position = this.transform.position + Utils.offsetPosition(this.target.position, (((-i) * this.speed) + 1));
         }
     }
 }

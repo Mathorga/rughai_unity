@@ -8522,6 +8522,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 341370460076821804, guid: dc24af1d5e467964c9d3a47913d2f2da,
         type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 341370460076821804, guid: dc24af1d5e467964c9d3a47913d2f2da,
+        type: 3}
       propertyPath: m_Name
       value: CloudsManager
       objectReference: {fileID: 0}
@@ -8580,6 +8586,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8207287712462835953, guid: dc24af1d5e467964c9d3a47913d2f2da,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 517444603}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc24af1d5e467964c9d3a47913d2f2da, type: 3}
 --- !u!1001 &1262837646
