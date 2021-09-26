@@ -30,7 +30,7 @@
             v2f vert(appdata_img v) {
                 v2f o;
                 o.pos = UnityObjectToClipPos (v.vertex);
-                half2 uv = MultiplyUV( UNITY_MATRIX_TEXTURE0, v.texcoord );
+                half2 uv = MultiplyUV(UNITY_MATRIX_TEXTURE0, v.texcoord);
                 o.uv = uv;
                 return o;
             }

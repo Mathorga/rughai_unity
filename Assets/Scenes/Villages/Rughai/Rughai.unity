@@ -4397,9 +4397,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
         type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
+        type: 3}
       propertyPath: m_SortingOrder
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 518176885177068487, guid: f75d966b6404a0641aff29575c40818a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 518176885177068489, guid: f75d966b6404a0641aff29575c40818a,
         type: 3}
       propertyPath: m_Name
@@ -37879,7 +37914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1826411276
 Transform:
   m_ObjectHideFlags: 0
