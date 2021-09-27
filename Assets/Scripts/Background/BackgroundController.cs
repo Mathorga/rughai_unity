@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Parallax2D : MonoBehaviour {
+public class BackgroundController : MonoBehaviour {
     public Transform target;
     public float speed;
 
