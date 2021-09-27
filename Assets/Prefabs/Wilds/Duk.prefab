@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 964938104122445379}
   - component: {fileID: 3619604187650466187}
   - component: {fileID: 8210551803531556191}
+  - component: {fileID: 8551014281716091479}
   m_Layer: 0
   m_Name: Duk
   m_TagString: Untagged
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1989d8ff709c7634a81bffd33c64883a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -187,6 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
+  state: 0
 --- !u!114 &964938104122445379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,3 +229,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   height: 0.55
+--- !u!114 &8551014281716091479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619604187650466195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c174f360db6b64b9d93a7dbd934e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette: {fileID: 2800000, guid: 678ceb8c5b2ba2149a3d966318499070, type: 3}
+  probability: 0.5
