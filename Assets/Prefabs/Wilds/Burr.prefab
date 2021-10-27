@@ -198,5 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c174f360db6b64b9d93a7dbd934e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palette: {fileID: 2800000, guid: 9288b88988b48e84f9b75584a106c60f, type: 3}
-  probability: 0.5
+  palette: {fileID: 2800000, guid: 0fafede846138604abfe81c9116f4177, type: 3}
+  rareProbability: 0.5
+  darkProbability: 0.2

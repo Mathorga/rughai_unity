@@ -45,6 +45,7 @@ Shader "Custom/PaletteSwap" {
             float _AlphaSplitEnabled;
             uniform sampler2D _Palette;
             float4 _Palette_TexelSize;
+            int _PaletteIndex;
 
             v2f vert(appdata_t IN) {
                 v2f OUT;
@@ -86,7 +87,7 @@ Shader "Custom/PaletteSwap" {
                 }
 
                 if (paletteIndex != -1) {
-                    baseColor.rgb = tex2D(_Palette, float2(0.5, paletteIndex / _Palette_TexelSize.w));
+                    baseColor.rgb = tex2D(_Palette, float2((_PaletteIndex + 1) / _Palette_TexelSize.z, paletteIndex / _Palette_TexelSize.w));
                 }
 
                 baseColor.rgb *= baseColor.a;
