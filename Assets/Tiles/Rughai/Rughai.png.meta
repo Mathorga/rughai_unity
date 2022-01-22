@@ -257,6 +257,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -266,8 +268,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -288,9 +290,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1980,6 +1985,85 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Rughai_28: -1594310185572771810
+      Rughai_56: 8861431361408338915
+      Rughai_21: -4667034160855705403
+      Rughai_12: 1586109600082290718
+      Rughai_60: -2925896716933946687
+      Rughai_2: -4462249974446574809
+      Rughai_36: -7815887930795986302
+      Rughai_68: 2303892645428131092
+      Rughai_18: -8368575776656657481
+      Rughai_48: 1754700583686481124
+      Rughai_72: 6796363455643966287
+      Rughai_75: -744553883871482310
+      Rughai_40: -6630047582405046976
+      Rughai_16: -4496455070780164880
+      Rughai_41: 5400905725802393327
+      Rughai_31: 3534508908585708793
+      Rughai_46: -5111402214527790570
+      Rughai_66: 1628535174410256109
+      Rughai_64: -5552387307951199620
+      Rughai_24: 347466147403435177
+      Rughai_33: -38911473216714274
+      Rughai_14: -89644452394265344
+      Rughai_19: 938004541203888444
+      Rughai_13: 7186136645947113421
+      Rughai_50: 6691786312991350728
+      Rughai_27: -5029521873982934314
+      Rughai_54: 9201347948464318969
+      Rughai_63: 5322354934542500366
+      Rughai_42: 8522458845961946151
+      Rughai_67: 4904938084031097945
+      Rughai_77: -6587819327963647591
+      Rughai_15: 73842675059646478
+      Rughai_76: -4603068164391717654
+      Rughai_9: -8944400167998557713
+      Rughai_69: -4653201283952639560
+      Rughai_6: 2506099869922910069
+      Rughai_65: 8100651845133071940
+      Rughai_26: 5563429068073199131
+      Rughai_70: -7222141953686701353
+      Rughai_22: -4806712032275860743
+      Rughai_4: -506305284198319238
+      Rughai_23: -1284550890042030205
+      Rughai_3: 6735248489665791495
+      Rughai_57: 4075230530660913840
+      Rughai_59: 2213335624437036370
+      Rughai_58: -5085843296898190426
+      Rughai_71: 2262105113485530
+      Rughai_32: 5337049836499910978
+      Rughai_49: -8130438469962206483
+      Rughai_1: -4855033809953878709
+      Rughai_30: -8046969345000761701
+      Rughai_52: -8532603881892325003
+      Rughai_34: 2265181110712447550
+      Rughai_35: 1417941408826578956
+      Rughai_8: -7907876304853107516
+      Rughai_73: 3391263293774211607
+      Rughai_10: 1055566161590311490
+      Rughai_25: 6290863231195694665
+      Rughai_45: -2211006635086400076
+      Rughai_17: 1233169348955026700
+      Rughai_62: 1559819455257519410
+      Rughai_7: 7543943411286620977
+      Rughai_43: 3086060335864093405
+      Rughai_74: -3651791347362129842
+      Rughai_44: 1270082996305260764
+      Rughai_11: 1782410644393096435
+      Rughai_29: 4813844475107736026
+      Rughai_61: 659734828173419093
+      Rughai_38: 7752712610895681250
+      Rughai_0: 7599873888236778826
+      Rughai_39: -251900572542684971
+      Rughai_37: 3061484365633609482
+      Rughai_47: -3894551738944275461
+      Rughai_51: 7295434601715447644
+      Rughai_53: 4044693398197974173
+      Rughai_55: -8116681416957938893
+      Rughai_20: -2844486332756289248
+      Rughai_5: 4699228285235323542
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

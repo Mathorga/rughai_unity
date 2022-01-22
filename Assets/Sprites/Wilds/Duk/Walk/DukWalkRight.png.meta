@@ -59,6 +59,8 @@ TextureImporter:
   isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -68,8 +70,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -90,9 +92,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -396,6 +401,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      DukWalkRight_0: 4514429543308450033
+      DukWalkRight_7: 7633055165500313903
+      DukWalkRight_1: -2321809847692056778
+      DukWalkRight_6: 7834229985714984938
+      DukWalkRight_9: -3760385835961845064
+      DukWalkRight_2: 7121675706491504025
+      DukWalkRight_11: 2386031849327531544
+      DukWalkRight_10: 2369008690334151100
+      DukWalkRight_3: -6299110941083445870
+      DukWalkRight_8: -5395958671643859024
+      DukWalkRight_4: -7574293332704371665
+      DukWalkRight_5: -2932836208487458794
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

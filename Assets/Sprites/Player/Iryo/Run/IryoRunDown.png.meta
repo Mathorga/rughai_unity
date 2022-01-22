@@ -95,6 +95,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,8 +106,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -126,9 +128,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -186,7 +191,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: adf1c6e8197e228b0800000000000000
-      internalID: -5178322009176924198
+      internalID: -1866756775119235955
       vertices: []
       indices: 
       edges: []
@@ -207,7 +212,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 22ed064488c1b0cf0800000000000000
-      internalID: -285102779819565534
+      internalID: -1975387468583199894
       vertices: []
       indices: 
       edges: []
@@ -228,7 +233,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cd3676e07bef63760800000000000000
-      internalID: 7437411896823079900
+      internalID: 5819803024686816818
       vertices: []
       indices: 
       edges: []
@@ -249,7 +254,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2b2bcc62c464ac030800000000000000
-      internalID: 3515699751998501554
+      internalID: -5550582405373153424
       vertices: []
       indices: 
       edges: []
@@ -270,7 +275,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f314064d3d590ec80800000000000000
-      internalID: -8295465776582737601
+      internalID: 8497036283293943245
       vertices: []
       indices: 
       edges: []
@@ -291,7 +296,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 687035adcb949bea0800000000000000
-      internalID: -5856568764953065594
+      internalID: -8881826748855256681
       vertices: []
       indices: 
       edges: []
@@ -312,7 +317,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5a158b02999df8f50800000000000000
-      internalID: 6885961606974951845
+      internalID: -5345717859412550349
       vertices: []
       indices: 
       edges: []
@@ -333,7 +338,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 71c4d3e6b8730d2e0800000000000000
-      internalID: -2103119953992528873
+      internalID: -4523759802448385794
       vertices: []
       indices: 
       edges: []
@@ -354,7 +359,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6d43faa32e58554c0800000000000000
-      internalID: -4299383062561606442
+      internalID: 5819538193044416280
       vertices: []
       indices: 
       edges: []
@@ -375,7 +380,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 45fa3a689b21b2e70800000000000000
-      internalID: 9091380860814602068
+      internalID: -7439520656535864032
       vertices: []
       indices: 
       edges: []
@@ -396,7 +401,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 67295201f2c3f6740800000000000000
-      internalID: 5147399071939793526
+      internalID: 1148159105509388118
       vertices: []
       indices: 
       edges: []
@@ -417,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6c2be339441b09cf0800000000000000
-      internalID: -247503071419125050
+      internalID: 2961868344901087675
       vertices: []
       indices: 
       edges: []
@@ -432,6 +437,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      IryoRunDown_8: 5819538193044416280
+      IryoRunDown_10: 1148159105509388118
+      IryoRunDown_3: -5550582405373153424
+      IryoRunDown_7: -4523759802448385794
+      IryoRunDown_4: 8497036283293943245
+      IryoRunDown_1: -1975387468583199894
+      IryoRunDown_11: 2961868344901087675
+      IryoRunDown_5: -8881826748855256681
+      IryoRunDown_0: -1866756775119235955
+      IryoRunDown_6: -5345717859412550349
+      IryoRunDown_2: 5819803024686816818
+      IryoRunDown_9: -7439520656535864032
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

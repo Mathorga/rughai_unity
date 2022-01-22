@@ -59,6 +59,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -68,8 +70,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -90,9 +92,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -396,6 +401,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      BurrIdle0Left_6: -3950157672979964270
+      BurrIdle0Left_4: -6570577937162024383
+      BurrIdle0Left_5: 1387762118977384344
+      BurrIdle0Left_7: -8983503374084393407
+      BurrIdle0Left_10: 1034119584978164162
+      BurrIdle0Left_1: -6820234546226465665
+      BurrIdle0Left_3: -852568674742813823
+      BurrIdle0Left_0: 8699730134448135001
+      BurrIdle0Left_2: -3940947847811107959
+      BurrIdle0Left_9: -4143882110797150111
+      BurrIdle0Left_11: -9072592862124708447
+      BurrIdle0Left_8: 2305922385564845916
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

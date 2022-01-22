@@ -173,6 +173,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -182,8 +184,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -204,9 +206,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1308,6 +1313,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Rokor_26: -569878551884442606
+      Rokor_40: -5194441614867761814
+      Rokor_37: 7553428847008101319
+      Rokor_23: 4174722155331840478
+      Rokor_48: -8649872262693058528
+      Rokor_4: 1889542005597398951
+      Rokor_22: 4128536872203117015
+      Rokor_18: -1485022828695260900
+      Rokor_5: 105533837996299839
+      Rokor_45: -4055643542802962999
+      Rokor_44: 2572117037071448872
+      Rokor_15: 5006098035856853486
+      Rokor_32: -104355129286529366
+      Rokor_47: -5136715162499631933
+      Rokor_35: 5447400794654161590
+      Rokor_9: 5669825100455850753
+      Rokor_14: 1298355796418939983
+      Rokor_27: 7295991933738232447
+      Rokor_41: -3699948395124447187
+      Rokor_8: -3721220402175142797
+      Rokor_34: 8698040027125690506
+      Rokor_1: -513910262257359660
+      Rokor_46: 4763282981168633906
+      Rokor_16: -7530225564881948161
+      Rokor_7: -9190975577665048864
+      Rokor_33: -1877274617754011823
+      Rokor_42: 84564315467168681
+      Rokor_11: 5957177670698934883
+      Rokor_25: -6505175460082718944
+      Rokor_29: -8491410875662205983
+      Rokor_3: -3149946633943489823
+      Rokor_17: -3433834927636224750
+      Rokor_49: -327588850174783075
+      Rokor_13: 5227492091352367910
+      Rokor_2: -3927770607222234048
+      Rokor_10: -4840723194801944868
+      Rokor_24: -284795459925481062
+      Rokor_31: -7389653255668642041
+      Rokor_19: 6704745035182162646
+      Rokor_20: -1923623722262729931
+      Rokor_30: -8556753417286329997
+      Rokor_0: -4961816249749341654
+      Rokor_6: -5690878328080024425
+      Rokor_38: 6408597822625977137
+      Rokor_43: -8459998478090335238
+      Rokor_28: 6582632466997292964
+      Rokor_12: 6512997405095778243
+      Rokor_36: -9089794277586672608
+      Rokor_21: -2577382753740799863
+      Rokor_39: 208284225846882147
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

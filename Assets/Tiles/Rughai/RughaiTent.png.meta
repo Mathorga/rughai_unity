@@ -83,6 +83,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -92,8 +94,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -114,9 +116,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -588,6 +593,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      RughaiTent_19: 3220713385052485501
+      RughaiTent_0: 4977403399971044331
+      RughaiTent_12: 7030917269417327909
+      RughaiTent_7: 7647500039971525954
+      RughaiTent_5: -7901980254819888057
+      RughaiTent_1: 2215895441401736327
+      RughaiTent_3: 6779922322736376979
+      RughaiTent_16: -6336078442447263617
+      RughaiTent_6: 7480285275926046814
+      RughaiTent_10: -2442704542917907719
+      RughaiTent_18: 407439511181691746
+      RughaiTent_15: -8588398499904582471
+      RughaiTent_8: -4367511503810409110
+      RughaiTent_2: 5823334864656063360
+      RughaiTent_14: 9046078504510768966
+      RughaiTent_9: -6516917197489224229
+      RughaiTent_4: 8950614358378992683
+      RughaiTent_11: -5331827465193211934
+      RughaiTent_17: -9056860885248614381
+      RughaiTent_13: -9177089246467062252
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
