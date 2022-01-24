@@ -24,8 +24,7 @@ public class PlayerAnimator : MonoBehaviour {
         this.animator = this.GetComponent<Animator>();
         this.fallController = this.GetComponent<FallController>();
         this.stats = this.GetComponent<PlayerStats>();
-        this.animator.SetFloat("FaceX", this.startFacing.value.x);
-        this.animator.SetFloat("FaceY", this.startFacing.value.y);
+        this.animator.SetBool("Flip", this.startFacing.value.x < 0);
     }
 
     void FixedUpdate() {
@@ -40,22 +39,14 @@ public class PlayerAnimator : MonoBehaviour {
             // Set facing for direction control.
             if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
                 // Use velocity if > 0.
-                this.animator.SetFloat("FaceX", this.rb.velocity.x);
-                this.animator.SetFloat("FaceY", this.rb.velocity.y);
-
-                foreach (Animator childAnimator in this.childAnimators) {
-                    childAnimator.SetFloat("FaceX", this.rb.velocity.x);
-                    childAnimator.SetFloat("FaceY", this.rb.velocity.y);
-                }
+                Vector3 scale = this.transform.localScale;
+                scale.x = this.rb.velocity.x < 0 ? -1 : 1;
+                this.transform.localScale = scale;
             } else if (this.controller.moveSpeed > this.slowWalkThreshold) {
                 // Use moveSpeed otherwise.
-                this.animator.SetFloat("FaceX", this.controller.moveForce.x);
-                this.animator.SetFloat("FaceY", this.controller.moveForce.y);
-
-                foreach (Animator childAnimator in this.childAnimators) {
-                    childAnimator.SetFloat("FaceX", this.controller.moveForce.x);
-                    childAnimator.SetFloat("FaceY", this.controller.moveForce.y);
-                }
+                Vector3 scale = this.transform.localScale;
+                scale.x = this.controller.moveForce.x < 0 ? -1 : 1;
+                this.transform.localScale = scale;
             }
         }
 
