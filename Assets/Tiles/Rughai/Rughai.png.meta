@@ -1,241 +1,7 @@
 fileFormatVersion: 2
-guid: dc1521ac3218e404b817def7d774bb73
+guid: a5c27cf3217d40a40be32cb5ae40790b
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7599873888236778826
-    second: Rughai_0
-  - first:
-      213: -4855033809953878709
-    second: Rughai_1
-  - first:
-      213: -4462249974446574809
-    second: Rughai_2
-  - first:
-      213: 6735248489665791495
-    second: Rughai_3
-  - first:
-      213: -506305284198319238
-    second: Rughai_4
-  - first:
-      213: 4699228285235323542
-    second: Rughai_5
-  - first:
-      213: 2506099869922910069
-    second: Rughai_6
-  - first:
-      213: 7543943411286620977
-    second: Rughai_7
-  - first:
-      213: -7907876304853107516
-    second: Rughai_8
-  - first:
-      213: -8944400167998557713
-    second: Rughai_9
-  - first:
-      213: 1055566161590311490
-    second: Rughai_10
-  - first:
-      213: 1782410644393096435
-    second: Rughai_11
-  - first:
-      213: 1586109600082290718
-    second: Rughai_12
-  - first:
-      213: 7186136645947113421
-    second: Rughai_13
-  - first:
-      213: -89644452394265344
-    second: Rughai_14
-  - first:
-      213: 73842675059646478
-    second: Rughai_15
-  - first:
-      213: -4496455070780164880
-    second: Rughai_16
-  - first:
-      213: 1233169348955026700
-    second: Rughai_17
-  - first:
-      213: -8368575776656657481
-    second: Rughai_18
-  - first:
-      213: 938004541203888444
-    second: Rughai_19
-  - first:
-      213: -2844486332756289248
-    second: Rughai_20
-  - first:
-      213: -4667034160855705403
-    second: Rughai_21
-  - first:
-      213: -4806712032275860743
-    second: Rughai_22
-  - first:
-      213: -1284550890042030205
-    second: Rughai_23
-  - first:
-      213: 347466147403435177
-    second: Rughai_24
-  - first:
-      213: 6290863231195694665
-    second: Rughai_25
-  - first:
-      213: 5563429068073199131
-    second: Rughai_26
-  - first:
-      213: -5029521873982934314
-    second: Rughai_27
-  - first:
-      213: -1594310185572771810
-    second: Rughai_28
-  - first:
-      213: 4813844475107736026
-    second: Rughai_29
-  - first:
-      213: -8046969345000761701
-    second: Rughai_30
-  - first:
-      213: 3534508908585708793
-    second: Rughai_31
-  - first:
-      213: 5337049836499910978
-    second: Rughai_32
-  - first:
-      213: -38911473216714274
-    second: Rughai_33
-  - first:
-      213: 2265181110712447550
-    second: Rughai_34
-  - first:
-      213: 1417941408826578956
-    second: Rughai_35
-  - first:
-      213: -7815887930795986302
-    second: Rughai_36
-  - first:
-      213: 3061484365633609482
-    second: Rughai_37
-  - first:
-      213: 7752712610895681250
-    second: Rughai_38
-  - first:
-      213: -251900572542684971
-    second: Rughai_39
-  - first:
-      213: -6630047582405046976
-    second: Rughai_40
-  - first:
-      213: 5400905725802393327
-    second: Rughai_41
-  - first:
-      213: 8522458845961946151
-    second: Rughai_42
-  - first:
-      213: 3086060335864093405
-    second: Rughai_43
-  - first:
-      213: 1270082996305260764
-    second: Rughai_44
-  - first:
-      213: -2211006635086400076
-    second: Rughai_45
-  - first:
-      213: -5111402214527790570
-    second: Rughai_46
-  - first:
-      213: -3894551738944275461
-    second: Rughai_47
-  - first:
-      213: 1754700583686481124
-    second: Rughai_48
-  - first:
-      213: -8130438469962206483
-    second: Rughai_49
-  - first:
-      213: 6691786312991350728
-    second: Rughai_50
-  - first:
-      213: 7295434601715447644
-    second: Rughai_51
-  - first:
-      213: -8532603881892325003
-    second: Rughai_52
-  - first:
-      213: 4044693398197974173
-    second: Rughai_53
-  - first:
-      213: 9201347948464318969
-    second: Rughai_54
-  - first:
-      213: -8116681416957938893
-    second: Rughai_55
-  - first:
-      213: 8861431361408338915
-    second: Rughai_56
-  - first:
-      213: 4075230530660913840
-    second: Rughai_57
-  - first:
-      213: -5085843296898190426
-    second: Rughai_58
-  - first:
-      213: 2213335624437036370
-    second: Rughai_59
-  - first:
-      213: -2925896716933946687
-    second: Rughai_60
-  - first:
-      213: 659734828173419093
-    second: Rughai_61
-  - first:
-      213: 1559819455257519410
-    second: Rughai_62
-  - first:
-      213: 5322354934542500366
-    second: Rughai_63
-  - first:
-      213: -5552387307951199620
-    second: Rughai_64
-  - first:
-      213: 8100651845133071940
-    second: Rughai_65
-  - first:
-      213: 1628535174410256109
-    second: Rughai_66
-  - first:
-      213: 4904938084031097945
-    second: Rughai_67
-  - first:
-      213: 2303892645428131092
-    second: Rughai_68
-  - first:
-      213: -4653201283952639560
-    second: Rughai_69
-  - first:
-      213: -7222141953686701353
-    second: Rughai_70
-  - first:
-      213: 2262105113485530
-    second: Rughai_71
-  - first:
-      213: 6796363455643966287
-    second: Rughai_72
-  - first:
-      213: 3391263293774211607
-    second: Rughai_73
-  - first:
-      213: -3651791347362129842
-    second: Rughai_74
-  - first:
-      213: -744553883871482310
-    second: Rughai_75
-  - first:
-      213: -4603068164391717654
-    second: Rughai_76
-  - first:
-      213: -6587819327963647591
-    second: Rughai_77
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -281,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -315,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -323,11 +89,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -341,10 +107,10 @@ TextureImporter:
       name: Rughai_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 193
-        width: 32
-        height: 22
+        x: 0
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a45be16190d287960800000000000000
-      internalID: 7599873888236778826
+      spriteID: f253f72da87da074e957071fc9676719
+      internalID: -1233654829
       vertices: []
       indices: 
       edges: []
@@ -362,10 +128,10 @@ TextureImporter:
       name: Rughai_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 193
-        width: 32
-        height: 22
+        x: 8
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4d003119747f9cb0800000000000000
-      internalID: -4855033809953878709
+      spriteID: eef2946683fe77444ac306973c550bed
+      internalID: 1645280393
       vertices: []
       indices: 
       edges: []
@@ -383,10 +149,10 @@ TextureImporter:
       name: Rughai_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 193
-        width: 32
-        height: 22
+        x: 16
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 723bd1e4a47e212c0800000000000000
-      internalID: -4462249974446574809
+      spriteID: d0650622174550c4bb0acdc859c250c2
+      internalID: 166535410
       vertices: []
       indices: 
       edges: []
@@ -404,10 +170,10 @@ TextureImporter:
       name: Rughai_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 193
-        width: 32
-        height: 22
+        x: 24
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706048401d8687d50800000000000000
-      internalID: 6735248489665791495
+      spriteID: 74d9d19b7d5bed6419d1af861c815226
+      internalID: 1154147368
       vertices: []
       indices: 
       edges: []
@@ -425,10 +191,10 @@ TextureImporter:
       name: Rughai_4
       rect:
         serializedVersion: 2
-        x: 137
-        y: 193
-        width: 32
-        height: 22
+        x: 32
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7bb47bc60e39f8f0800000000000000
-      internalID: -506305284198319238
+      spriteID: 538b01f94181fe542811b00d97dbb673
+      internalID: -1718995074
       vertices: []
       indices: 
       edges: []
@@ -446,10 +212,10 @@ TextureImporter:
       name: Rughai_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 193
-        width: 32
-        height: 22
+        x: 40
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6926be35a33073140800000000000000
-      internalID: 4699228285235323542
+      spriteID: 40d5a0fafe1923b46acd74a4cffd3ea2
+      internalID: -2086168935
       vertices: []
       indices: 
       edges: []
@@ -467,10 +233,10 @@ TextureImporter:
       name: Rughai_6
       rect:
         serializedVersion: 2
-        x: 205
-        y: 193
-        width: 32
-        height: 22
+        x: 48
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57f5866cd8477c220800000000000000
-      internalID: 2506099869922910069
+      spriteID: 27d82e355baa9cd4ab54370c0b1d1290
+      internalID: -1000905083
       vertices: []
       indices: 
       edges: []
@@ -488,10 +254,10 @@ TextureImporter:
       name: Rughai_7
       rect:
         serializedVersion: 2
-        x: 239
-        y: 193
-        width: 32
-        height: 22
+        x: 56
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b3363209871b860800000000000000
-      internalID: 7543943411286620977
+      spriteID: 134252fa39274724cb9f1a5b3efcf800
+      internalID: -1947874111
       vertices: []
       indices: 
       edges: []
@@ -509,10 +275,10 @@ TextureImporter:
       name: Rughai_8
       rect:
         serializedVersion: 2
-        x: 273
-        y: 193
-        width: 32
-        height: 22
+        x: 64
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,8 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cc70810664914290800000000000000
-      internalID: -7907876304853107516
+      spriteID: 3c8a55356b247df47b4849e740adab39
+      internalID: -1534355034
       vertices: []
       indices: 
       edges: []
@@ -530,10 +296,10 @@ TextureImporter:
       name: Rughai_9
       rect:
         serializedVersion: 2
-        x: 1
-        y: 169
-        width: 32
-        height: 22
+        x: 72
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,8 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe17089cf6b1fd380800000000000000
-      internalID: -8944400167998557713
+      spriteID: 39833db97b53968438cc228be99f0045
+      internalID: -2018179335
       vertices: []
       indices: 
       edges: []
@@ -551,10 +317,10 @@ TextureImporter:
       name: Rughai_10
       rect:
         serializedVersion: 2
-        x: 35
-        y: 169
-        width: 32
-        height: 22
+        x: 80
+        y: 88
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,8 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24a5382d4df16ae00800000000000000
-      internalID: 1055566161590311490
+      spriteID: 8ecb95c602884fe409dede30e0dd0e4d
+      internalID: 2103413366
       vertices: []
       indices: 
       edges: []
@@ -572,10 +338,10 @@ TextureImporter:
       name: Rughai_11
       rect:
         serializedVersion: 2
-        x: 69
-        y: 169
-        width: 32
-        height: 22
+        x: 0
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,8 +349,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f4fce699056cb810800000000000000
-      internalID: 1782410644393096435
+      spriteID: 782c80e1db72c7c42a418677d2f559e3
+      internalID: 261474737
       vertices: []
       indices: 
       edges: []
@@ -593,10 +359,10 @@ TextureImporter:
       name: Rughai_12
       rect:
         serializedVersion: 2
-        x: 103
-        y: 169
-        width: 32
-        height: 22
+        x: 8
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,8 +370,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e18edb7174ef20610800000000000000
-      internalID: 1586109600082290718
+      spriteID: e7827c3e43949f74a8ac34e30916273a
+      internalID: 598691504
       vertices: []
       indices: 
       edges: []
@@ -614,10 +380,10 @@ TextureImporter:
       name: Rughai_13
       rect:
         serializedVersion: 2
-        x: 137
-        y: 169
-        width: 32
-        height: 22
+        x: 16
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,8 +391,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcf3819a4394ab360800000000000000
-      internalID: 7186136645947113421
+      spriteID: f7bd9580fb852d948a6f19bb9c51bc91
+      internalID: 285857837
       vertices: []
       indices: 
       edges: []
@@ -635,10 +401,10 @@ TextureImporter:
       name: Rughai_14
       rect:
         serializedVersion: 2
-        x: 171
-        y: 169
-        width: 32
-        height: 22
+        x: 24
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,8 +412,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00594f278d481cef0800000000000000
-      internalID: -89644452394265344
+      spriteID: 86c47bad810f88343be0da9ebc5e4bde
+      internalID: 191385100
       vertices: []
       indices: 
       edges: []
@@ -656,10 +422,10 @@ TextureImporter:
       name: Rughai_15
       rect:
         serializedVersion: 2
-        x: 205
-        y: 169
-        width: 32
-        height: 22
+        x: 32
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,8 +433,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e00e1309587560100800000000000000
-      internalID: 73842675059646478
+      spriteID: e37e50e15c53568458dbe9475d1e5d2b
+      internalID: -818497201
       vertices: []
       indices: 
       edges: []
@@ -677,10 +443,10 @@ TextureImporter:
       name: Rughai_16
       rect:
         serializedVersion: 2
-        x: 239
-        y: 169
-        width: 32
-        height: 22
+        x: 40
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,8 +454,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4f4a5bfe16991c0800000000000000
-      internalID: -4496455070780164880
+      spriteID: d741f18aa56135b468ae1bf52bab1833
+      internalID: 924678943
       vertices: []
       indices: 
       edges: []
@@ -698,10 +464,10 @@ TextureImporter:
       name: Rughai_17
       rect:
         serializedVersion: 2
-        x: 273
-        y: 169
-        width: 32
-        height: 22
+        x: 48
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,8 +475,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c053d504df81d1110800000000000000
-      internalID: 1233169348955026700
+      spriteID: 1d9aefa51cc9d724b9d9b94e33801f42
+      internalID: -1513397512
       vertices: []
       indices: 
       edges: []
@@ -719,10 +485,10 @@ TextureImporter:
       name: Rughai_18
       rect:
         serializedVersion: 2
-        x: 1
-        y: 145
-        width: 32
-        height: 22
+        x: 56
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,8 +496,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b3f0747ba8dcdb80800000000000000
-      internalID: -8368575776656657481
+      spriteID: 86ff8c50bab3d9e4280a397ead938b75
+      internalID: 512027803
       vertices: []
       indices: 
       edges: []
@@ -740,10 +506,10 @@ TextureImporter:
       name: Rughai_19
       rect:
         serializedVersion: 2
-        x: 35
-        y: 145
-        width: 32
-        height: 22
+        x: 64
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,8 +517,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3939241926740d00800000000000000
-      internalID: 938004541203888444
+      spriteID: 9c25e94dbecb30a49a0918dee61e8d4e
+      internalID: -1815126195
       vertices: []
       indices: 
       edges: []
@@ -761,10 +527,10 @@ TextureImporter:
       name: Rughai_20
       rect:
         serializedVersion: 2
-        x: 69
-        y: 145
-        width: 32
-        height: 22
+        x: 80
+        y: 80
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,8 +538,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0299b9740ca5688d0800000000000000
-      internalID: -2844486332756289248
+      spriteID: 544e764a3fa79154bb12786a90eda87b
+      internalID: 1561552052
       vertices: []
       indices: 
       edges: []
@@ -782,10 +548,10 @@ TextureImporter:
       name: Rughai_21
       rect:
         serializedVersion: 2
-        x: 103
-        y: 145
-        width: 32
-        height: 22
+        x: 0
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,8 +559,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c8159f582d5b3fb0800000000000000
-      internalID: -4667034160855705403
+      spriteID: 525f1372fee88b64fb1dbddfb9bd5244
+      internalID: 984423150
       vertices: []
       indices: 
       edges: []
@@ -803,10 +569,10 @@ TextureImporter:
       name: Rughai_22
       rect:
         serializedVersion: 2
-        x: 137
-        y: 145
-        width: 32
-        height: 22
+        x: 8
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,8 +580,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f2f99aafd02b4db0800000000000000
-      internalID: -4806712032275860743
+      spriteID: d06737aa096deb846aec66d66dc70162
+      internalID: -1151275215
       vertices: []
       indices: 
       edges: []
@@ -824,10 +590,10 @@ TextureImporter:
       name: Rughai_23
       rect:
         serializedVersion: 2
-        x: 171
-        y: 145
-        width: 32
-        height: 22
+        x: 16
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,8 +601,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 387022775cb5c2ee0800000000000000
-      internalID: -1284550890042030205
+      spriteID: 8da3a8be3678b1f4d95799b941749500
+      internalID: 1900303822
       vertices: []
       indices: 
       edges: []
@@ -845,10 +611,10 @@ TextureImporter:
       name: Rughai_24
       rect:
         serializedVersion: 2
-        x: 205
-        y: 145
-        width: 32
-        height: 22
+        x: 24
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,8 +622,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac847fbe9272d400800000000000000
-      internalID: 347466147403435177
+      spriteID: c7d25b2d687e22845892f5676703a1c0
+      internalID: -63515923
       vertices: []
       indices: 
       edges: []
@@ -866,10 +632,10 @@ TextureImporter:
       name: Rughai_25
       rect:
         serializedVersion: 2
-        x: 239
-        y: 145
-        width: 32
-        height: 22
+        x: 32
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -877,8 +643,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9464cf147c2ad4750800000000000000
-      internalID: 6290863231195694665
+      spriteID: 8d9c406f10bf2574d80f897ecce3653d
+      internalID: -857548732
       vertices: []
       indices: 
       edges: []
@@ -887,10 +653,10 @@ TextureImporter:
       name: Rughai_26
       rect:
         serializedVersion: 2
-        x: 273
-        y: 145
-        width: 32
-        height: 22
+        x: 40
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,8 +664,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b16e597d245453d40800000000000000
-      internalID: 5563429068073199131
+      spriteID: 494bda6660dea5042aba7acb9ba5904d
+      internalID: -1123905951
       vertices: []
       indices: 
       edges: []
@@ -908,10 +674,10 @@ TextureImporter:
       name: Rughai_27
       rect:
         serializedVersion: 2
-        x: 1
-        y: 121
-        width: 32
-        height: 22
+        x: 48
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -919,8 +685,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d2b03fc08c833ab0800000000000000
-      internalID: -5029521873982934314
+      spriteID: ff5a7b8e37ab27b4888e4998704258a9
+      internalID: -646925073
       vertices: []
       indices: 
       edges: []
@@ -929,10 +695,10 @@ TextureImporter:
       name: Rughai_28
       rect:
         serializedVersion: 2
-        x: 35
-        y: 121
-        width: 32
-        height: 22
+        x: 56
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,8 +706,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e18d52f455fdfd9e0800000000000000
-      internalID: -1594310185572771810
+      spriteID: 1a19c464a67a13348b1468015dbec3cd
+      internalID: -617591406
       vertices: []
       indices: 
       edges: []
@@ -950,10 +716,10 @@ TextureImporter:
       name: Rughai_29
       rect:
         serializedVersion: 2
-        x: 69
-        y: 121
-        width: 32
-        height: 22
+        x: 64
+        y: 72
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,8 +727,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad9f5c69b063ec240800000000000000
-      internalID: 4813844475107736026
+      spriteID: 6f784ad44c761bb4d9a634993e8944e7
+      internalID: 759189312
       vertices: []
       indices: 
       edges: []
@@ -971,10 +737,10 @@ TextureImporter:
       name: Rughai_30
       rect:
         serializedVersion: 2
-        x: 103
-        y: 121
-        width: 32
-        height: 22
+        x: 0
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,8 +748,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9695c0f30c635090800000000000000
-      internalID: -8046969345000761701
+      spriteID: 99eac92d4fea8864d90f81deaad6ca8e
+      internalID: 373663690
       vertices: []
       indices: 
       edges: []
@@ -992,10 +758,10 @@ TextureImporter:
       name: Rughai_31
       rect:
         serializedVersion: 2
-        x: 137
-        y: 121
-        width: 32
-        height: 22
+        x: 8
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,8 +769,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fc64bf20291d0130800000000000000
-      internalID: 3534508908585708793
+      spriteID: b762914b892ebfa4b965dd270d2b7e44
+      internalID: 970644912
       vertices: []
       indices: 
       edges: []
@@ -1013,10 +779,10 @@ TextureImporter:
       name: Rughai_32
       rect:
         serializedVersion: 2
-        x: 171
-        y: 121
-        width: 32
-        height: 22
+        x: 16
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,8 +790,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2414225ac82011a40800000000000000
-      internalID: 5337049836499910978
+      spriteID: 6ce9ce7a5c495e3469b9c8a96a938392
+      internalID: 1441921955
       vertices: []
       indices: 
       edges: []
@@ -1034,10 +800,10 @@ TextureImporter:
       name: Rughai_33
       rect:
         serializedVersion: 2
-        x: 205
-        y: 121
-        width: 32
-        height: 22
+        x: 24
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1045,8 +811,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed90b35a832c57ff0800000000000000
-      internalID: -38911473216714274
+      spriteID: 0e23dc53984b651408fa383953ce721e
+      internalID: 1091416932
       vertices: []
       indices: 
       edges: []
@@ -1055,10 +821,10 @@ TextureImporter:
       name: Rughai_34
       rect:
         serializedVersion: 2
-        x: 239
-        y: 121
-        width: 32
-        height: 22
+        x: 32
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,8 +832,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e32b0fff73a8f6f10800000000000000
-      internalID: 2265181110712447550
+      spriteID: 1032b831330805948ad8af62d5e3f7e9
+      internalID: -1471724821
       vertices: []
       indices: 
       edges: []
@@ -1076,10 +842,10 @@ TextureImporter:
       name: Rughai_35
       rect:
         serializedVersion: 2
-        x: 273
-        y: 121
-        width: 32
-        height: 22
+        x: 40
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1087,8 +853,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c08dc61e23a8da310800000000000000
-      internalID: 1417941408826578956
+      spriteID: c915f5ca18a91dd4296c183af1ab020a
+      internalID: 2056021312
       vertices: []
       indices: 
       edges: []
@@ -1097,10 +863,10 @@ TextureImporter:
       name: Rughai_36
       rect:
         serializedVersion: 2
-        x: 1
-        y: 97
-        width: 32
-        height: 22
+        x: 48
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,8 +874,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28274a85653688390800000000000000
-      internalID: -7815887930795986302
+      spriteID: 9c82bd28f0985d54da88f3072b5a9565
+      internalID: 1434948193
       vertices: []
       indices: 
       edges: []
@@ -1118,10 +884,10 @@ TextureImporter:
       name: Rughai_37
       rect:
         serializedVersion: 2
-        x: 35
-        y: 97
-        width: 32
-        height: 22
+        x: 56
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,8 +895,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0fd0036fc39c7a20800000000000000
-      internalID: 3061484365633609482
+      spriteID: 42774634a3b9476408d85078fba29b82
+      internalID: 747441441
       vertices: []
       indices: 
       edges: []
@@ -1139,10 +905,10 @@ TextureImporter:
       name: Rughai_38
       rect:
         serializedVersion: 2
-        x: 69
-        y: 97
-        width: 32
-        height: 22
+        x: 64
+        y: 64
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1150,8 +916,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e6d0224b0b279b60800000000000000
-      internalID: 7752712610895681250
+      spriteID: a406978dea604f04fa46c3bc2f2520d1
+      internalID: 1708218565
       vertices: []
       indices: 
       edges: []
@@ -1160,10 +926,10 @@ TextureImporter:
       name: Rughai_39
       rect:
         serializedVersion: 2
-        x: 103
-        y: 97
-        width: 32
-        height: 22
+        x: 0
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,8 +937,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d030ee83c1118cf0800000000000000
-      internalID: -251900572542684971
+      spriteID: 878642c36ee73244c960b2b24771af14
+      internalID: -1026104506
       vertices: []
       indices: 
       edges: []
@@ -1181,10 +947,10 @@ TextureImporter:
       name: Rughai_40
       rect:
         serializedVersion: 2
-        x: 137
-        y: 97
-        width: 32
-        height: 22
+        x: 8
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,8 +958,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d4fcee9d65df3a0800000000000000
-      internalID: -6630047582405046976
+      spriteID: dad78f21282234c4fa19820e95e4527d
+      internalID: 1999718073
       vertices: []
       indices: 
       edges: []
@@ -1202,10 +968,10 @@ TextureImporter:
       name: Rughai_41
       rect:
         serializedVersion: 2
-        x: 171
-        y: 97
-        width: 32
-        height: 22
+        x: 16
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,8 +979,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee23d3742fd3fa40800000000000000
-      internalID: 5400905725802393327
+      spriteID: dd4e1a05e49929248b1b9fcc3ce4a931
+      internalID: 2020318804
       vertices: []
       indices: 
       edges: []
@@ -1223,10 +989,10 @@ TextureImporter:
       name: Rughai_42
       rect:
         serializedVersion: 2
-        x: 205
-        y: 97
-        width: 32
-        height: 22
+        x: 24
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,8 +1000,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 724827e9a2bd54670800000000000000
-      internalID: 8522458845961946151
+      spriteID: 78a9b8584d21f614d94dbc9d978734cd
+      internalID: 949534655
       vertices: []
       indices: 
       edges: []
@@ -1244,10 +1010,10 @@ TextureImporter:
       name: Rughai_43
       rect:
         serializedVersion: 2
-        x: 239
-        y: 97
-        width: 32
-        height: 22
+        x: 32
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1255,8 +1021,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda1a9a5683e3da20800000000000000
-      internalID: 3086060335864093405
+      spriteID: 8878affb0b23adb498b49aec6b521c1b
+      internalID: 978722827
       vertices: []
       indices: 
       edges: []
@@ -1265,10 +1031,10 @@ TextureImporter:
       name: Rughai_44
       rect:
         serializedVersion: 2
-        x: 273
-        y: 97
-        width: 32
-        height: 22
+        x: 40
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,8 +1042,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd0f90681cd30a110800000000000000
-      internalID: 1270082996305260764
+      spriteID: ba66662b37e0a044a8433353266cd3c4
+      internalID: -1479994484
       vertices: []
       indices: 
       edges: []
@@ -1286,10 +1052,10 @@ TextureImporter:
       name: Rughai_45
       rect:
         serializedVersion: 2
-        x: 1
-        y: 73
-        width: 32
-        height: 22
+        x: 48
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,8 +1063,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5b4a70e2de051e0800000000000000
-      internalID: -2211006635086400076
+      spriteID: 6d014a500a940fc4c9a0c9b39974c605
+      internalID: 1665202475
       vertices: []
       indices: 
       edges: []
@@ -1307,10 +1073,10 @@ TextureImporter:
       name: Rughai_46
       rect:
         serializedVersion: 2
-        x: 35
-        y: 73
-        width: 32
-        height: 22
+        x: 56
+        y: 56
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1318,8 +1084,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6121dea64c6a019b0800000000000000
-      internalID: -5111402214527790570
+      spriteID: 99c339b0377888c4c9d7a28e53adb070
+      internalID: 364573327
       vertices: []
       indices: 
       edges: []
@@ -1328,10 +1094,10 @@ TextureImporter:
       name: Rughai_47
       rect:
         serializedVersion: 2
-        x: 69
-        y: 73
-        width: 32
-        height: 22
+        x: 0
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1339,8 +1105,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfbb8d0e3d5c3f9c0800000000000000
-      internalID: -3894551738944275461
+      spriteID: 323d2d2d19c90f148be8df0b0cf5b15b
+      internalID: 1206793198
       vertices: []
       indices: 
       edges: []
@@ -1349,10 +1115,10 @@ TextureImporter:
       name: Rughai_48
       rect:
         serializedVersion: 2
-        x: 103
-        y: 73
-        width: 32
-        height: 22
+        x: 8
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1360,8 +1126,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e4adc152e2f95810800000000000000
-      internalID: 1754700583686481124
+      spriteID: cfb0d50b0a636464c80dc2fc6a489483
+      internalID: 887332502
       vertices: []
       indices: 
       edges: []
@@ -1370,10 +1136,10 @@ TextureImporter:
       name: Rughai_49
       rect:
         serializedVersion: 2
-        x: 137
-        y: 73
-        width: 32
-        height: 22
+        x: 16
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1381,8 +1147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de27bb9d941ea2f80800000000000000
-      internalID: -8130438469962206483
+      spriteID: 5d475005031692741a8493c3ee227fc0
+      internalID: -1652622414
       vertices: []
       indices: 
       edges: []
@@ -1391,10 +1157,10 @@ TextureImporter:
       name: Rughai_50
       rect:
         serializedVersion: 2
-        x: 171
-        y: 73
-        width: 32
-        height: 22
+        x: 24
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,8 +1168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cf9ba272300edc50800000000000000
-      internalID: 6691786312991350728
+      spriteID: 81dad76bf4c6e4b4b89d7c0d8fab94ba
+      internalID: -817121800
       vertices: []
       indices: 
       edges: []
@@ -1412,10 +1178,10 @@ TextureImporter:
       name: Rughai_51
       rect:
         serializedVersion: 2
-        x: 205
-        y: 73
-        width: 32
-        height: 22
+        x: 32
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1423,8 +1189,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c57b75d0e179e3560800000000000000
-      internalID: 7295434601715447644
+      spriteID: 48ba60f11ecb60745a03821209204b92
+      internalID: 501320564
       vertices: []
       indices: 
       edges: []
@@ -1433,10 +1199,10 @@ TextureImporter:
       name: Rughai_52
       rect:
         serializedVersion: 2
-        x: 239
-        y: 73
-        width: 32
-        height: 22
+        x: 40
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1444,8 +1210,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57950b22af9169980800000000000000
-      internalID: -8532603881892325003
+      spriteID: 553df1225845ad140a6bc22478a6f666
+      internalID: 1617878291
       vertices: []
       indices: 
       edges: []
@@ -1454,10 +1220,10 @@ TextureImporter:
       name: Rughai_53
       rect:
         serializedVersion: 2
-        x: 273
-        y: 73
-        width: 32
-        height: 22
+        x: 48
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1465,8 +1231,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9435f84733a12830800000000000000
-      internalID: 4044693398197974173
+      spriteID: ce2a3d8b51bb6254a822d752beab6659
+      internalID: -1440293320
       vertices: []
       indices: 
       edges: []
@@ -1475,10 +1241,10 @@ TextureImporter:
       name: Rughai_54
       rect:
         serializedVersion: 2
-        x: 1
-        y: 49
-        width: 32
-        height: 22
+        x: 56
+        y: 48
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1486,8 +1252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f92cf25531c1bf70800000000000000
-      internalID: 9201347948464318969
+      spriteID: 5f17bd8c516efa44eaf5dcf0ff01f162
+      internalID: 1258250509
       vertices: []
       indices: 
       edges: []
@@ -1496,10 +1262,10 @@ TextureImporter:
       name: Rughai_55
       rect:
         serializedVersion: 2
-        x: 35
-        y: 49
-        width: 32
-        height: 22
+        x: 0
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1507,8 +1273,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 333353b5141cb5f80800000000000000
-      internalID: -8116681416957938893
+      spriteID: 77c4724a08d88674e910666207688814
+      internalID: 989842861
       vertices: []
       indices: 
       edges: []
@@ -1517,10 +1283,10 @@ TextureImporter:
       name: Rughai_56
       rect:
         serializedVersion: 2
-        x: 69
-        y: 49
-        width: 32
-        height: 22
+        x: 8
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1528,8 +1294,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3eb00429fd02afa70800000000000000
-      internalID: 8861431361408338915
+      spriteID: 98d70c1f6d4747143bc30c0f98f6275f
+      internalID: 1897571181
       vertices: []
       indices: 
       edges: []
@@ -1538,10 +1304,10 @@ TextureImporter:
       name: Rughai_57
       rect:
         serializedVersion: 2
-        x: 103
-        y: 49
-        width: 32
-        height: 22
+        x: 16
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1549,8 +1315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b2dedd73902e8830800000000000000
-      internalID: 4075230530660913840
+      spriteID: 1437378fd5be44044bb1bd92cebcc87b
+      internalID: 1932332664
       vertices: []
       indices: 
       edges: []
@@ -1559,10 +1325,10 @@ TextureImporter:
       name: Rughai_58
       rect:
         serializedVersion: 2
-        x: 137
-        y: 49
-        width: 32
-        height: 22
+        x: 24
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1570,8 +1336,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a3f419a7747b69b0800000000000000
-      internalID: -5085843296898190426
+      spriteID: 58e41e0282b5cdd4a99a399dcf3ac597
+      internalID: -705116801
       vertices: []
       indices: 
       edges: []
@@ -1580,10 +1346,10 @@ TextureImporter:
       name: Rughai_59
       rect:
         serializedVersion: 2
-        x: 171
-        y: 49
-        width: 32
-        height: 22
+        x: 32
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1591,8 +1357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 255794f060957be10800000000000000
-      internalID: 2213335624437036370
+      spriteID: 8266ea9c60c9aa141a64983244bbd4f3
+      internalID: -531205649
       vertices: []
       indices: 
       edges: []
@@ -1601,10 +1367,10 @@ TextureImporter:
       name: Rughai_60
       rect:
         serializedVersion: 2
-        x: 205
-        y: 49
-        width: 32
-        height: 22
+        x: 40
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1612,8 +1378,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c2aba120702567d0800000000000000
-      internalID: -2925896716933946687
+      spriteID: 0bacba29ab00d4746a74d0d282f777ae
+      internalID: 1735214396
       vertices: []
       indices: 
       edges: []
@@ -1622,10 +1388,10 @@ TextureImporter:
       name: Rughai_61
       rect:
         serializedVersion: 2
-        x: 239
-        y: 49
-        width: 32
-        height: 22
+        x: 48
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1633,8 +1399,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 552ea3fa459d72900800000000000000
-      internalID: 659734828173419093
+      spriteID: 74a5b000bb537204ca3044e7a94ba0cc
+      internalID: 1521110918
       vertices: []
       indices: 
       edges: []
@@ -1643,10 +1409,10 @@ TextureImporter:
       name: Rughai_62
       rect:
         serializedVersion: 2
-        x: 273
-        y: 49
-        width: 32
-        height: 22
+        x: 56
+        y: 40
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1654,8 +1420,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2352e50c78795a510800000000000000
-      internalID: 1559819455257519410
+      spriteID: bef38ebaba86ff540947b6a61a0f19cd
+      internalID: -1261444683
       vertices: []
       indices: 
       edges: []
@@ -1664,10 +1430,10 @@ TextureImporter:
       name: Rughai_63
       rect:
         serializedVersion: 2
-        x: 1
-        y: 25
-        width: 32
-        height: 22
+        x: 0
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1675,8 +1441,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0204f92d9dccd940800000000000000
-      internalID: 5322354934542500366
+      spriteID: fd7aa33991c62aa4184a9a7d3417cdad
+      internalID: 1268166180
       vertices: []
       indices: 
       edges: []
@@ -1685,10 +1451,10 @@ TextureImporter:
       name: Rughai_64
       rect:
         serializedVersion: 2
-        x: 35
-        y: 25
-        width: 32
-        height: 22
+        x: 8
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1696,8 +1462,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7a6e264925f1f2b0800000000000000
-      internalID: -5552387307951199620
+      spriteID: 8a7f3b137ca655e468915dce4fb14e4f
+      internalID: -866567627
       vertices: []
       indices: 
       edges: []
@@ -1706,10 +1472,10 @@ TextureImporter:
       name: Rughai_65
       rect:
         serializedVersion: 2
-        x: 69
-        y: 25
-        width: 32
-        height: 22
+        x: 16
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1717,8 +1483,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 446f44e1feb4b6070800000000000000
-      internalID: 8100651845133071940
+      spriteID: d4ac3cc06d4f2ba45ada026b10050d3a
+      internalID: 1516741791
       vertices: []
       indices: 
       edges: []
@@ -1727,10 +1493,10 @@ TextureImporter:
       name: Rughai_66
       rect:
         serializedVersion: 2
-        x: 103
-        y: 25
-        width: 32
-        height: 22
+        x: 24
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1738,8 +1504,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deeb3fedc18b99610800000000000000
-      internalID: 1628535174410256109
+      spriteID: dcff7fa9a7497824fa908f4800cf1b6b
+      internalID: -924396936
       vertices: []
       indices: 
       edges: []
@@ -1748,10 +1514,10 @@ TextureImporter:
       name: Rughai_67
       rect:
         serializedVersion: 2
-        x: 137
-        y: 25
-        width: 32
-        height: 22
+        x: 32
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1759,8 +1525,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95c65ff2337d11440800000000000000
-      internalID: 4904938084031097945
+      spriteID: 2122b36ed81c8624dbfa1b5c2da8afb2
+      internalID: -105959524
       vertices: []
       indices: 
       edges: []
@@ -1769,10 +1535,10 @@ TextureImporter:
       name: Rughai_68
       rect:
         serializedVersion: 2
-        x: 171
-        y: 25
-        width: 32
-        height: 22
+        x: 40
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1780,8 +1546,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 415f06b872219ff10800000000000000
-      internalID: 2303892645428131092
+      spriteID: 8275ff113ef131548851769613a8c2af
+      internalID: 660640522
       vertices: []
       indices: 
       edges: []
@@ -1790,10 +1556,10 @@ TextureImporter:
       name: Rughai_69
       rect:
         serializedVersion: 2
-        x: 205
-        y: 25
-        width: 32
-        height: 22
+        x: 0
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1801,8 +1567,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b18c9106128c6fb0800000000000000
-      internalID: -4653201283952639560
+      spriteID: 3242c8da4787e7046a7fff7001921023
+      internalID: 1672413549
       vertices: []
       indices: 
       edges: []
@@ -1811,10 +1577,10 @@ TextureImporter:
       name: Rughai_70
       rect:
         serializedVersion: 2
-        x: 239
-        y: 25
-        width: 32
-        height: 22
+        x: 8
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1822,8 +1588,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dafe0d582cc5cb90800000000000000
-      internalID: -7222141953686701353
+      spriteID: 72fc9eb0853068d4e8931adb29aaac5d
+      internalID: 202464295
       vertices: []
       indices: 
       edges: []
@@ -1832,10 +1598,10 @@ TextureImporter:
       name: Rughai_71
       rect:
         serializedVersion: 2
-        x: 273
-        y: 25
-        width: 32
-        height: 22
+        x: 16
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1843,8 +1609,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad0ebb36f59080000800000000000000
-      internalID: 2262105113485530
+      spriteID: 374d2e19885adde45b1271d78c630560
+      internalID: 63450598
       vertices: []
       indices: 
       edges: []
@@ -1853,10 +1619,10 @@ TextureImporter:
       name: Rughai_72
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 32
-        height: 22
+        x: 24
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1864,8 +1630,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4bda12ed88815e50800000000000000
-      internalID: 6796363455643966287
+      spriteID: 84508f4cdf591b941b5f62b884097763
+      internalID: 1154998696
       vertices: []
       indices: 
       edges: []
@@ -1874,10 +1640,10 @@ TextureImporter:
       name: Rughai_73
       rect:
         serializedVersion: 2
-        x: 35
-        y: 1
-        width: 32
-        height: 22
+        x: 32
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1885,8 +1651,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71aab3d7fff201f20800000000000000
-      internalID: 3391263293774211607
+      spriteID: 6ae62364db1b6a9499e71c37a53d7be2
+      internalID: 1795723148
       vertices: []
       indices: 
       edges: []
@@ -1895,10 +1661,10 @@ TextureImporter:
       name: Rughai_74
       rect:
         serializedVersion: 2
-        x: 69
-        y: 1
-        width: 32
-        height: 22
+        x: 40
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1906,8 +1672,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4892aa1e1b325dc0800000000000000
-      internalID: -3651791347362129842
+      spriteID: 57d4f4eb2ef33e840b31047881b542e1
+      internalID: 946163203
       vertices: []
       indices: 
       edges: []
@@ -1916,10 +1682,10 @@ TextureImporter:
       name: Rughai_75
       rect:
         serializedVersion: 2
-        x: 103
-        y: 1
-        width: 32
-        height: 22
+        x: 0
+        y: 16
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1927,8 +1693,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3ee3bbff20daa5f0800000000000000
-      internalID: -744553883871482310
+      spriteID: 8992b818a4edf954fab8808f06984595
+      internalID: 2115905601
       vertices: []
       indices: 
       edges: []
@@ -1937,10 +1703,10 @@ TextureImporter:
       name: Rughai_76
       rect:
         serializedVersion: 2
-        x: 239
-        y: 1
-        width: 32
-        height: 22
+        x: 8
+        y: 16
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1948,8 +1714,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae4b58084ed9e10c0800000000000000
-      internalID: -4603068164391717654
+      spriteID: 741c8afb361c98b42806624ec364dd3d
+      internalID: 1972522222
       vertices: []
       indices: 
       edges: []
@@ -1958,10 +1724,10 @@ TextureImporter:
       name: Rughai_77
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1
-        width: 32
-        height: 22
+        x: 16
+        y: 16
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1969,8 +1735,239 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9913648993d5394a0800000000000000
-      internalID: -6587819327963647591
+      spriteID: 45cb497e60ae7424991a4055f88e001c
+      internalID: 395224552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_78
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45061bc74a2cc064ea97b8184e10d58f
+      internalID: 322263186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_79
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1432ca0a4ff8dc48a8b302df6a7f249
+      internalID: 968403338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_80
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e5e2c9656ba9648b2d3ce1f02a27ca
+      internalID: -1751668061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b656571aff26044ae0f9b45df00f01
+      internalID: -1014897201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_82
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df4b1b5abdf53645860cff211fc80df
+      internalID: 1421352879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_83
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab79c4da3323e3449d660f77ae11d3c
+      internalID: 1477833507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_84
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b5857705c33b8499c5117b6333a5db
+      internalID: 859120327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0237b9dcae54fb3479867aaea0eb5d17
+      internalID: -902617893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_86
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93462becb9f0ba145921ecf9ce77043b
+      internalID: -1680426053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_87
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701148bd1fe09314c8197f4eb3af1685
+      internalID: -743009555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rughai_88
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1a72e18a935c8418861179a9cf09d4
+      internalID: -1042898662
       vertices: []
       indices: 
       edges: []
@@ -1986,84 +1983,95 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rughai_28: -1594310185572771810
-      Rughai_56: 8861431361408338915
-      Rughai_21: -4667034160855705403
-      Rughai_12: 1586109600082290718
-      Rughai_60: -2925896716933946687
-      Rughai_2: -4462249974446574809
-      Rughai_36: -7815887930795986302
-      Rughai_68: 2303892645428131092
-      Rughai_18: -8368575776656657481
-      Rughai_48: 1754700583686481124
-      Rughai_72: 6796363455643966287
-      Rughai_75: -744553883871482310
-      Rughai_40: -6630047582405046976
-      Rughai_16: -4496455070780164880
-      Rughai_41: 5400905725802393327
-      Rughai_31: 3534508908585708793
-      Rughai_46: -5111402214527790570
-      Rughai_66: 1628535174410256109
-      Rughai_64: -5552387307951199620
-      Rughai_24: 347466147403435177
-      Rughai_33: -38911473216714274
-      Rughai_14: -89644452394265344
-      Rughai_19: 938004541203888444
-      Rughai_13: 7186136645947113421
-      Rughai_50: 6691786312991350728
-      Rughai_27: -5029521873982934314
-      Rughai_54: 9201347948464318969
-      Rughai_63: 5322354934542500366
-      Rughai_42: 8522458845961946151
-      Rughai_67: 4904938084031097945
-      Rughai_77: -6587819327963647591
-      Rughai_15: 73842675059646478
-      Rughai_76: -4603068164391717654
-      Rughai_9: -8944400167998557713
-      Rughai_69: -4653201283952639560
-      Rughai_6: 2506099869922910069
-      Rughai_65: 8100651845133071940
-      Rughai_26: 5563429068073199131
-      Rughai_70: -7222141953686701353
-      Rughai_22: -4806712032275860743
-      Rughai_4: -506305284198319238
-      Rughai_23: -1284550890042030205
-      Rughai_3: 6735248489665791495
-      Rughai_57: 4075230530660913840
-      Rughai_59: 2213335624437036370
-      Rughai_58: -5085843296898190426
-      Rughai_71: 2262105113485530
-      Rughai_32: 5337049836499910978
-      Rughai_49: -8130438469962206483
-      Rughai_1: -4855033809953878709
-      Rughai_30: -8046969345000761701
-      Rughai_52: -8532603881892325003
-      Rughai_34: 2265181110712447550
-      Rughai_35: 1417941408826578956
-      Rughai_8: -7907876304853107516
-      Rughai_73: 3391263293774211607
-      Rughai_10: 1055566161590311490
-      Rughai_25: 6290863231195694665
-      Rughai_45: -2211006635086400076
-      Rughai_17: 1233169348955026700
-      Rughai_62: 1559819455257519410
-      Rughai_7: 7543943411286620977
-      Rughai_43: 3086060335864093405
-      Rughai_74: -3651791347362129842
-      Rughai_44: 1270082996305260764
-      Rughai_11: 1782410644393096435
-      Rughai_29: 4813844475107736026
-      Rughai_61: 659734828173419093
-      Rughai_38: 7752712610895681250
-      Rughai_0: 7599873888236778826
-      Rughai_39: -251900572542684971
-      Rughai_37: 3061484365633609482
-      Rughai_47: -3894551738944275461
-      Rughai_51: 7295434601715447644
-      Rughai_53: 4044693398197974173
-      Rughai_55: -8116681416957938893
-      Rughai_20: -2844486332756289248
-      Rughai_5: 4699228285235323542
+      Rughai_12: 598691504
+      Rughai_68: 660640522
+      Rughai_36: 1434948193
+      Rughai_18: 512027803
+      Rughai_48: 887332502
+      Rughai_46: 364573327
+      Rughai_24: -63515923
+      Rughai_81: -1014897201
+      Rughai_14: 191385100
+      Rughai_19: -1815126195
+      Rughai_13: 285857837
+      Rughai_27: -646925073
+      Rughai_54: 1258250509
+      Rughai_42: 949534655
+      Rughai_67: -105959524
+      Rughai_77: 395224552
+      Rughai_76: 1972522222
+      Rughai_85: -902617893
+      Rughai_26: -1123905951
+      Rughai_23: 1900303822
+      Rughai_59: -531205649
+      Rughai_71: 63450598
+      Rughai_32: 1441921955
+      Rughai_49: -1652622414
+      Rughai_34: -1471724821
+      Rughai_52: 1617878291
+      Rughai_8: -1534355034
+      Rughai_73: 1795723148
+      Rughai_10: 2103413366
+      Rughai_45: 1665202475
+      Rughai_17: -1513397512
+      Rughai_62: -1261444683
+      Rughai_43: 978722827
+      Rughai_74: 946163203
+      Rughai_44: -1479994484
+      Rughai_11: 261474737
+      Rughai_29: 759189312
+      Rughai_38: 1708218565
+      Rughai_37: 747441441
+      Rughai_20: 1561552052
+      Rughai_5: -2086168935
+      Rughai_28: -617591406
+      Rughai_56: 1897571181
+      Rughai_88: -1042898662
+      Rughai_21: 984423150
+      Rughai_75: 2115905601
+      Rughai_60: 1735214396
+      Rughai_2: 166535410
+      Rughai_72: 1154998696
+      Rughai_40: 1999718073
+      Rughai_16: 924678943
+      Rughai_41: 2020318804
+      Rughai_31: 970644912
+      Rughai_86: -1680426053
+      Rughai_66: -924396936
+      Rughai_64: -866567627
+      Rughai_33: 1091416932
+      Rughai_50: -817121800
+      Rughai_87: -743009555
+      Rughai_84: 859120327
+      Rughai_63: 1268166180
+      Rughai_82: 1421352879
+      Rughai_15: -818497201
+      Rughai_9: -2018179335
+      Rughai_69: 1672413549
+      Rughai_6: -1000905083
+      Rughai_65: 1516741791
+      Rughai_70: 202464295
+      Rughai_22: -1151275215
+      Rughai_4: -1718995074
+      Rughai_58: -705116801
+      Rughai_3: 1154147368
+      Rughai_57: 1932332664
+      Rughai_80: -1751668061
+      Rughai_1: 1645280393
+      Rughai_30: 373663690
+      Rughai_35: 2056021312
+      Rughai_25: -857548732
+      Rughai_78: 322263186
+      Rughai_79: 968403338
+      Rughai_7: -1947874111
+      Rughai_61: 1521110918
+      Rughai_83: 1477833507
+      Rughai_0: -1233654829
+      Rughai_39: -1026104506
+      Rughai_47: 1206793198
+      Rughai_53: -1440293320
+      Rughai_51: 501320564
+      Rughai_55: 989842861
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

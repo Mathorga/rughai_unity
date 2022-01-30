@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Rughai_50
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 6691786312991350728, guid: dc1521ac3218e404b817def7d774bb73,
-    type: 3}
+  m_Sprite: {fileID: -817121800, guid: a5c27cf3217d40a40be32cb5ae40790b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
