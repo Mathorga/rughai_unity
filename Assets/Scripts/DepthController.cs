@@ -27,16 +27,16 @@ public class DepthController : MonoBehaviour {
     }
 
     private void SetDepth() {
-        int depth = (int) (this.transform.position.y * -22);
+        // int depth = (int) (this.transform.position.y * -8);
 
-        if (this.drawer != null) {
-            this.drawer.sortingOrder = depth + this.offset;
-        }
-        if (this.mask != null) {
-            // mask.sortingOrder = (int) (this.transform.position.y * -22);
-            this.mask.isCustomRangeActive = true;
-            this.mask.backSortingOrder = (depth + this.offset) - 1000;
-            this.mask.frontSortingOrder = depth + this.offset;
-        }
+        // if (this.drawer != null) {
+        //     this.drawer.sortingOrder = depth + this.offset;
+        // }
+        // if (this.mask != null) {
+        //     // mask.sortingOrder = (int) (this.transform.position.y * -22);
+        //     this.mask.isCustomRangeActive = true;
+        //     this.mask.backSortingOrder = (depth + this.offset) - 1000;
+        //     this.mask.frontSortingOrder = depth + this.offset;
+        // }
     }
 }
