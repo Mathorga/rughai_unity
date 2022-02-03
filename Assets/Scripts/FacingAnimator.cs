@@ -19,8 +19,9 @@ public class FacingAnimator : MonoBehaviour {
 
         // Set animator facing if current velocity exceeds the threshold.
         if (this.rb.velocity.magnitude > this.threshold * maxVelocity) {
-            this.animator.SetFloat("FaceX", this.rb.velocity.x);
-            this.animator.SetFloat("FaceY", this.rb.velocity.y);
+            Vector3 scale = this.transform.localScale;
+            scale.x = this.rb.velocity.x < 0 ? -1 : 1;
+            this.transform.localScale = scale;
         }
     }
 }
