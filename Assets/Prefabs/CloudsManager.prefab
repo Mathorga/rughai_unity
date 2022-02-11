@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,8 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudsCount: 12
-  cloudsSpeed: 0.01
+  cloudsSpeed: 0.1
   primaryType: {fileID: 1365337181117633167, guid: 334ed3ec9affb5b45b90f107d5c44b56,
     type: 3}
   secondaryType: {fileID: 7627284202276766601, guid: 0f2f2f298b4ec15478f493ff054e5289,
     type: 3}
+  target: {fileID: 0}

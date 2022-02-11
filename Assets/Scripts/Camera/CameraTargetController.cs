@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraTargetController : MonoBehaviour {
-    public float extension;
+    public int extension;
     public Transform anchor;
     public CameraInput input;
     public Vector2 offset;

@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1500,7 +1500,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RughaiGround_27: 345756964
+      RughaiGround_41: 2086832156
       RughaiGround_38: 1027062420
       RughaiGround_34: 982667858
       RughaiGround_14: -829833562
@@ -1562,10 +1562,10 @@ TextureImporter:
       RughaiGround_63: -516415713
       RughaiGround_4: -1830188320
       RughaiGround_25: 20015602
-      RughaiGround_28: 654123120
-      RughaiGround_41: 2086832156
+      RughaiGround_27: 345756964
       RughaiGround_1: -1981766137
       RughaiGround_21: -1184508669
+      RughaiGround_28: 654123120
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

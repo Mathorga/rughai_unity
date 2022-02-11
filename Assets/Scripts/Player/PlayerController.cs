@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private float walkThreshold = 0.1f;
-    private float runThreshold  = 0.6f;
+    private float runThreshold  = 0.8f;
     private Rigidbody2D rb;
     private PlayerInput input;
     private PlayerStats stats;

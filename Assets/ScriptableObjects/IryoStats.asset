@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IryoStats
   m_EditorClassIdentifier: 
   health: 25
-  speed: 19
-  walkSpeed: 9
+  speed: 140
+  walkSpeed: 80
