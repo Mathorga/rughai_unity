@@ -8,8 +8,8 @@ public class CloudController : MonoBehaviour {
         set;
     }
 
-    void Update() {
+    void FixedUpdate() {
         this.transform.position += new Vector3(this.speed, 0.0f, 0.0f);
-        this.transform.position += new Vector3(0.0f, Mathf.Sin(this.transform.position.x) * 0.001f, 0.0f);
+        this.transform.position += new Vector3(0.0f, Mathf.Sin(this.transform.position.x * 0.5f) * 0.1f, 0.0f);
     }
 }

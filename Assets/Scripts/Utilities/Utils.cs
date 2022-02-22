@@ -2,7 +2,7 @@ using Unity.Mathematics;
 using UnityEngine;
 
 public static class Utils {
-    public static float TILE_RATIO = 0.6875f;
+    public static float TILE_RATIO = 1.0f;
     private const int STRAIGHT_COST = 10;
     private const int DIAGONAL_COST = 14;
 

@@ -44130,7 +44130,7 @@ PrefabInstance:
     - target: {fileID: 5215978658914033473, guid: ae35c92c81f403b4d90cb7cc46a7f645,
         type: 3}
       propertyPath: offset.y
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5215978658914033473, guid: ae35c92c81f403b4d90cb7cc46a7f645,
         type: 3}
