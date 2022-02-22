@@ -71,26 +71,26 @@ public class CloudsManagerController : MonoBehaviour {
     }
 
     // Update is called once per frame
-    // void FixedUpdate() {
-    //     this.transform.position = Utils.offsetPosition(this.target.position, 0.15f);
+    void FixedUpdate() {
+        // this.transform.position = Utils.offsetPosition(this.target.position, 0.15f);
 
-    //     // Move clouds to the beginning if they go off bounds.
-    //     foreach (GameObject cloud in this.clouds) {
-    //         if (cloud.transform.position.x > this.bounds.center.x + this.bounds.extents.x) {
-    //             cloud.transform.position = new Vector2(this.bounds.center.x - this.bounds.extents.x,
-    //                                                    Random.Range(this.bounds.center.y - this.bounds.extents.y, this.bounds.center.y + this.bounds.extents.y));
-    //         } else if (cloud.transform.position.x < this.bounds.center.x - this.bounds.extents.x) {
-    //             cloud.transform.position = new Vector2(this.bounds.center.x + this.bounds.extents.x,
-    //                                                    Random.Range(this.bounds.center.y - this.bounds.extents.y, this.bounds.center.y + this.bounds.extents.y));
-    //         }
+        // Move clouds to the beginning if they go off bounds.
+        foreach (GameObject cloud in this.clouds) {
+            if (cloud.transform.position.x > this.bounds.center.x + this.bounds.extents.x) {
+                cloud.transform.position = new Vector2(this.bounds.center.x - this.bounds.extents.x,
+                                                       Random.Range(this.bounds.center.y - this.bounds.extents.y, this.bounds.center.y + this.bounds.extents.y));
+            } else if (cloud.transform.position.x < this.bounds.center.x - this.bounds.extents.x) {
+                cloud.transform.position = new Vector2(this.bounds.center.x + this.bounds.extents.x,
+                                                       Random.Range(this.bounds.center.y - this.bounds.extents.y, this.bounds.center.y + this.bounds.extents.y));
+            }
 
-    //         if (cloud.transform.position.y > this.bounds.center.y + this.bounds.extents.y) {
-    //             cloud.transform.position = new Vector2(Random.Range(this.bounds.center.x - this.bounds.extents.x, this.bounds.center.x + this.bounds.extents.x),
-    //                                                    this.bounds.center.y - this.bounds.extents.y);
-    //         } else if (cloud.transform.position.y < this.bounds.center.y - this.bounds.extents.y) {
-    //             cloud.transform.position = new Vector2(Random.Range(this.bounds.center.x - this.bounds.extents.x, this.bounds.center.x + this.bounds.extents.x),
-    //                                                    this.bounds.center.y + this.bounds.extents.y);
-    //         }
-    //     }
-    // }
+            if (cloud.transform.position.y > this.bounds.center.y + this.bounds.extents.y) {
+                cloud.transform.position = new Vector2(Random.Range(this.bounds.center.x - this.bounds.extents.x, this.bounds.center.x + this.bounds.extents.x),
+                                                       this.bounds.center.y - this.bounds.extents.y);
+            } else if (cloud.transform.position.y < this.bounds.center.y - this.bounds.extents.y) {
+                cloud.transform.position = new Vector2(Random.Range(this.bounds.center.x - this.bounds.extents.x, this.bounds.center.x + this.bounds.extents.x),
+                                                       this.bounds.center.y + this.bounds.extents.y);
+            }
+        }
+    }
 }
