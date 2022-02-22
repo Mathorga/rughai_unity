@@ -6350,6 +6350,18 @@ PrefabInstance:
       propertyPath: cloudsSpeed
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8207287712462835953, guid: dc24af1d5e467964c9d3a47913d2f2da,
+        type: 3}
+      propertyPath: primaryType
+      value: 
+      objectReference: {fileID: 8431145536168155066, guid: fc789460ba7e1f84e8289991b33baa24,
+        type: 3}
+    - target: {fileID: 8207287712462835953, guid: dc24af1d5e467964c9d3a47913d2f2da,
+        type: 3}
+      propertyPath: secondaryType
+      value: 
+      objectReference: {fileID: 1365337181117633167, guid: 334ed3ec9affb5b45b90f107d5c44b56,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc24af1d5e467964c9d3a47913d2f2da, type: 3}
 --- !u!1001 &1280961407
