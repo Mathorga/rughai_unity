@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d09ebda14edc2e46a9683e28ea5cdd6
+guid: 4585844a8ff2ca140bac73942e51915a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DukWalk_0
+      name: CommonerWalk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfcc699b809aed74b840aff36a8e7340
-      internalID: -1825694123
+      spriteID: 363f73b049fd9c0408ad90df8d124365
+      internalID: -1916915501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DukWalk_1
+      name: CommonerWalk_1
       rect:
         serializedVersion: 2
         x: 8
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0af4401885f210b40a03a0977f6da46d
-      internalID: 622871983
+      spriteID: c47351cbf69bca449a6964cb99578401
+      internalID: -1571493441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DukWalk_2
+      name: CommonerWalk_2
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79773d2689ed03c48a2893ed3af5a6a6
-      internalID: 1231040528
+      spriteID: 364aa0acb2fe0b2478193db0ceab02ab
+      internalID: -617302381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DukWalk_3
+      name: CommonerWalk_3
       rect:
         serializedVersion: 2
         x: 24
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e14d68d9ae156e4e862235ae1d0f9b3
-      internalID: 271669552
+      spriteID: 202bce12b63207d4b893509fc9d37bed
+      internalID: 1267735458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DukWalk_4
+      name: CommonerWalk_4
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9fe613ad9b202840af06f195a68f079
-      internalID: 1557951675
+      spriteID: dce8c57e22511784284a50ea71342a37
+      internalID: -1939566466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DukWalk_5
+      name: CommonerWalk_5
       rect:
         serializedVersion: 2
         x: 40
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +223,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ac3887acf6cd2d4c951fbb7c4358f20
-      internalID: -1295802330
+      spriteID: 13915586bcbed8647bbce990b6f668e9
+      internalID: 1632927134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonerWalk_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 8
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d540a84fe56aa64facc3bad5b237421
+      internalID: -491863204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonerWalk_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 8
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832a59ae40f45d24f98ed09883597489
+      internalID: -118210385
       vertices: []
       indices: 
       edges: []
@@ -240,12 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DukWalk_4: 1557951675
-      DukWalk_2: 1231040528
-      DukWalk_5: -1295802330
-      DukWalk_0: -1825694123
-      DukWalk_3: 271669552
-      DukWalk_1: 622871983
+      CommonerWalk_1: -1571493441
+      CommonerWalk_3: 1267735458
+      CommonerWalk_0: -1916915501
+      CommonerWalk_5: 1632927134
+      CommonerWalk_7: -118210385
+      CommonerWalk_4: -1939566466
+      CommonerWalk_6: -491863204
+      CommonerWalk_2: -617302381
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

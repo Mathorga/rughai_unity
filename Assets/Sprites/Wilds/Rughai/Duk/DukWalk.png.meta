@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ae55e2a8a5b98947866bdd25b88350c
+guid: 90f45a2021925ca498c24106dba7c12c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e674f04c6f4a7e44985504fac6e5e5d6
-      internalID: 2037233849
+      spriteID: 30ba15be3156b3b40a749e4f282df428
+      internalID: -1323072458
       vertices: []
       indices: 
       edges: []
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a30ad188e604fc64c9e9f31c6fe8d32c
-      internalID: -2142545082
+      spriteID: bf0bf8a46c178784980ac479cc17412d
+      internalID: -1063560848
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4967fa6ddb893294eb75c08d2efe414c
-      internalID: -1636270979
+      spriteID: bf14cff2c58a8cd448bead348dac29e4
+      internalID: 459730559
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6c40ddee6fac914e989a63113b657e9
-      internalID: -715500208
+      spriteID: b2068a3145e03af4a8510b1e8e8f206a
+      internalID: 476718169
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7a1147b460e78748981727889c961fd
-      internalID: 146912200
+      spriteID: 906c4fb65eddbbe43a10627c9d3cf85b
+      internalID: 50196110
       vertices: []
       indices: 
       edges: []
@@ -223,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb05eb5dd14e04c459453f174b7bfe92
-      internalID: -839745322
+      spriteID: 9c43bb8b43a053845825b3a1baeadb1f
+      internalID: 64959299
       vertices: []
       indices: 
       edges: []
@@ -240,12 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DukWalk_4: 146912200
-      DukWalk_2: -1636270979
-      DukWalk_5: -839745322
-      DukWalk_0: 2037233849
-      DukWalk_3: -715500208
-      DukWalk_1: -2142545082
+      DukWalk_4: 50196110
+      DukWalk_2: 459730559
+      DukWalk_5: 64959299
+      DukWalk_0: -1323072458
+      DukWalk_3: 476718169
+      DukWalk_1: -1063560848
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
