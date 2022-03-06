@@ -30,7 +30,17 @@ public class PlayerAnimator : MonoBehaviour {
     void FixedUpdate() {
         this.Animate();
     }
-    
+
+    void PlayAnimation(string animationName) {
+        if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName)) {
+            this.animator.Play(animationName);
+
+            foreach (Animator childAnimator in this.childAnimators) {
+                childAnimator.Play(animationName);
+            }
+        }
+    }
+
     void Animate() {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.data.speed / this.rb.drag;
@@ -61,13 +71,7 @@ public class PlayerAnimator : MonoBehaviour {
                 childAnimator.speed = 1f;
             }
 
-            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Attack0")) {
-                this.animator.Play("Attack0");
-
-                foreach (Animator childAnimator in this.childAnimators) {
-                    childAnimator.Play("Attack0");
-                }
-            }
+            this.PlayAnimation("Atk0");
 
             // Reset state after animation ends.
             if (animationTime >= 1f) {
@@ -81,11 +85,8 @@ public class PlayerAnimator : MonoBehaviour {
                 foreach (Animator childAnimator in this.childAnimators) {
                     childAnimator.speed = 0.5f;
                 }
-                this.animator.Play("Fall");
 
-                foreach (Animator childAnimator in this.childAnimators) {
-                    childAnimator.Play("Fall");
-                }
+                this.PlayAnimation("Fall");
 
                 // Reset state after animation ends.
                 if (animationTime >= 1f) {
@@ -104,13 +105,7 @@ public class PlayerAnimator : MonoBehaviour {
 
                     // Current velocity is below slow walk, so stand.
                     // Current move speed is also checked in order to be able to walk against walls.
-                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) {
-                        this.animator.Play("Idle");
-
-                        foreach (Animator childAnimator in this.childAnimators) {
-                            childAnimator.Play("Idle");
-                        }
-                    }
+                    this.PlayAnimation(this.controller.state == PlayerController.State.Idle ? "Idle" : "AtkIdle");
                 } else {
                     if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
                         // In order to achieve slow walk, the standard walk animation is played at slower speed.
@@ -121,13 +116,7 @@ public class PlayerAnimator : MonoBehaviour {
                         }
 
                         // Current velocity is above slow walk and below walk, so slow walk.
-                        if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
-                            this.animator.Play("Walk", 0, animationProgress);
-
-                            foreach (Animator childAnimator in this.childAnimators) {
-                                childAnimator.Play("Walk", 0, animationProgress);
-                            }
-                        }
+                        this.PlayAnimation("Walk");
                     } else {
                         // Set standard speed for standard walk and run animations.
                         this.animator.speed = 1f;
@@ -138,22 +127,10 @@ public class PlayerAnimator : MonoBehaviour {
 
                         if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity) {
                             // Current velocity is above walk and below run (or walk is triggered), so walk.
-                            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
-                                this.animator.Play("Walk", 0, animationProgress);
-
-                                foreach (Animator childAnimator in this.childAnimators) {
-                                    childAnimator.Play("Walk", 0, animationProgress);
-                                }
-                            }
+                            this.PlayAnimation("Walk");
                         } else {
                             // Current velocity is above run, so run.
-                            if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Run")) {
-                                this.animator.Play("Run", 0, animationProgress);
-
-                                foreach (Animator childAnimator in this.childAnimators) {
-                                    childAnimator.Play("Run", 0, animationProgress);
-                                }
-                            }
+                            this.PlayAnimation("Run");
                         }
                     }
                 }

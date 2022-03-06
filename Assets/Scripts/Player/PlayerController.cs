@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour {
         Run,
         Fall,
         Attack0,
-        Attack1
+        Attack1,
+        AttackIdle
     }
 
     public Vector2Value startPosition;
@@ -27,6 +28,9 @@ public class PlayerController : MonoBehaviour {
         get;
         private set;
     }
+
+    // Used to trigger attack idle state.
+    private bool justAttacked = false;
 
     private float walkThreshold = 0.1f;
     private float runThreshold  = 0.8f;
@@ -77,14 +81,17 @@ public class PlayerController : MonoBehaviour {
                 this.state != State.Attack1) {
                 if (this.input.attack) {
                     this.state = State.Attack0;
+                    this.justAttacked = true;
                 } else {
                     if (this.input.moveLen <= this.walkThreshold) {
-                        this.state = State.Idle;
+                        this.state = this.justAttacked ? State.AttackIdle : State.Idle;
+                        // this.state = State.Idle;
                     } else {
-                        if (this.input.moveLen < this.runThreshold ||
-                            this.input.walk) {
+                        if (this.input.moveLen < this.runThreshold || this.input.walk) {
+                            this.justAttacked = false;
                             this.state = State.Walk;
                         } else {
+                            this.justAttacked = false;
                             this.state = State.Run;
                         }
                     }
