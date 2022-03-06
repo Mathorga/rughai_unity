@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f68f50395852b6b4bb8815bc95ba1246
+guid: 4bc8a1a084d5e6e498b3fcbe322a8aed
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IryoAtk0_0
+      name: IryoAtk1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e0de242f89b0b34eba52152ff4e20b9
-      internalID: -1004315999
+      spriteID: 15d319f85e2d2db4f9602d8eb5c14e4a
+      internalID: -1687337728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_1
+      name: IryoAtk1_1
       rect:
         serializedVersion: 2
         x: 24
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f10e8747fe5ce394ea1522ab57ac4a4c
-      internalID: 465645455
+      spriteID: 537ab7717b3c04a4dae37109084c3500
+      internalID: 1198513159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_2
+      name: IryoAtk1_2
       rect:
         serializedVersion: 2
         x: 48
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67243aea722507b45a47f61a6045ee5e
-      internalID: 861676454
+      spriteID: 83e796b55125f154a83756bc5bdfd1c4
+      internalID: -22559694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_3
+      name: IryoAtk1_3
       rect:
         serializedVersion: 2
         x: 72
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51db6a9e65cbb17429a648b5f33f20c2
-      internalID: -884616246
+      spriteID: f79c33ba7d5be7b448380200e5fbb9ab
+      internalID: 1497756494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_4
+      name: IryoAtk1_4
       rect:
         serializedVersion: 2
         x: 96
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 003853cd975903e4c8697a002d88d706
-      internalID: -157909433
+      spriteID: 0d51780885d35ff4dac4b16940ed36d5
+      internalID: 850333765
       vertices: []
       indices: 
       edges: []
@@ -219,11 +219,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IryoAtk0_0: -1004315999
-      IryoAtk0_2: 861676454
-      IryoAtk0_4: -157909433
-      IryoAtk0_1: 465645455
-      IryoAtk0_3: -884616246
+      IryoAtk1_0: -1687337728
+      IryoAtk1_1: 1198513159
+      IryoAtk1_3: 1497756494
+      IryoAtk1_2: -22559694
+      IryoAtk1_4: 850333765
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
