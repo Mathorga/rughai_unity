@@ -84,16 +84,16 @@ public class PlayerController : MonoBehaviour {
                     this.justAttacked = true;
                 } else {
                     if (this.input.moveLen <= this.walkThreshold) {
+                        // Idle.
                         this.state = this.justAttacked ? State.AttackIdle : State.Idle;
-                        // this.state = State.Idle;
+                    } else if (this.input.moveLen < this.runThreshold || this.input.walk) {
+                        // Walk.
+                        this.justAttacked = false;
+                        this.state = State.Walk;
                     } else {
-                        if (this.input.moveLen < this.runThreshold || this.input.walk) {
-                            this.justAttacked = false;
-                            this.state = State.Walk;
-                        } else {
-                            this.justAttacked = false;
-                            this.state = State.Run;
-                        }
+                        // Run.
+                        this.justAttacked = false;
+                        this.state = State.Run;
                     }
                 }
             }

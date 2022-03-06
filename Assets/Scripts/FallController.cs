@@ -30,10 +30,10 @@ public class FallController : MonoBehaviour {
             this.isFalling = true;
 
             // Cut current velocity.
-            this.rb.velocity /= 2.0f;
+            this.rb.velocity /= 1.2f;
 
             // Start gravity.
-            this.rb.gravityScale = 1;
+            this.rb.gravityScale = 10;
 
             // Cut drag.
             this.rb.drag /= 4;
