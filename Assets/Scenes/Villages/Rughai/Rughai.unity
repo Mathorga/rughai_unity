@@ -43202,6 +43202,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2117117479 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3455518863044487244, guid: 96e447597bd08274dab3063b88737979,
+    type: 3}
+  m_PrefabInstance: {fileID: 6496907038989926148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2129349029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43477,6 +43483,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3239950128817349321, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4486190685028644503, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
       propertyPath: m_BackSortingOrder
@@ -43571,10 +43582,26 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 6496907040287462479, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
+      propertyPath: startFacing
+      value: 
+      objectReference: {fileID: 11400000, guid: d4fb4fa8fb09d294ab9d8c94affb8a53,
+        type: 2}
+    - target: {fileID: 6496907040287462479, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 11400000, guid: 268337dce2221bb4c89c5fcebce9a38e,
         type: 2}
+    - target: {fileID: 6496907040287462479, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: childAnimators.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496907040287462479, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: childAnimators.Array.data[0]
+      value: 
+      objectReference: {fileID: 2117117479}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e447597bd08274dab3063b88737979, type: 3}
 --- !u!1001 &9014459487409736326

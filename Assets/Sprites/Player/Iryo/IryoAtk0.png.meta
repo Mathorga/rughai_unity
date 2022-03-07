@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f68f50395852b6b4bb8815bc95ba1246
+guid: 17e1085a072efb240a904e99e9a1c069
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e0de242f89b0b34eba52152ff4e20b9
-      internalID: -1004315999
+      spriteID: 3800961182e273f4ea2c0089d476f03e
+      internalID: 540100292
       vertices: []
       indices: 
       edges: []
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f10e8747fe5ce394ea1522ab57ac4a4c
-      internalID: 465645455
+      spriteID: 09b9332d903c6084685b5a2a7aa026b9
+      internalID: -1937300608
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67243aea722507b45a47f61a6045ee5e
-      internalID: 861676454
+      spriteID: a075cc8dfc4654a46b79a7466231e8ca
+      internalID: -1394595595
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51db6a9e65cbb17429a648b5f33f20c2
-      internalID: -884616246
+      spriteID: e4373bedb6d684a4faf2d2bd782a6326
+      internalID: 1601095513
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 003853cd975903e4c8697a002d88d706
-      internalID: -157909433
+      spriteID: 3df9905569c96c34fafcfa5f68dc12dc
+      internalID: -416389476
       vertices: []
       indices: 
       edges: []
@@ -219,11 +219,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IryoAtk0_0: -1004315999
-      IryoAtk0_2: 861676454
-      IryoAtk0_4: -157909433
-      IryoAtk0_1: 465645455
-      IryoAtk0_3: -884616246
+      IryoAtk0_0: 540100292
+      IryoAtk0_2: -1394595595
+      IryoAtk0_4: -416389476
+      IryoAtk0_1: -1937300608
+      IryoAtk0_3: 1601095513
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

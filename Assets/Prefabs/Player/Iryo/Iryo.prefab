@@ -138,7 +138,6 @@ GameObject:
   - component: {fileID: 6496907040287462473}
   - component: {fileID: 7871844527328637313}
   - component: {fileID: 6496907040287462479}
-  - component: {fileID: 3239950128817349321}
   - component: {fileID: 7862757527975364077}
   m_Layer: 0
   m_Name: Iryo
@@ -338,23 +337,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50156fb0263e942409bbf7fbd2de65dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {fileID: 0}
---- !u!114 &3239950128817349321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6496907040287462466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8202aa23b76a0694c992bf4e5fb38e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 6496907040287462479}
   childAnimators:
   - {fileID: 3455518863044487244}
   startFacing: {fileID: 11400000, guid: d4fb4fa8fb09d294ab9d8c94affb8a53, type: 2}
+  startPosition: {fileID: 11400000, guid: 268337dce2221bb4c89c5fcebce9a38e, type: 2}
 --- !u!114 &7862757527975364077
 MonoBehaviour:
   m_ObjectHideFlags: 0
