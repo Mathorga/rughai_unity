@@ -49,15 +49,14 @@ public class PlayerController : MonoBehaviour {
 
     private bool atkCombo = false;
 
+    // Used to allow the controller to set states.
+    private bool activeShift = true;
+
     private Rigidbody2D rb;
     private PlayerInput input;
     private Animator animator;
     private PlayerStats stats;
     private FallController fallController;
-
-    public void SetState(State state) {
-        this.state = state;
-    }
 
     void Awake() {
         this.transform.position = this.startPosition.value;
@@ -72,8 +71,10 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        // Set state based on input.
-        this.SetState();
+        if (this.activeShift) {
+            // Set state based on input.
+            this.FindState();
+        }
 
         // Act according to state.
         this.Behave();
@@ -139,6 +140,7 @@ public class PlayerController : MonoBehaviour {
 
                 // Reset state after animation ends.
                 if (animationProgress > 0.9f) {
+                    this.activeShift = true;
                     this.SetState(State.Idle);
                 }
                 break;
@@ -156,17 +158,21 @@ public class PlayerController : MonoBehaviour {
                     // Reset state after animation ends.
                     if (this.atkCombo) {
                         this.atkCombo = false;
+                        this.activeShift = false;
                         this.SetState(State.Atk1);
                     } else {
+                        this.activeShift = true;
                         this.SetState(State.Idle);
                     }
                 }
                 break;
             case State.Atk1:
+                Debug.Log("COMBO!");
                 this.PlayAnimation("Atk1", 1.0f);
 
                 if (animationProgress > 0.9f) {
                     // Reset state after animation ends.
+                    this.activeShift = true;
                     this.SetState(State.Idle);
                 }
                 break;
@@ -174,19 +180,28 @@ public class PlayerController : MonoBehaviour {
                 break;
             case State.AtkIdle:
                 this.PlayAnimation("AtkIdle", 1.0f);
+                if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
+                    this.activeShift = true;
+                    this.SetState(State.Idle);
+                }
                 break;
             default:
                 break;
         }
     }
 
-    private void SetState() {
+    private void SetState(State state) {
+        this.state = state;
+    }
+
+    private void FindState() {
         if (this.fallController.isFalling) {
             this.state = State.Fall;
         } else {
             if (this.state != State.Atk0 && this.state != State.Atk1) {
                 if (this.input.attack) {
                     this.justAttacked = true;
+                    this.activeShift = false;
                     this.state = State.Atk0;
                 } else {
                     if (this.input.moveLen <= this.walkThreshold) {
