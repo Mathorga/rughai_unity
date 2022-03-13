@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour {
     public enum State {
@@ -49,8 +51,8 @@ public class PlayerController : MonoBehaviour {
 
     private bool atkCombo = false;
 
-    // Used to allow the controller to set states.
-    private bool activeShift = true;
+    private float animationTime = 0.0f;
+    private float animationProgress = 0.0f;
 
     private Rigidbody2D rb;
     private PlayerInput input;
@@ -71,10 +73,8 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        if (this.activeShift) {
-            // Set state based on input.
-            this.FindState();
-        }
+        // Set state based on input.
+        this.FindState();
 
         // Act according to state.
         this.Behave();
@@ -85,8 +85,8 @@ public class PlayerController : MonoBehaviour {
         float maxVelocity = this.stats.data.speed / this.rb.drag;
 
         // Get current animation progress.
-        float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-        float animationProgress = animationTime - Mathf.Floor(animationTime);
+        // float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        // this.animationProgress = animationTime - Mathf.Floor(animationTime);
 
         if (this.state != State.Fall) {
             // Set facing for direction control.
@@ -139,8 +139,7 @@ public class PlayerController : MonoBehaviour {
                 this.PlayAnimation("Fall", 1.0f);
 
                 // Reset state after animation ends.
-                if (animationProgress > 0.9f) {
-                    this.activeShift = true;
+                if (this.AnimationDone("Fall")) {
                     this.SetState(State.Idle);
                 }
                 break;
@@ -149,39 +148,39 @@ public class PlayerController : MonoBehaviour {
 
                 this.PlayAnimation("Atk0", 1.0f);
 
-                if (animationProgress >= 0.5f && this.input.attack) {
+                if (this.animationProgress >= 0.8f && this.input.attack) {
                     // Combo.
                     this.atkCombo = true;
                 }
-                
-                if (animationProgress > 0.9f) {
+
+                if (this.AnimationDone("Atk0")) {
                     // Reset state after animation ends.
                     if (this.atkCombo) {
                         this.atkCombo = false;
-                        this.activeShift = false;
                         this.SetState(State.Atk1);
                     } else {
-                        this.activeShift = true;
-                        this.SetState(State.Idle);
+                        this.SetState(State.AtkIdle);
                     }
                 }
                 break;
             case State.Atk1:
-                Debug.Log("COMBO!");
+                Debug.Log("Bef COMBO! " + this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1") + animationProgress.ToString());
+
                 this.PlayAnimation("Atk1", 1.0f);
 
-                if (animationProgress > 0.9f) {
+                Debug.Log("Aft COMBO! " + this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1") + animationProgress.ToString());
+
+                if (this.AnimationDone("Atk1")) {
                     // Reset state after animation ends.
-                    this.activeShift = true;
-                    this.SetState(State.Idle);
+                    this.SetState(State.AtkIdle);
                 }
                 break;
             case State.Atk2:
                 break;
             case State.AtkIdle:
                 this.PlayAnimation("AtkIdle", 1.0f);
-                if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
-                    this.activeShift = true;
+
+                if (this.AnimationDone("AtkIdle") || this.rb.velocity.magnitude > 0.0f) {
                     this.SetState(State.Idle);
                 }
                 break;
@@ -194,6 +193,10 @@ public class PlayerController : MonoBehaviour {
         this.state = state;
     }
 
+    private bool AnimationDone(string animationName) {
+        return this.animationTime >= 1.0f && this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
+    }
+
     private void FindState() {
         if (this.fallController.isFalling) {
             this.state = State.Fall;
@@ -201,7 +204,6 @@ public class PlayerController : MonoBehaviour {
             if (this.state != State.Atk0 && this.state != State.Atk1) {
                 if (this.input.attack) {
                     this.justAttacked = true;
-                    this.activeShift = false;
                     this.state = State.Atk0;
                 } else {
                     if (this.input.moveLen <= this.walkThreshold) {
@@ -244,11 +246,14 @@ public class PlayerController : MonoBehaviour {
 
         // Play animation if not already playing.
         if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName)) {
-            this.animator.Play(animationName, 0, 0);
-
+            this.animator.Play(animationName, 0, 0.0f);
             foreach (Animator childAnimator in this.childAnimators) {
-                childAnimator.Play(animationName, 0, 0);
+                childAnimator.Play(animationName, 0, 0.0f);
             }
         }
+
+        // Save animation progress.
+        this.animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        this.animationProgress = animationTime - Mathf.Floor(animationTime);
     }
 }

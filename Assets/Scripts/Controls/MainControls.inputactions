@@ -11,7 +11,8 @@
                     "id": "87678759-9044-4bd7-853b-adf236bc0f08",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "WalkTrigger",
@@ -19,7 +20,8 @@
                     "id": "1019b82b-c777-496e-867c-ab9d5162bf93",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Interact",
@@ -27,7 +29,8 @@
                     "id": "66c33b00-f2ea-4416-86b8-db51f0af9b4c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Attack",
@@ -35,7 +38,8 @@
                     "id": "ad8524c9-a89d-4df6-99eb-f76119f24c2e",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -183,7 +187,8 @@
                     "id": "54356845-372b-48ad-af64-6cdfa649744b",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
