@@ -164,11 +164,7 @@ public class PlayerController : MonoBehaviour {
                 }
                 break;
             case State.Atk1:
-                Debug.Log("Bef COMBO! " + this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1") + animationProgress.ToString());
-
                 this.PlayAnimation("Atk1", 1.0f);
-
-                Debug.Log("Aft COMBO! " + this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1") + animationProgress.ToString());
 
                 if (this.AnimationDone("Atk1")) {
                     // Reset state after animation ends.

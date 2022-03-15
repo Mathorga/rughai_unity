@@ -16,7 +16,7 @@ public class RopeController : MonoBehaviour {
         this.distances = new List<Vector2>();
         this.angles = new List<float>();
 
-        // Retrieve all anchors objects.
+        // Retrieve all anchor objects.
         foreach (Transform child in this.transform) {
             this.anchors.Add(child.gameObject);
         }
