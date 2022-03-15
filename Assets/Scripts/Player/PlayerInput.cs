@@ -73,10 +73,16 @@ public class PlayerInput : MonoBehaviour {
         this.controls.Player.Interact.canceled += (context) => this.SetInteract(false);
 
         // Check for attack start.
-        this.controls.Player.Attack.performed += (context) => this.SetAttack(true);
+        this.controls.Player.Attack.started += (context) => this.SetAttack(true);
 
         // Check for attack end.
-        this.controls.Player.Attack.canceled += (context) => this.SetAttack(false);
+        // this.controls.Player.Attack.canceled += (context) => this.SetAttack(false);
+    }
+
+    public void FixedUpdate() {
+        if (this.attack) {
+            attack = false;
+        }
     }
 
     private void OnEnable() {

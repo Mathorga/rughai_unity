@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour {
 
                 this.PlayAnimation("Atk0", 1.0f);
 
-                if (this.animationProgress >= 0.8f && this.input.attack) {
+                if (this.animationProgress > 0.8f && this.animationProgress < 0.9f && this.input.attack) {
                     // Combo.
                     this.atkCombo = true;
                 }
