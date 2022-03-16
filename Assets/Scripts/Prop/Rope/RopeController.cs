@@ -6,6 +6,7 @@ using UnityEditor;
 public class RopeController : MonoBehaviour {
     public GameObject ropeSegmentType;
     public float particlesPerUnit;
+    public float frequency = 5.0f;
 
     private List<GameObject> anchors;
     private List<Vector2> distances;
@@ -60,7 +61,7 @@ public class RopeController : MonoBehaviour {
             firstJoint.connectedBody = ropeSegments[0].GetComponent<Rigidbody2D>();
             firstJoint.autoConfigureDistance = false;
             firstJoint.distance = 0f;
-            firstJoint.frequency = 10f;
+            firstJoint.frequency = this.frequency;
 
             // Loop through rope segments in order to attach hinges to them.
             for (int j = 0; j < amount - 1; j++) {
@@ -68,7 +69,7 @@ public class RopeController : MonoBehaviour {
                 segmentJoint.connectedBody = ropeSegments[j + 1].GetComponent<Rigidbody2D>();
                 segmentJoint.autoConfigureDistance = false;
                 segmentJoint.distance = 0f;
-                segmentJoint.frequency = 10f;
+                segmentJoint.frequency = this.frequency;
             }
 
             // Add hinge component to the last rope segment and attach it to the next anchor.
@@ -77,7 +78,7 @@ public class RopeController : MonoBehaviour {
             lastJoint.connectedBody = this.anchors[i + 1].GetComponent<Rigidbody2D>();
             lastJoint.autoConfigureDistance = false;
             lastJoint.distance = 0f;
-            lastJoint.frequency = 10f;
+            lastJoint.frequency = this.frequency;
         }
         // Reset last anchor parent.
         this.anchors[this.anchors.Count - 1].transform.parent = this.transform;

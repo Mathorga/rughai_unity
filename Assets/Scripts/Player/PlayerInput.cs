@@ -81,7 +81,11 @@ public class PlayerInput : MonoBehaviour {
 
     public void FixedUpdate() {
         if (this.attack) {
-            attack = false;
+            this.attack = false;
+        }
+
+        if (this.interact) {
+            this.interact = false;
         }
     }
 
@@ -118,6 +122,7 @@ public class PlayerInput : MonoBehaviour {
     }
 
     public void SetAttack(bool value) {
+        Debug.Log("Set attack " + value.ToString());
         if (this.active) {
             this.attack = value;
         }

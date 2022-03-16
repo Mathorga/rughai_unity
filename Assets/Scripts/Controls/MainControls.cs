@@ -38,29 +38,29 @@ public partial class @MainControls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""WalkTrigger"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""1019b82b-c777-496e-867c-ab9d5162bf93"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": true
+                    ""initialStateCheck"": false
                 },
                 {
                     ""name"": ""Interact"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""66c33b00-f2ea-4416-86b8-db51f0af9b4c"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": true
+                    ""initialStateCheck"": false
                 },
                 {
                     ""name"": ""Attack"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""ad8524c9-a89d-4df6-99eb-f76119f24c2e"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Tap"",
+                    ""interactions"": """",
                     ""initialStateCheck"": false
                 }
             ],

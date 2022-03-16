@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 06fa5ef5f8a4fed43b15b358a7d3878b
+guid: a03f1492756ce89408ae27ad63eca041
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,127 +104,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IryoAtk0_0
+      name: IryoAtk2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 24
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afcac3a9cc65530488706a09398d6a30
-      internalID: 1805442181
+      spriteID: dae9348eb0555ce41a27f352c140f2d2
+      internalID: -376416221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_1
+      name: IryoAtk2_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 24
         y: 0
-        width: 16
+        width: 24
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c6d9fa21719e0546b1f745121e03983
-      internalID: 259746902
+      spriteID: c5b4f8d581162b445af7ac299e3fdc2a
+      internalID: -1233844252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2d02c8441aa0b94280dbf296734dfd6
-      internalID: 971056303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IryoAtk0_3
+      name: IryoAtk2_2
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 16
+        width: 24
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16afb1a9fe1b3ef43be33cc26b3ab95e
-      internalID: -149656541
+      spriteID: 4eb1735338209d54486297e8d25d2878
+      internalID: 788509390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_4
+      name: IryoAtk2_3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 72
         y: 0
-        width: 16
+        width: 24
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abc33f1cef5e42441a74f8eb366a32ca
-      internalID: -1800831878
+      spriteID: 69e1e2a61e840da4f82b383a38879f6a
+      internalID: 1127921871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IryoAtk0_5
+      name: IryoAtk2_4
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 0
-        width: 16
+        width: 24
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ab5f84b71257d944a4debec0ecdd067
-      internalID: 1053246061
+      spriteID: 8529233ef8d0ee84697b7d428bfc976e
+      internalID: 810630081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IryoAtk2_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d313f13bb2ca36445b9fcea942dce352
+      internalID: -1938089193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IryoAtk2_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01726d0082ea444d81a2f75e4fb4794
+      internalID: 338982489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IryoAtk2_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817d5a9aee5831b43a40424bb81da888
+      internalID: -1243649966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IryoAtk2_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ae4d6b89041634688a42432c00ad7a
+      internalID: 788699758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IryoAtk2_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d0a3f391046f74c8bc5562fb0c049a
+      internalID: -675129846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IryoAtk2_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93054a2a71ffc3948b4878bd9c5268a0
+      internalID: 1300702723
       vertices: []
       indices: 
       edges: []
@@ -240,12 +345,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IryoAtk0_0: 1805442181
-      IryoAtk0_2: 971056303
-      IryoAtk0_4: -1800831878
-      IryoAtk0_1: 259746902
-      IryoAtk0_3: -149656541
-      IryoAtk0_5: 1053246061
+      IryoAtk2_1: -1233844252
+      IryoAtk2_10: 1300702723
+      IryoAtk2_9: -675129846
+      IryoAtk2_0: -376416221
+      IryoAtk2_6: 338982489
+      IryoAtk2_2: 788509390
+      IryoAtk2_3: 1127921871
+      IryoAtk2_4: 810630081
+      IryoAtk2_7: -1243649966
+      IryoAtk2_5: -1938089193
+      IryoAtk2_8: 788699758
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

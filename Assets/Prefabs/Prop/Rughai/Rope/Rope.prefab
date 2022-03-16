@@ -48,7 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ropeSegmentType: {fileID: 3955069087994905756, guid: ebe39e9396559aa47bf52176ee2ec3fb,
     type: 3}
-  particlesPerUnit: 0.3
+  particlesPerUnit: 0.4
+  frequency: 10
 --- !u!1001 &1553744551013183861
 PrefabInstance:
   m_ObjectHideFlags: 0

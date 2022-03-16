@@ -148,7 +148,10 @@ public class PlayerController : MonoBehaviour {
 
                 this.PlayAnimation("Atk0", 1.0f);
 
-                if (this.animationProgress > 0.8f && this.animationProgress < 0.9f && this.input.attack) {
+                if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0") &&
+                    this.animationProgress > 0.5f &&
+                    this.animationProgress < 0.9f &&
+                    this.input.attack) {
                     // Combo.
                     this.atkCombo = true;
                 }
@@ -166,12 +169,31 @@ public class PlayerController : MonoBehaviour {
             case State.Atk1:
                 this.PlayAnimation("Atk1", 1.0f);
 
+                if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1") &&
+                    this.animationProgress > 0.5f &&
+                    this.animationProgress < 0.9f &&
+                    this.input.attack) {
+                    // Combo.
+                    this.atkCombo = true;
+                }
+
                 if (this.AnimationDone("Atk1")) {
                     // Reset state after animation ends.
-                    this.SetState(State.AtkIdle);
+                    if (this.atkCombo) {
+                        this.atkCombo = false;
+                        this.SetState(State.Atk2);
+                    } else {
+                        this.SetState(State.AtkIdle);
+                    }
                 }
                 break;
             case State.Atk2:
+                this.PlayAnimation("Atk2", 1.0f);
+
+                if (this.AnimationDone("Atk2")) {
+                    // Reset state after animation ends.
+                    this.SetState(State.AtkIdle);
+                }
                 break;
             case State.AtkIdle:
                 this.PlayAnimation("AtkIdle", 1.0f);
@@ -197,7 +219,7 @@ public class PlayerController : MonoBehaviour {
         if (this.fallController.isFalling) {
             this.state = State.Fall;
         } else {
-            if (this.state != State.Atk0 && this.state != State.Atk1) {
+            if (this.state != State.Atk0 && this.state != State.Atk1 && this.state != State.Atk2) {
                 if (this.input.attack) {
                     this.justAttacked = true;
                     this.state = State.Atk0;
