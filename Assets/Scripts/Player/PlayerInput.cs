@@ -69,14 +69,8 @@ public class PlayerInput : MonoBehaviour {
         // Check for interact start.
         this.controls.Player.Interact.started += (context) => this.SetInteract(true);
 
-        // Check for interact end.
-        this.controls.Player.Interact.canceled += (context) => this.SetInteract(false);
-
         // Check for attack start.
         this.controls.Player.Attack.started += (context) => this.SetAttack(true);
-
-        // Check for attack end.
-        // this.controls.Player.Attack.canceled += (context) => this.SetAttack(false);
     }
 
     public void FixedUpdate() {
@@ -122,7 +116,6 @@ public class PlayerInput : MonoBehaviour {
     }
 
     public void SetAttack(bool value) {
-        Debug.Log("Set attack " + value.ToString());
         if (this.active) {
             this.attack = value;
         }
