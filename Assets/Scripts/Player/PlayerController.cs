@@ -49,7 +49,10 @@ public class PlayerController : MonoBehaviour {
     // Threshold from walk to run animation.
     private float runThreshold = 0.8f;
 
+    // True when the user pushes the attack button inside the combo window.
     private bool atkCombo = false;
+
+    // True when the user pushes the attack button outside the combo window.
     private bool comboFailed = false;
 
     private float animationTime = 0.0f;
@@ -84,10 +87,6 @@ public class PlayerController : MonoBehaviour {
     private void Behave() {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.data.speed / this.rb.drag;
-
-        // Get current animation progress.
-        // float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-        // this.animationProgress = animationTime - Mathf.Floor(animationTime);
 
         if (this.state != State.Fall) {
             // Set facing for direction control.
@@ -151,6 +150,7 @@ public class PlayerController : MonoBehaviour {
 
                 if (this.input.attack &&
                     !this.comboFailed &&
+                    !this.atkCombo &&
                     this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0")) {
                     if (this.animationProgress > 0.5f &&
                         this.animationProgress < 0.9f) {
@@ -177,6 +177,7 @@ public class PlayerController : MonoBehaviour {
 
                 if (this.input.attack &&
                     !this.comboFailed &&
+                    !this.atkCombo &&
                     this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1")) {
                     if (this.animationProgress > 0.5f &&
                         this.animationProgress < 0.9f) {
