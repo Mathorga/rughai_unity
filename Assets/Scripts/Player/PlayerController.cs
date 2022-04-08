@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour {
     private float runThreshold = 0.8f;
 
     private bool atkCombo = false;
+    private bool comboFailed = false;
 
     private float animationTime = 0.0f;
     private float animationProgress = 0.0f;
@@ -148,12 +149,16 @@ public class PlayerController : MonoBehaviour {
 
                 this.PlayAnimation("Atk0", 1.0f);
 
-                if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0") &&
-                    this.animationProgress > 0.5f &&
-                    this.animationProgress < 0.9f &&
-                    this.input.attack) {
-                    // Combo.
-                    this.atkCombo = true;
+                if (this.input.attack &&
+                    !this.comboFailed &&
+                    this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0")) {
+                    if (this.animationProgress > 0.5f &&
+                        this.animationProgress < 0.9f) {
+                        // Combo.
+                        this.atkCombo = true;
+                    } else {
+                        this.comboFailed = true;
+                    }
                 }
 
                 if (this.AnimationDone("Atk0")) {
@@ -164,17 +169,22 @@ public class PlayerController : MonoBehaviour {
                     } else {
                         this.SetState(State.AtkIdle);
                     }
+                    this.comboFailed = false;
                 }
                 break;
             case State.Atk1:
                 this.PlayAnimation("Atk1", 1.0f);
 
-                if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1") &&
-                    this.animationProgress > 0.5f &&
-                    this.animationProgress < 0.9f &&
-                    this.input.attack) {
-                    // Combo.
-                    this.atkCombo = true;
+                if (this.input.attack &&
+                    !this.comboFailed &&
+                    this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1")) {
+                    if (this.animationProgress > 0.5f &&
+                        this.animationProgress < 0.9f) {
+                        // Combo.
+                        this.atkCombo = true;
+                    } else {
+                        this.comboFailed = true;
+                    }
                 }
 
                 if (this.AnimationDone("Atk1")) {
@@ -185,6 +195,7 @@ public class PlayerController : MonoBehaviour {
                     } else {
                         this.SetState(State.AtkIdle);
                     }
+                    this.comboFailed = false;
                 }
                 break;
             case State.Atk2:
