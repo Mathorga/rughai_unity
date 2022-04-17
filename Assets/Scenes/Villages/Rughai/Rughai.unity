@@ -1264,7 +1264,7 @@ Transform:
   - {fileID: 1831878509}
   - {fileID: 1812459562}
   m_Father: {fileID: 874511825}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &517444603 stripped
 Transform:
@@ -2288,10 +2288,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874511824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0.6899986, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1806306709}
+  - {fileID: 2103902835}
+  - {fileID: 1076397762}
   - {fileID: 1822565901}
   - {fileID: 504058484}
   m_Father: {fileID: 0}
@@ -4098,6 +4101,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2449009b1874f9c449e1cc465efe19d7, type: 3}
+--- !u!1 &1076397761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076397762}
+  - component: {fileID: 1076397763}
+  m_Layer: 0
+  m_Name: DaugSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1076397762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076397761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 100, y: -35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 874511825}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1076397763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076397761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0040925be78747418753851c5b6bde9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wild: {fileID: 3619604187650466195, guid: 9c149a4871022d04ba0a968e914728c3, type: 3}
+  amount: 5
+  width: 60
+  height: 60
 --- !u!1001 &1137186882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38814,7 +38865,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1416254809 stripped
 Transform:
@@ -39732,7 +39783,7 @@ GameObject:
   - component: {fileID: 1806306709}
   - component: {fileID: 1806306710}
   m_Layer: 0
-  m_Name: WildSpawner
+  m_Name: DukSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39745,13 +39796,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806306708}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 874511825}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1806306710
 MonoBehaviour:
@@ -39766,8 +39817,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wild: {fileID: 3619604187650466195, guid: 95cda04ef0a4da44e9e8029eaeb52ab7, type: 3}
-  amount: 12
-  radius: 20
+  amount: 30
+  width: 100
+  height: 60
 --- !u!4 &1812459562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3619604187650466199, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
@@ -39789,7 +39841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1822565901
 Transform:
   m_ObjectHideFlags: 0
@@ -39819,7 +39871,7 @@ Transform:
   - {fileID: 183135197}
   - {fileID: 1254595660}
   m_Father: {fileID: 874511825}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1826411275
 GameObject:
@@ -41010,6 +41062,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2103902834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103902835}
+  - component: {fileID: 2103902836}
+  m_Layer: 0
+  m_Name: DwarfBurrSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2103902835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103902834}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 100, y: 70, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 874511825}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2103902836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103902834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0040925be78747418753851c5b6bde9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wild: {fileID: 518176885177068489, guid: f75d966b6404a0641aff29575c40818a, type: 3}
+  amount: 10
+  width: 60
+  height: 60
 --- !u!95 &2117117479 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3455518863044487244, guid: 96e447597bd08274dab3063b88737979,
