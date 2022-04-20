@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 7871844527328637313}
   - component: {fileID: 6496907040287462479}
   - component: {fileID: 7862757527975364077}
+  - component: {fileID: 4330426863402372337}
   m_Layer: 0
   m_Name: Iryo
   m_TagString: Untagged
@@ -357,3 +358,16 @@ MonoBehaviour:
   interactionSignType: {fileID: 5312771666620185, guid: fa5f167e249b71343a27822d9beaf7a8,
     type: 3}
   signPositionOffset: {x: 0, y: 1}
+--- !u!114 &4330426863402372337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6496907040287462466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1ab2d5985606842a3b2f278fbd8fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extent: 10

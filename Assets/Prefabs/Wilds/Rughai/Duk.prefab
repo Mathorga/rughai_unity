@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 964938104122445379}
   - component: {fileID: 3619604187650466187}
   - component: {fileID: 8551014281716091479}
+  - component: {fileID: 2108739630138851253}
   m_Layer: 0
   m_Name: Duk
   m_TagString: Untagged
@@ -218,3 +219,18 @@ MonoBehaviour:
   palette: {fileID: 2800000, guid: 6a28ccdd3f043544bb2410bc1c1f6650, type: 3}
   rareProbability: 0.5
   darkProbability: 0.2
+--- !u!114 &2108739630138851253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619604187650466195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a77b723d2c4d8f419bf9c604f479607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
+  immuneTime: 30
+  timeSinceLastHit: 0

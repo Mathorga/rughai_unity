@@ -55,8 +55,14 @@ public class PlayerController : MonoBehaviour {
     // True when the user pushes the attack button outside the combo window.
     private bool comboFailed = false;
 
-    private float animationTime = 0.0f;
-    private float animationProgress = 0.0f;
+    public float animationTime {
+        get;
+        private set;
+    }
+    public float animationProgress {
+        get;
+        private set;
+    }
 
     private Rigidbody2D rb;
     private PlayerInput input;
@@ -74,6 +80,8 @@ public class PlayerController : MonoBehaviour {
         this.state = State.Idle;
         this.justAttacked = false;
         this.animator.SetBool("Flip", this.startFacing.value.x < 0);
+        this.animationTime = 0.0f;
+        this.animationProgress = 0.0f;
     }
 
     void FixedUpdate() {
