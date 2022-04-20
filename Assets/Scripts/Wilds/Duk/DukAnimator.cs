@@ -9,9 +9,12 @@ public class DukAnimator : MonoBehaviour {
     private Rigidbody2D rb;
     private Animator animator;
 
+    private HitController hitController;
+
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
+        this.hitController = this.GetComponent<HitController>();
     }
 
     void FixedUpdate() {
@@ -22,7 +25,7 @@ public class DukAnimator : MonoBehaviour {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.speed / this.rb.drag;
 
-        if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
+        if (this.hitController.hit || this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
             if (animationTime >= 1){
                 if (Random.value > 0.01f) {
                     if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Stand0")) {

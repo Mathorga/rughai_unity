@@ -2,7 +2,10 @@
 using UnityEngine;
 
 public class DukController : MonoBehaviour {
-    public enum State {Idle, Chase};
+    public enum State {
+        Idle,
+        Chase
+    };
 
     public Stats stats;
     public State state = State.Idle;
@@ -15,8 +18,16 @@ public class DukController : MonoBehaviour {
         private set;
     }
 
+    public bool moving {
+        get;
+        set;
+    }
+
     private Rigidbody2D rb;
-    private bool active;
+    public bool active {
+        get;
+        set;
+    }
     private ChaserController pathfinder;
 
     void Start() {
