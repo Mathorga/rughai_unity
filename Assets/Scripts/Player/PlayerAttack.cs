@@ -9,6 +9,13 @@ public class PlayerAttack : MonoBehaviour {
     // The y-axis offset applied to the hitbox.
     public int elevation;
 
+    // The camera, used to add screen shake.
+    public CameraShake cameraShake;
+
+    public float shakeDuration;
+    public float shakeMagnitude;
+    public float shakeFade;
+
     void Start() {
         this.controller = this.GetComponent<PlayerController>();
     }
@@ -24,11 +31,17 @@ public class PlayerAttack : MonoBehaviour {
             float dir = this.controller.faceDir;
             float len = this.extent;
 
+            // Compute attack position with elevation.
             Vector2 pos2D = (Vector2) this.transform.position + Utils.PolarToCartesian(dir, len);
             pos2D[1] += this.elevation;
 
             // Check what was hit by the attack.
             Collider2D[] hits = Physics2D.OverlapCircleAll(pos2D, this.extent);
+
+            // Only perform screen shake if a camera shake behavior is provided.
+            if (this.cameraShake != null) {
+                this.cameraShake.Shake(this.shakeDuration * hits.Length, this.shakeMagnitude * hits.Length, this.shakeFade * hits.Length);
+            }
 
             // Loop through hits.
             foreach (Collider2D hit in hits) {
