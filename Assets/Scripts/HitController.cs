@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class HitController : MonoBehaviour {
     public Stats stats;
-    private float currentHealth;
     public int immuneTime;
+    public AudioClip hitAudio;
 
+    private float currentHealth;
     private int timeSinceLastHit;
 
     private Rigidbody2D rb;
-    public AudioSource hitAudio;
+    private AudioSource audioSource;
 
-    // TODO Replace with generic controller.
-    private DukController controller;
+    // Used to make the current object die.
+    private ILiving controller;
 
     public bool hit {
         get;
@@ -23,15 +24,15 @@ public class HitController : MonoBehaviour {
     void Start() {
         this.currentHealth = this.stats.health;
         this.rb = this.GetComponent<Rigidbody2D>();
-        this.hitAudio = this.GetComponent<AudioSource>();
-        this.controller = this.GetComponent<DukController>();
+        this.audioSource = this.GetComponent<AudioSource>();
+        this.controller = this.GetComponent<ILiving>();
         this.hit = false;
     }
 
     void FixedUpdate() {
         if (this.currentHealth <= 0) {
             // Die.
-            this.controller.state = DukController.State.Dead;
+            this.controller.Die();
             // Destroy(this.gameObject);
         }
 
@@ -45,7 +46,7 @@ public class HitController : MonoBehaviour {
     public void takeDamage(Transform source, float damage) {
         if (this.timeSinceLastHit > this.immuneTime) {
             // Play hit sound.
-            this.hitAudio.Play();
+            this.audioSource.PlayOneShot(this.hitAudio, 0.7f);
 
             // Knockback.
             float dir = Utils.AngleBetween(source.position, this.transform.position);

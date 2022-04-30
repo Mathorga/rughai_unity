@@ -177,7 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
-  state: 0
 --- !u!114 &964938104122445379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
   immuneTime: 30
+  hitAudio: {fileID: 8300000, guid: 0414fd65c3a54e34080839b0d7173218, type: 3}
 --- !u!82 &681308278254490988
 AudioSource:
   m_ObjectHideFlags: 0

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour {
     private PlayerController controller;
+    private AudioSource audioSource;
+
+    public AudioClip swingSound;
+
     public float extent;
 
     // The y-axis offset applied to the hitbox.
@@ -16,11 +20,41 @@ public class PlayerAttack : MonoBehaviour {
     public float shakeMagnitude;
     public float shakeFade;
 
+    private PlayerController.State currentState;
+
     void Start() {
         this.controller = this.GetComponent<PlayerController>();
+        this.audioSource = this.GetComponent<AudioSource>();
+        this.currentState = this.controller.state;
     }
 
     void FixedUpdate() {
+        if (this.controller.state == PlayerController.State.Atk0 ||
+            this.controller.state == PlayerController.State.Atk1) {
+            if (this.controller.state != this.currentState) {
+                // Play attack sound.
+                // this.audioSource.clip = this.swingSound;
+                this.audioSource.Play();
+
+                // Update current state.
+                this.currentState = this.controller.state;
+            }
+        } else if (this.controller.state == PlayerController.State.Atk2) {
+            if (this.controller.state != this.currentState) {
+                // Play attack sound.
+                // this.audioSource.clip = this.swingSound;
+                this.audioSource.PlayDelayed(0.2f);
+
+                // Update current state.
+                this.currentState = this.controller.state;
+            }
+        } else {
+            if (this.controller.state != this.currentState) {
+                // Update current state.
+                this.currentState = this.controller.state;
+            }
+        }
+
         if ((this.controller.state == PlayerController.State.Atk0 ||
             this.controller.state == PlayerController.State.Atk1 ||
             this.controller.state == PlayerController.State.Atk2) &&

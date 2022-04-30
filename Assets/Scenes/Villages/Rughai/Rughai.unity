@@ -40305,7 +40305,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0414fd65c3a54e34080839b0d7173218, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 89ba16dbb22dc6840b3afae9dd0bc919, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -41545,6 +41545,11 @@ PrefabInstance:
       propertyPath: shakeFade
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4330426863402372337, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: swingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 89ba16dbb22dc6840b3afae9dd0bc919, type: 3}
     - target: {fileID: 4330426863402372337, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
       propertyPath: cameraShake

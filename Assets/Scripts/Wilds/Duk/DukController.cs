@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class DukController : MonoBehaviour {
+public class DukController : MonoBehaviour, ILiving {
     public enum State {
         Idle,
         Chase,
@@ -33,10 +33,12 @@ public class DukController : MonoBehaviour {
         set;
     }
     private ChaserController pathfinder;
+    private CapsuleCollider2D capsCollider;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.pathfinder = this.GetComponent<ChaserController>();
+        this.capsCollider = this.GetComponent<CapsuleCollider2D>();
         this.active = false;
         this.state = State.Idle;
     }
@@ -59,6 +61,17 @@ public class DukController : MonoBehaviour {
             default:
                 break;
         }
+    }
+
+    void ILiving.Die() {
+        // Stop any movement.
+        this.rb.velocity = new Vector2(0.0f, 0.0f);
+
+        // Disable collider.
+        this.capsCollider.enabled = false;
+
+        // Set state.
+        this.state = State.Dead;
     }
 
     void Idle() {
