@@ -4,11 +4,15 @@ using UnityEngine;
 public class DukController : MonoBehaviour {
     public enum State {
         Idle,
-        Chase
+        Chase,
+        Dead
     };
 
     public Stats stats;
-    public State state = State.Idle;
+    public State state {
+        get;
+        set;
+    }
     public float moveSpeed {
         get;
         private set;
@@ -34,7 +38,7 @@ public class DukController : MonoBehaviour {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.pathfinder = this.GetComponent<ChaserController>();
         this.active = false;
-        // this.state = State.Idle;
+        this.state = State.Idle;
     }
 
     void FixedUpdate() {

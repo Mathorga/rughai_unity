@@ -10,6 +10,10 @@ public class HitController : MonoBehaviour {
     private int timeSinceLastHit;
 
     private Rigidbody2D rb;
+    public AudioSource hitAudio;
+
+    // TODO Replace with generic controller.
+    private DukController controller;
 
     public bool hit {
         get;
@@ -19,13 +23,16 @@ public class HitController : MonoBehaviour {
     void Start() {
         this.currentHealth = this.stats.health;
         this.rb = this.GetComponent<Rigidbody2D>();
+        this.hitAudio = this.GetComponent<AudioSource>();
+        this.controller = this.GetComponent<DukController>();
         this.hit = false;
     }
 
     void FixedUpdate() {
         if (this.currentHealth <= 0) {
             // Die.
-            Destroy(this.gameObject);
+            this.controller.state = DukController.State.Dead;
+            // Destroy(this.gameObject);
         }
 
         if (this.timeSinceLastHit <= this.immuneTime) {
@@ -37,6 +44,9 @@ public class HitController : MonoBehaviour {
 
     public void takeDamage(Transform source, float damage) {
         if (this.timeSinceLastHit > this.immuneTime) {
+            // Play hit sound.
+            this.hitAudio.Play();
+
             // Knockback.
             float dir = Utils.AngleBetween(source.position, this.transform.position);
             float len = 10.0f;
