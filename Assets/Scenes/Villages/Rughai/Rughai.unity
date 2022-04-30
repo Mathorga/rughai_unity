@@ -41565,6 +41565,11 @@ PrefabInstance:
       propertyPath: shakeMagnitude
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4330426863402372337, guid: 96e447597bd08274dab3063b88737979,
+        type: 3}
+      propertyPath: hitLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4486190685028644503, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
       propertyPath: m_BackSortingOrder
