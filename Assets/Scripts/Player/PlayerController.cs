@@ -55,6 +55,10 @@ public class PlayerController : MonoBehaviour {
     // True when the user pushes the attack button outside the combo window.
     private bool comboFailed = false;
 
+    // Indicates whether the player has moved during the attack or not.
+    // This is useful in order not to allow the player to move continuously during the attack state.
+    private bool movedAtk = false;
+
     public float animationTime {
         get;
         private set;
@@ -111,6 +115,8 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
+        bool inAnimation = false;
+
         switch (this.state) {
             case State.Idle:
                 if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity) {
@@ -152,14 +158,25 @@ public class PlayerController : MonoBehaviour {
                 }
                 break;
             case State.Atk0:
-                this.rb.velocity = Vector2.zero;
-
                 this.PlayAnimation("Atk0", 1.0f);
+
+                // Check if the animation being played is actually the one we're expecting.
+                inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0");
+
+                // Only move once during the attack.
+                if (!this.movedAtk) {
+                    // Block any movement before applying attack force.
+                    this.rb.velocity = Vector2.zero;
+                    if (inAnimation && this.animationProgress > 0.5f) {
+                        this.rb.AddForce(Utils.PolarToCartesian(this.faceDir, 25.0f), ForceMode2D.Impulse);
+                        this.movedAtk = true;
+                    }
+                }
 
                 if (this.input.attack &&
                     !this.comboFailed &&
                     !this.atkCombo &&
-                    this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0")) {
+                    inAnimation) {
                     if (this.animationProgress > 0.5f &&
                         this.animationProgress < 0.9f) {
                         // Combo.
@@ -178,10 +195,24 @@ public class PlayerController : MonoBehaviour {
                         this.SetState(State.AtkIdle);
                     }
                     this.comboFailed = false;
+                    this.movedAtk = false;
                 }
                 break;
             case State.Atk1:
                 this.PlayAnimation("Atk1", 1.0f);
+
+                // Check if the animation being played is actually the one we're expecting.
+                inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1");
+
+                // Only move once during the attack.
+                if (!this.movedAtk) {
+                    // Block any movement before applying attack force.
+                    this.rb.velocity = Vector2.zero;
+                    if (inAnimation && this.animationProgress > 0.2f) {
+                        this.rb.AddForce(Utils.PolarToCartesian(this.faceDir, 25.0f), ForceMode2D.Impulse);
+                        this.movedAtk = true;
+                    }
+                }
 
                 if (this.input.attack &&
                     !this.comboFailed &&
@@ -231,6 +262,7 @@ public class PlayerController : MonoBehaviour {
         this.state = state;
     }
 
+    // Tells whether the animation with the given name has finished or not.
     private bool AnimationDone(string animationName) {
         return this.animationTime >= 1.0f && this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
     }
