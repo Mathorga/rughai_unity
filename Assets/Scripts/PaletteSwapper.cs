@@ -2,6 +2,7 @@
 
 public class PaletteSwapper : MonoBehaviour {
     public Texture2D palette;
+    public AnimationCurve mutationDistribution;
 
     [Range(0.0f, 1.0f)]
     public float mutationRate = 0.8f;
@@ -12,7 +13,8 @@ public class PaletteSwapper : MonoBehaviour {
         if (renderer != null) {
             // Pass the palette to the swapper shader.
             renderer.material.SetTexture("_Palette", this.palette);
-            this.mutationRate = Random.Range(0.0f, 1.0f) * Random.Range(0.0f, 1.0f) * Random.Range(0.0f, 1.0f) * Random.Range(0.0f, 1.0f);
+            this.mutationRate = Mathf.Pow(Random.value, 6.0f);
+            this.mutationRate = this.mutationDistribution.Evaluate(Random.value);
 
             renderer.material.SetFloat("_MutationRate", this.mutationRate);
         }

@@ -217,8 +217,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   palette: {fileID: 2800000, guid: 6a28ccdd3f043544bb2410bc1c1f6650, type: 3}
-  rareProbability: 0.5
-  darkProbability: 0.2
+  mutationDistribution:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.000017440878
+      value: 0.09961108
+      inSlope: -0.1905363
+      outSlope: -0.1905363
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0
+      outWeight: 0.55707294
+    - serializedVersion: 3
+      time: 0.9966611
+      value: 0.50226897
+      inSlope: 2.0283568
+      outSlope: 2.0283568
+      tangentMode: 0
+      weightedMode: 1
+      inWeight: 0.31781358
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  mutationRate: 0.8
 --- !u!114 &2108739630138851253
 MonoBehaviour:
   m_ObjectHideFlags: 0
