@@ -251,6 +251,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   mutationRate: 0.8
+  distributionRate: 43.5
 --- !u!114 &2108739630138851253
 MonoBehaviour:
   m_ObjectHideFlags: 0
