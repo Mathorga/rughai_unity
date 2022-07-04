@@ -202,11 +202,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   palette: {fileID: 2800000, guid: f40713a106aa042429c168c7e6b0de06, type: 3}
-  mutationDistribution:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  mutationRate: 0.8
-  distributionRate: 14.3
+  distributionRate: 8

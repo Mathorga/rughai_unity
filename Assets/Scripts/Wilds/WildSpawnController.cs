@@ -7,12 +7,15 @@ public class WildSpawnController : MonoBehaviour {
     public GameObject wild;
 
     // The amount of wild to spawn.
+    [Range(0, 1000)]
     public int amount;
 
     // Width over which to extend the spawn.
+    [Range(0.0f, 1000.0f)]
     public float width;
 
     // Height over which to extend the spawn.
+    [Range(0.0f, 1000.0f)]
     public float height;
 
     void Start() {

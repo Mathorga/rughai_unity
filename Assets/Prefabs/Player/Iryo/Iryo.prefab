@@ -228,7 +228,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 4
+  m_LinearDrag: 10
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -370,4 +370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1ab2d5985606842a3b2f278fbd8fbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  swingSound: {fileID: 0}
   extent: 10
+  elevation: 0
+  cameraShake: {fileID: 0}
+  shakeDuration: 0
+  shakeMagnitude: 0
+  shakeFade: 0

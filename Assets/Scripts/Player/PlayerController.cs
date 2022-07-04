@@ -100,7 +100,10 @@ public class PlayerController : MonoBehaviour {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.data.speed / this.rb.drag;
 
-        if (this.state != State.Fall) {
+        if (this.state != State.Fall &&
+            this.state != State.Atk0 &&
+            this.state != State.Atk1 &&
+            this.state != State.Atk2) {
             // Set facing for direction control.
             if (this.rb.velocity.magnitude > this.slowWalkThreshold * maxVelocity) {
                 // Use velocity if > 0.
@@ -115,143 +118,30 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        bool inAnimation = false;
-
         switch (this.state) {
             case State.Idle:
-                if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity) {
-                    this.PlayAnimation("Idle", 1.0f);
-                } else if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity) {
-                    this.PlayAnimation("Walk", this.rb.velocity.magnitude < this.walkThreshold * maxVelocity ? 0.5f : 1.0f);
-                } else {
-                    this.PlayAnimation("Run", 1.0f);
-                }
+                this.Idle();
                 break;
             case State.Walk:
-                // Compute the amount of force to apply to apply to self.
-                this.ComputeForce();
-
-                // Actually apply the computed force if greater than 0.
-                if (this.moveForce.magnitude > 0f) {
-                    this.rb.AddForce(this.moveForce);
-                }
-
-                this.PlayAnimation("Walk", this.rb.velocity.magnitude < this.walkThreshold * maxVelocity ? 0.5f : 1.0f);
+                this.Walk();
                 break;
             case State.Run:
-                // Compute the amount of force to apply to apply to self.
-                this.ComputeForce();
-
-                // Actually apply the computed force if greater than 0.
-                if (this.moveForce.magnitude > 0f) {
-                    this.rb.AddForce(this.moveForce);
-                }
-
-                this.PlayAnimation("Run", 1.0f);
+                this.Run();
                 break;
             case State.Fall:
-                this.PlayAnimation("Fall", 1.0f);
-
-                // Reset state after animation ends.
-                if (this.AnimationDone("Fall")) {
-                    this.SetState(State.Idle);
-                }
+                this.Fall();
                 break;
             case State.Atk0:
-                this.PlayAnimation("Atk0", 1.0f);
-
-                // Check if the animation being played is actually the one we're expecting.
-                inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0");
-
-                // Only move once during the attack.
-                if (!this.movedAtk) {
-                    // Block any movement before applying attack force.
-                    this.rb.velocity = Vector2.zero;
-                    if (inAnimation && this.animationProgress > 0.5f) {
-                        this.rb.AddForce(Utils.PolarToCartesian(this.faceDir, 25.0f), ForceMode2D.Impulse);
-                        this.movedAtk = true;
-                    }
-                }
-
-                if (this.input.attack &&
-                    !this.comboFailed &&
-                    !this.atkCombo &&
-                    inAnimation) {
-                    if (this.animationProgress > 0.5f &&
-                        this.animationProgress < 0.9f) {
-                        // Combo.
-                        this.atkCombo = true;
-                    } else {
-                        this.comboFailed = true;
-                    }
-                }
-
-                if (this.AnimationDone("Atk0")) {
-                    // Reset state after animation ends.
-                    if (this.atkCombo) {
-                        this.atkCombo = false;
-                        this.SetState(State.Atk1);
-                    } else {
-                        this.SetState(State.AtkIdle);
-                    }
-                    this.comboFailed = false;
-                    this.movedAtk = false;
-                }
+                this.Attack0();
                 break;
             case State.Atk1:
-                this.PlayAnimation("Atk1", 1.0f);
-
-                // Check if the animation being played is actually the one we're expecting.
-                inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1");
-
-                // Only move once during the attack.
-                if (!this.movedAtk) {
-                    // Block any movement before applying attack force.
-                    this.rb.velocity = Vector2.zero;
-                    if (inAnimation && this.animationProgress > 0.2f) {
-                        this.rb.AddForce(Utils.PolarToCartesian(this.faceDir, 25.0f), ForceMode2D.Impulse);
-                        this.movedAtk = true;
-                    }
-                }
-
-                if (this.input.attack &&
-                    !this.comboFailed &&
-                    !this.atkCombo &&
-                    this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1")) {
-                    if (this.animationProgress > 0.5f &&
-                        this.animationProgress < 0.9f) {
-                        // Combo.
-                        this.atkCombo = true;
-                    } else {
-                        this.comboFailed = true;
-                    }
-                }
-
-                if (this.AnimationDone("Atk1")) {
-                    // Reset state after animation ends.
-                    if (this.atkCombo) {
-                        this.atkCombo = false;
-                        this.SetState(State.Atk2);
-                    } else {
-                        this.SetState(State.AtkIdle);
-                    }
-                    this.comboFailed = false;
-                }
+                this.Attack1();
                 break;
             case State.Atk2:
-                this.PlayAnimation("Atk2", 1.0f);
-
-                if (this.AnimationDone("Atk2")) {
-                    // Reset state after animation ends.
-                    this.SetState(State.AtkIdle);
-                }
+                this.Attack2();
                 break;
             case State.AtkIdle:
-                this.PlayAnimation("AtkIdle", 1.0f);
-
-                if (this.AnimationDone("AtkIdle") || this.rb.velocity.magnitude > 0.0f) {
-                    this.SetState(State.Idle);
-                }
+                this.AttackIdle();
                 break;
             default:
                 break;
@@ -264,7 +154,7 @@ public class PlayerController : MonoBehaviour {
 
     // Tells whether the animation with the given name has finished or not.
     private bool AnimationDone(string animationName) {
-        return this.animationTime >= 1.0f && this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
+        return this.animationTime > 1.0f && this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
     }
 
     private void FindState() {
@@ -325,5 +215,154 @@ public class PlayerController : MonoBehaviour {
         // Save animation progress.
         this.animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
         this.animationProgress = animationTime - Mathf.Floor(animationTime);
+    }
+
+    // ************************ States ************************
+
+    private void Idle() {
+        float maxVelocity = this.stats.data.speed / this.rb.drag;
+
+        if (this.rb.velocity.magnitude < this.slowWalkThreshold * maxVelocity) {
+            this.PlayAnimation("Idle", 1.0f);
+        } else if (this.rb.velocity.magnitude < this.runThreshold * maxVelocity) {
+            this.PlayAnimation("Walk", this.rb.velocity.magnitude < this.walkThreshold * maxVelocity ? 0.5f : 1.0f);
+        } else {
+            this.PlayAnimation("Run", 1.0f);
+        }
+    }
+
+    private void Walk() {
+        float maxVelocity = this.stats.data.speed / this.rb.drag;
+
+        // Compute the amount of force to apply to apply to self.
+        this.ComputeForce();
+
+        // Actually apply the computed force if greater than 0.
+        if (this.moveForce.magnitude > 0f) {
+            this.rb.AddForce(this.moveForce);
+        }
+
+        this.PlayAnimation("Walk", this.rb.velocity.magnitude < this.walkThreshold * maxVelocity ? 0.5f : 1.0f);
+    }
+
+    private void Run() {
+        // Compute the amount of force to apply to apply to self.
+        this.ComputeForce();
+
+        // Actually apply the computed force if greater than 0.
+        if (this.moveForce.magnitude > 0f) {
+            this.rb.AddForce(this.moveForce);
+        }
+
+        this.PlayAnimation("Run", 1.0f);
+    }
+
+    private void Fall() {
+        this.PlayAnimation("Fall", 1.0f);
+
+        // Reset state after animation ends.
+        if (this.AnimationDone("Fall")) {
+            this.SetState(State.Idle);
+        }
+    }
+
+    private void Attack0() {
+        this.PlayAnimation("Atk0", 1.0f);
+
+        // Check if the animation being played is actually the one we're expecting.
+        bool inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0");
+
+        // Only move once during the attack.
+        if (!this.movedAtk) {
+            // Block any movement before applying attack force.
+            this.rb.velocity = Vector2.zero;
+            if (inAnimation && this.animationProgress > 0.5f) {
+                this.rb.AddForce(Utils.PolarToCartesian(this.faceDir, 25.0f), ForceMode2D.Impulse);
+                this.movedAtk = true;
+            }
+        }
+
+        if (this.input.attack &&
+            !this.comboFailed &&
+            !this.atkCombo &&
+            inAnimation) {
+            if (this.animationProgress > 0.5f &&
+                this.animationProgress < 0.9f) {
+                // Combo.
+                this.atkCombo = true;
+            } else {
+                this.comboFailed = true;
+            }
+        }
+
+        if (this.AnimationDone("Atk0")) {
+            // Reset state after animation ends.
+            if (this.atkCombo) {
+                this.atkCombo = false;
+                this.SetState(State.Atk1);
+            } else {
+                this.SetState(State.AtkIdle);
+            }
+            this.comboFailed = false;
+            this.movedAtk = false;
+        }
+    }
+
+    private void Attack1() {
+        this.PlayAnimation("Atk1", 1.0f);
+
+        // Check if the animation being played is actually the one we're expecting.
+        bool inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1");
+
+        // Only move once during the attack.
+        if (!this.movedAtk) {
+            // Block any movement before applying attack force.
+            this.rb.velocity = Vector2.zero;
+            if (inAnimation && this.animationProgress > 0.2f) {
+                this.rb.AddForce(Utils.PolarToCartesian(this.faceDir, 25.0f), ForceMode2D.Impulse);
+                this.movedAtk = true;
+            }
+        }
+
+        if (this.input.attack &&
+            !this.comboFailed &&
+            !this.atkCombo &&
+            this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1")) {
+            if (this.animationProgress > 0.5f &&
+                this.animationProgress < 0.9f) {
+                // Combo.
+                this.atkCombo = true;
+            } else {
+                this.comboFailed = true;
+            }
+        }
+
+        if (this.AnimationDone("Atk1")) {
+            // Reset state after animation ends.
+            if (this.atkCombo) {
+                this.atkCombo = false;
+                this.SetState(State.Atk2);
+            } else {
+                this.SetState(State.AtkIdle);
+            }
+            this.comboFailed = false;
+        }
+    }
+
+    private void Attack2() {
+        this.PlayAnimation("Atk2", 1.0f);
+
+        if (this.AnimationDone("Atk2")) {
+            // Reset state after animation ends.
+            this.SetState(State.AtkIdle);
+        }
+    }
+
+    private void AttackIdle() {
+        this.PlayAnimation("AtkIdle", 1.0f);
+
+        if (this.AnimationDone("AtkIdle") || this.rb.velocity.magnitude > 0.0f) {
+            this.SetState(State.Idle);
+        }
     }
 }
