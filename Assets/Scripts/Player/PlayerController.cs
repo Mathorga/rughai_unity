@@ -96,10 +96,6 @@ public class PlayerController : MonoBehaviour {
         this.Behave();
     }
 
-    private void Update() {
-        // TODO Handle animations.
-    }
-
     private void Behave() {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.data.speed / this.rb.drag;
