@@ -39843,7 +39843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wild: {fileID: 3619604187650466195, guid: 95cda04ef0a4da44e9e8029eaeb52ab7, type: 3}
-  amount: 10
+  amount: 222
   width: 60
   height: 60
 --- !u!4 &1812459562 stripped

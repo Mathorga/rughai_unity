@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour {
     private PlayerStats stats;
     private FallController fallController;
 
-    void Awake() {
+    private void Awake() {
         this.transform.position = this.startPosition.value;
         this.rb = this.GetComponent<Rigidbody2D>();
         this.input = this.GetComponent<PlayerInput>();
@@ -88,14 +88,18 @@ public class PlayerController : MonoBehaviour {
         this.animationProgress = 0.0f;
     }
 
-    void FixedUpdate() {
+    private void FixedUpdate() {
         // Set state based on input.
         this.FindState();
 
         // Act according to state.
         this.Behave();
     }
-    
+
+    private void Update() {
+        // TODO Handle animations.
+    }
+
     private void Behave() {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.data.speed / this.rb.drag;
@@ -206,9 +210,11 @@ public class PlayerController : MonoBehaviour {
 
         // Play animation if not already playing.
         if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName)) {
-            this.animator.Play(animationName, 0, 0.0f);
+            // this.animator.Play(animationName, 0, 0.0f);
+            this.animator.CrossFade(animationName, 0.0f, 0);
             foreach (Animator childAnimator in this.childAnimators) {
-                childAnimator.Play(animationName, 0, 0.0f);
+                // childAnimator.Play(animationName, 0, 0.0f);
+                childAnimator.CrossFade(animationName, 0.0f, 0);
             }
         }
 

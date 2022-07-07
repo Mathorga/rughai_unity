@@ -16,6 +16,7 @@ public class PaletteSwapper : MonoBehaviour {
             // Get a random mutation rate and send it to the shader.
             // The mutation rate is adjusted by elevating it to the power of distributionRate.
             float mutationRate = Mathf.Pow(Random.value, this.distributionRate);
+
             renderer.material.SetFloat("_MutationRate", mutationRate);
         }
     }
