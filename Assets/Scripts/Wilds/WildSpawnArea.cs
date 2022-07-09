@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WildSpawnController : MonoBehaviour {
+public class WildSpawnArea : MonoBehaviour {
     // The kind of wild to spawn.
     public GameObject wild;
 
