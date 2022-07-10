@@ -12,23 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2344859355253140957c1acb4506221, type: 3}
   m_Name: DukStatsBounds
   m_EditorClassIdentifier: 
-  minHealth: 0
-  maxHealth: 0
-  minAttack: 0
-  maxAttack: 0
-  minDefense: 0
-  maxDefense: 0
-  minEnergy: 0
-  maxEnergy: 0
-  minCritDamage: 0
-  maxCritDamage: 0
-  minCritRate: 0
-  maxCritRate: 0
-  minFailDamage: 0
-  maxFailDamage: 0
-  minFailRate: 0
-  maxFailRate: 0
-  minSpeed: 0
-  maxSpeed: 0
-  minWalkSpeed: 0
-  maxWalkSpeed: 0
+  minHealth: 5
+  maxHealth: 8
+  minAttack: 1
+  maxAttack: 2
+  minDefense: 2
+  maxDefense: 4
+  minEnergy: 1
+  maxEnergy: 2
+  minCritDamage: 1.5
+  maxCritDamage: 2
+  minCritRate: 0.01
+  maxCritRate: 0.1
+  minFailDamage: 0.5
+  maxFailDamage: 0.8
+  minFailRate: 0.01
+  maxFailRate: 0.1
+  minSpeed: 25
+  maxSpeed: 45
+  minWalkSpeed: 15
+  maxWalkSpeed: 20
