@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WildSpawnArea : MonoBehaviour {
+    public WildSpawner wildSpawner;
+
     // The kind of wild to spawn.
     public GameObject wildType;
 
@@ -26,9 +28,7 @@ public class WildSpawnArea : MonoBehaviour {
             float wildPosY = this.transform.position.y + Random.Range(-(this.height / 2), this.height / 2);
 
             // Create the wild in the computed position.
-            GameObject spawnedWild = Instantiate(this.wildType,
-                                                 new Vector2(wildPosX, wildPosY),
-                                                 Quaternion.identity);
+            this.wildSpawner.spawn(this.wildType, wildPosX, wildPosY);
         }
     }
 

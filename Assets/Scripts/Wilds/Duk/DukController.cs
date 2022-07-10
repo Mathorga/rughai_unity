@@ -8,7 +8,6 @@ public class DukController : MonoBehaviour, ILiving {
         Dead
     };
 
-    public Stats stats;
     public State state {
         get;
         set;
@@ -34,6 +33,7 @@ public class DukController : MonoBehaviour, ILiving {
     }
     private ChaserController pathfinder;
     private CapsuleCollider2D capsCollider;
+    private WildStats stats;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
@@ -41,6 +41,7 @@ public class DukController : MonoBehaviour, ILiving {
         this.capsCollider = this.GetComponent<CapsuleCollider2D>();
         this.active = false;
         this.state = State.Idle;
+        this.stats = this.GetComponent<WildStats>();
     }
 
     void FixedUpdate() {

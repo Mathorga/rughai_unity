@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FacingAnimator : MonoBehaviour {
-    public Stats stats;
     public float threshold = 0.05f;
 
     private Rigidbody2D rb;
     private Animator animator;
 
     private HitController hitController;
+    private WildStats stats;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
         this.hitController = this.GetComponent<HitController>();
+        this.stats = this.GetComponent<WildStats>();
     }
+
     void FixedUpdate() {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.speed / this.rb.drag;

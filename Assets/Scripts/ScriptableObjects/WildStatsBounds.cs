@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class WildStats : ScriptableObject {
+public class WildStatsBounds : ScriptableObject {
     // Health stat.
     public float minHealth;
     public float maxHealth;

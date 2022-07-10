@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
 public class DukAnimator : MonoBehaviour {
-    public Stats stats;
-
     // Threshold from stand to walk animation.
     private float walkThreshold = 0.05f;
 
@@ -11,12 +9,14 @@ public class DukAnimator : MonoBehaviour {
 
     private HitController hitController;
     private DukController controller;
+    private WildStats stats;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
         this.hitController = this.GetComponent<HitController>();
         this.controller = this.GetComponent<DukController>();
+        this.stats = this.GetComponent<WildStats>();
     }
 
     void FixedUpdate() {
