@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WildSpawner : MonoBehaviour {
-    void Start() {
-        
-    }
+    public GameObject spawn(GameObject wildType, float xPos, float yPos) {
+        GameObject wild = Instantiate(wildType,
+                                      new Vector2(xPos, yPos),
+                                      Quaternion.identity);
 
-    void Update() {
-        
+        return wild;
     }
 }
