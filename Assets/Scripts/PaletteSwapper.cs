@@ -3,8 +3,7 @@
 public class PaletteSwapper : MonoBehaviour {
     public Texture2D palette;
 
-    [Range(0.0f, 100.0f)]
-    public float distributionRate = 2.0f;
+    // TODO Remove.
     public float mutationRate;
 
     private WildStats stats;

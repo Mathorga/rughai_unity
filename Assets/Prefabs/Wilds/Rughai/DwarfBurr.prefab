@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 518176885177068487}
   - component: {fileID: 518176885177068488}
   - component: {fileID: 518176885177068484}
-  - component: {fileID: 518176885177068482}
+  - component: {fileID: 3193973266944783911}
+  - component: {fileID: 7877577006448214265}
   - component: {fileID: 518176885177068483}
   - component: {fileID: 2417282130966018454}
   - component: {fileID: 4867998360038629450}
@@ -148,20 +149,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &518176885177068482
+--- !u!114 &3193973266944783911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518176885177068489}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e83ec12c4c6c29b4a81f7b2cd21659c9, type: 3}
+  m_Script: {fileID: 11500000, guid: c8a6793e20fb94440952151bbb1aee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooted: 0
-  offset: 0
+  statsBounds: {fileID: 11400000, guid: 6a34d3eebff077949b6d15216cb7c9c1, type: 2}
+--- !u!114 &7877577006448214265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518176885177068489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb1c86810ec5d541a1337cb39dfa2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &518176885177068483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84d8d0803124894cb4ea98acd53f561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
   threshold: 0.05
 --- !u!114 &2417282130966018454
 MonoBehaviour:
@@ -201,5 +212,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c174f360db6b64b9d93a7dbd934e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palette: {fileID: 2800000, guid: f40713a106aa042429c168c7e6b0de06, type: 3}
-  distributionRate: 8
+  palette: {fileID: 2800000, guid: d77fddf5b738ce845998e922bc7bb187, type: 3}
+  mutationRate: 0

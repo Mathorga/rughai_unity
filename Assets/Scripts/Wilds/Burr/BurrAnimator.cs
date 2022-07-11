@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BurrAnimator : MonoBehaviour {
-    public Stats stats;
 
     // Threshold from stand to walk animation.
     private float walkThreshold = 0.05f;
@@ -11,9 +10,13 @@ public class BurrAnimator : MonoBehaviour {
     private Rigidbody2D rb;
     private Animator animator;
 
+    public WildStats stats;
+
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
+
+        this.stats = this.GetComponent<WildStats>();
     }
 
     void FixedUpdate() {

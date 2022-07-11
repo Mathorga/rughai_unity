@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HitController : MonoBehaviour {
-    public Stats stats;
     public int immuneTime;
     public AudioClip hitAudio;
 
@@ -12,6 +11,7 @@ public class HitController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private AudioSource audioSource;
+    public WildStats stats;
 
     // Used to make the current object die.
     private ILiving controller;
@@ -22,11 +22,14 @@ public class HitController : MonoBehaviour {
     }
 
     void Start() {
-        this.currentHealth = this.stats.health;
         this.rb = this.GetComponent<Rigidbody2D>();
         this.audioSource = this.GetComponent<AudioSource>();
+        this.stats = this.GetComponent<WildStats>();
+
         this.controller = this.GetComponent<ILiving>();
         this.hit = false;
+
+        this.currentHealth = this.stats.health;
     }
 
     void FixedUpdate() {
