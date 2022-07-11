@@ -39,8 +39,4 @@ public class WildStatsBounds : ScriptableObject {
     // Speed stat.
     public float minSpeed;
     public float maxSpeed;
-
-    // Walk speed stat.
-    public float minWalkSpeed;
-    public float maxWalkSpeed;
 }

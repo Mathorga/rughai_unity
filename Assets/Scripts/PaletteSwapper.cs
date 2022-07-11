@@ -5,6 +5,7 @@ public class PaletteSwapper : MonoBehaviour {
 
     [Range(0.0f, 100.0f)]
     public float distributionRate = 2.0f;
+    public float mutationRate;
 
     private WildStats stats;
 
@@ -19,8 +20,8 @@ public class PaletteSwapper : MonoBehaviour {
             // Get a random mutation rate and send it to the shader.
             // The mutation rate is adjusted by elevating it to the power of distributionRate.
             // float mutationRate = Mathf.Pow(Random.value, this.distributionRate);
-            float mutationRate = this.stats.fullMod;
-            if (mutationRate > 0.2f) Debug.Log("MUTATION_RATE " + mutationRate.ToString());
+            this.mutationRate = this.stats.avgMod;
+            if (mutationRate > 0.8f) Debug.Log("MUTATION_RATE " + mutationRate.ToString());
 
             renderer.material.SetFloat("_MutationRate", mutationRate);
         }

@@ -14,7 +14,6 @@ public class WildStats : MonoBehaviour {
     private float failDamageMod;
     private float failRateMod;
     private float speedMod;
-    private float walkSpeedMod;
 
     public float fullMod {
         get {
@@ -26,8 +25,21 @@ public class WildStats : MonoBehaviour {
                    this.critRateMod *
                    this.failDamageMod *
                    this.failRateMod *
-                   this.speedMod *
-                   this.walkSpeedMod;
+                   this.speedMod;
+        }
+    }
+
+    public float avgMod {
+        get {
+            return (this.healthMod +
+                   this.attackMod +
+                   this.defenseMod +
+                   this.energyMod +
+                   this.critDamageMod +
+                   this.critRateMod +
+                   this.failDamageMod +
+                   this.failRateMod +
+                   this.speedMod) / 9;
         }
     }
 
@@ -87,7 +99,7 @@ public class WildStats : MonoBehaviour {
 
     public float walkSpeed {
         get {
-            return this.statsBounds.minWalkSpeed + ((this.statsBounds.maxWalkSpeed - this.statsBounds.minWalkSpeed) * this.walkSpeedMod);
+            return this.statsBounds.minSpeed + ((this.statsBounds.maxSpeed - this.statsBounds.minSpeed) * this.speedMod * this.speedMod);
         }
     }
 
@@ -106,6 +118,5 @@ public class WildStats : MonoBehaviour {
         this.failDamageMod = Random.value;
         this.failRateMod = Random.value;
         this.speedMod = Random.value;
-        this.walkSpeedMod = Random.value;
     }
 }
