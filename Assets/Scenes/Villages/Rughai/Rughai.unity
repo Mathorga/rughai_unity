@@ -41624,7 +41624,7 @@ PrefabInstance:
     - target: {fileID: 4330426863402372337, guid: 96e447597bd08274dab3063b88737979,
         type: 3}
       propertyPath: elevation
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4330426863402372337, guid: 96e447597bd08274dab3063b88737979,
         type: 3}

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 518176885177068488}
   - component: {fileID: 518176885177068484}
   - component: {fileID: 3193973266944783911}
-  - component: {fileID: 7877577006448214265}
+  - component: {fileID: 4076180091857932297}
   - component: {fileID: 518176885177068483}
-  - component: {fileID: 2417282130966018454}
+  - component: {fileID: 8831112439794050960}
   - component: {fileID: 4867998360038629450}
   - component: {fileID: 3790862983969170320}
   - component: {fileID: 6173102517870727752}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsBounds: {fileID: 11400000, guid: 6a34d3eebff077949b6d15216cb7c9c1, type: 2}
---- !u!114 &7877577006448214265
+--- !u!114 &4076180091857932297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 518176885177068489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cb1c86810ec5d541a1337cb39dfa2c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e1418a1788b76a46a56bbbd3942d92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &518176885177068483
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 0.05
---- !u!114 &2417282130966018454
+--- !u!114 &8831112439794050960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,10 +198,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 518176885177068489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938e067ba66abfb4abe0177ff742f78b, type: 3}
+  m_Script: {fileID: 11500000, guid: deb6e910af25bb34a990603973aa7b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
 --- !u!114 &4867998360038629450
 MonoBehaviour:
   m_ObjectHideFlags: 0
