@@ -11,7 +11,7 @@ public class HitController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private AudioSource audioSource;
-    public WildStats stats;
+    private WildStats stats;
 
     // Used to make the current object die.
     private ILiving controller;
