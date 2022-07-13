@@ -228,7 +228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   palette: {fileID: 2800000, guid: c5ce2a5fa05fb1c4abcd5713e1a629cf, type: 3}
-  distributionRate: 50
   mutationRate: 0
 --- !u!114 &2108739630138851253
 MonoBehaviour:
@@ -242,9 +241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a77b723d2c4d8f419bf9c604f479607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 3f4d166d6c9e2a94eb60d1211ce47dbb, type: 2}
   immuneTime: 30
-  hitAudio: {fileID: 8300000, guid: 0414fd65c3a54e34080839b0d7173218, type: 3}
+  hitAudio: {fileID: 8300000, guid: 0dd0aa80ca2d69d4cb40c138e023796f, type: 3}
 --- !u!82 &681308278254490988
 AudioSource:
   m_ObjectHideFlags: 0
@@ -255,7 +253,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0414fd65c3a54e34080839b0d7173218, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0dd0aa80ca2d69d4cb40c138e023796f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

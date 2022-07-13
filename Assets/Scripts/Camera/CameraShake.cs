@@ -7,11 +7,7 @@ public class CameraShake : MonoBehaviour {
     private float magnitude;
     private float fadeSpeed;
 
-    void Start() {
-        
-    }
-
-    void FixedUpdate() {
+    void Update() {
         if (this.duration > 0.0f) {
             this.transform.position += Random.insideUnitSphere * this.magnitude;
             

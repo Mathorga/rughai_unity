@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   immuneTime: 15
-  hitAudio: {fileID: 8300000, guid: 0414fd65c3a54e34080839b0d7173218, type: 3}
+  hitAudio: {fileID: 8300000, guid: 0dd0aa80ca2d69d4cb40c138e023796f, type: 3}
 --- !u!82 &6173102517870727752
 AudioSource:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0414fd65c3a54e34080839b0d7173218, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0dd0aa80ca2d69d4cb40c138e023796f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

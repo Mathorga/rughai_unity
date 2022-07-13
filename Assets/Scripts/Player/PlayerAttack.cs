@@ -98,8 +98,9 @@ public class PlayerAttack : MonoBehaviour {
         Collider2D[] hits = Physics2D.OverlapCircleAll(pos2D, this.extent, this.hitLayer);
 
         // Only perform screen shake if a camera shake behavior is provided.
-        if (this.cameraShake != null) {
-            this.cameraShake.Shake(this.shakeDuration * hits.Length, this.shakeMagnitude * hits.Length, this.shakeFade * hits.Length);
+        if (this.cameraShake != null &&
+            hits.Length > 0) {
+            this.cameraShake.Shake(this.shakeDuration, this.shakeMagnitude, this.shakeFade * hits.Length);
         }
 
         // Loop through hits.
