@@ -70,7 +70,10 @@ public class PlayerController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private PlayerInput input;
-    private Animator animator;
+    public Animator animator{
+        get;
+        private set;
+    }
     private PlayerStats stats;
     private FallController fallController;
 
@@ -88,10 +91,12 @@ public class PlayerController : MonoBehaviour {
         this.animationProgress = 0.0f;
     }
 
-    private void FixedUpdate() {
+    private void Update() {
         // Set state based on input.
         this.FindState();
+    }
 
+    private void FixedUpdate() {
         // Act according to state.
         this.Behave();
     }

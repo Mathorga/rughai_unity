@@ -11,11 +11,15 @@ public class PlayerAnimator : MonoBehaviour {
     private PlayerController controller;
 
     // Private state variables.
-    private string currentAnimation = "Idle";
+    public string currentAnimation{
+        get;
+        set;
+    }
 
     void Start() {
         this.animator = this.GetComponent<Animator>();
         this.controller = this.GetComponent<PlayerController>();
+        this.currentAnimation = "Idle";
     }
 
     void Update() {
@@ -38,7 +42,28 @@ public class PlayerAnimator : MonoBehaviour {
         // if (Time.time < )
         switch (this.controller.state) {
             case PlayerController.State.Idle:
-                // TODO.
+                animation = "Idle";
+                break;
+            case PlayerController.State.Walk:
+                animation = "Walk";
+                break;
+            case PlayerController.State.Run:
+                animation = "Run";
+                break;
+            case PlayerController.State.Atk0:
+                animation = "Atk0";
+                break;
+            case PlayerController.State.Atk1:
+                animation = "Atk1";
+                break;
+            case PlayerController.State.Atk2:
+                animation = "Atk2";
+                break;
+            case PlayerController.State.AtkIdle:
+                animation = "AtkIdle";
+                break;
+            case PlayerController.State.Fall:
+                animation = "Fall";
                 break;
             default:
                 break;

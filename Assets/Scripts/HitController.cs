@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HitController : MonoBehaviour {
     public int immuneTime;
-    public AudioClip hitAudio;
 
     private float currentHealth;
     private int timeSinceLastHit;
@@ -32,7 +31,7 @@ public class HitController : MonoBehaviour {
         this.currentHealth = this.stats.health;
     }
 
-    void FixedUpdate() {
+    void Update() {
         if (this.currentHealth <= 0) {
             // Die.
             this.controller.Die();
@@ -47,18 +46,16 @@ public class HitController : MonoBehaviour {
     }
 
     public void takeDamage(Transform source, float damage) {
-        if (this.timeSinceLastHit > this.immuneTime) {
-            // Play hit sound.
-            this.audioSource.PlayOneShot(this.hitAudio, 0.7f);
-
+        if (!this.hit) {
             // Knockback.
             float dir = Utils.AngleBetween(source.position, this.transform.position);
-            float len = 10.0f;
+            float len = 20.0f;
             Vector2 force = Utils.PolarToCartesian(dir, len);
             this.rb.AddForce(force, ForceMode2D.Impulse);
 
             // Actual health damage.
             this.currentHealth -= damage;
+
             this.timeSinceLastHit = 0;
             this.hit = true;
         }

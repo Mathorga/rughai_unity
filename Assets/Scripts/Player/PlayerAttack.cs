@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour {
 
     public LayerMask hitLayer;
     public AudioClip swingSound;
+    public AudioClip hitSound;
 
     public float extent;
 
@@ -23,21 +24,27 @@ public class PlayerAttack : MonoBehaviour {
 
     private PlayerController.State currentState;
 
+    private bool hitPlayed;
+
     void Start() {
         this.controller = this.GetComponent<PlayerController>();
         this.audioSource = this.GetComponent<AudioSource>();
         this.currentState = this.controller.state;
+        this.hitPlayed = false;
     }
 
     void FixedUpdate() {
-        this.PlaySound();
+        this.PlaySwing();
 
-        if ((this.controller.state == PlayerController.State.Atk0 ||
-            this.controller.state == PlayerController.State.Atk1 ||
-            this.controller.state == PlayerController.State.Atk2) &&
+        if ((this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk0") ||
+            this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk1") ||
+            this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk2")) &&
             this.controller.animationProgress > 0.4f &&
             this.controller.animationProgress < 0.6f) {
+            Debug.Log("Attack! " + this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk0").ToString() + " " + this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk1").ToString() + " " + this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk2").ToString());
             this.Attack();
+        } else {
+            this.hitPlayed = false;
         }
     }
 
@@ -56,31 +63,20 @@ public class PlayerAttack : MonoBehaviour {
     }
 
     // Plays the attack sound according to state.
-    void PlaySound() {
-        if (this.controller.state == PlayerController.State.Atk0 ||
-            this.controller.state == PlayerController.State.Atk1) {
-            if (this.controller.state != this.currentState) {
+    void PlaySwing() {
+        if (this.controller.state != this.currentState) {
+            if (this.controller.state == PlayerController.State.Atk0 ||
+                this.controller.state == PlayerController.State.Atk1) {
                 // Play attack sound.
                 // this.audioSource.clip = this.swingSound;
                 this.audioSource.Play();
-
-                // Update current state.
-                this.currentState = this.controller.state;
-            }
-        } else if (this.controller.state == PlayerController.State.Atk2) {
-            if (this.controller.state != this.currentState) {
+            } else if (this.controller.state == PlayerController.State.Atk2) {
                 // Play attack sound.
                 // this.audioSource.clip = this.swingSound;
                 this.audioSource.PlayDelayed(0.2f);
-
-                // Update current state.
-                this.currentState = this.controller.state;
             }
-        } else {
-            if (this.controller.state != this.currentState) {
-                // Update current state.
-                this.currentState = this.controller.state;
-            }
+            // Update current state.
+            this.currentState = this.controller.state;
         }
     }
 
@@ -98,8 +94,7 @@ public class PlayerAttack : MonoBehaviour {
         Collider2D[] hits = Physics2D.OverlapCircleAll(pos2D, this.extent, this.hitLayer);
 
         // Only perform screen shake if a camera shake behavior is provided.
-        if (this.cameraShake != null &&
-            hits.Length > 0) {
+        if (this.cameraShake != null && hits.Length > 0) {
             this.cameraShake.Shake(this.shakeDuration, this.shakeMagnitude, this.shakeFade * hits.Length);
         }
 
@@ -108,6 +103,14 @@ public class PlayerAttack : MonoBehaviour {
             // TODO Damage.
             HitController hitController = hit.GetComponent<HitController>();
             if (hitController != null) {
+                // Only play hit sound once.
+                // This must go before the hit controller takes damage, otherwise controller.hit will always be true.
+                if (!hitController.hit && !this.hitPlayed) {
+                    this.audioSource.PlayOneShot(this.hitSound, 1.0f);
+                    this.hitPlayed = true;
+                }
+
+                // Actually take damage.
                 hitController.takeDamage(this.transform, 1);
             }
         }
