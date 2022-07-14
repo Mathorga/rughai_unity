@@ -39894,7 +39894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806306708}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55, y: -40, z: 0}
+  m_LocalPosition: {x: -50, y: -50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39916,9 +39916,9 @@ MonoBehaviour:
   wildSpawner: {fileID: 1979296968}
   wildType: {fileID: 3619604187650466195, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
     type: 3}
-  amount: 30
-  width: 60
-  height: 60
+  amount: 200
+  width: 100
+  height: 50
 --- !u!4 &1812459562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3619604187650466199, guid: 95cda04ef0a4da44e9e8029eaeb52ab7,
@@ -41198,7 +41198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103902834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55, y: -40, z: 0}
+  m_LocalPosition: {x: 50, y: -50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41219,9 +41219,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wildSpawner: {fileID: 1979296968}
   wildType: {fileID: 518176885177068489, guid: f75d966b6404a0641aff29575c40818a, type: 3}
-  amount: 30
-  width: 60
-  height: 60
+  amount: 200
+  width: 100
+  height: 50
 --- !u!1001 &2129349029
 PrefabInstance:
   m_ObjectHideFlags: 0

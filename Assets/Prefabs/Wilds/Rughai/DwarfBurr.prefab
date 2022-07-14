@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsBounds: {fileID: 11400000, guid: 6a34d3eebff077949b6d15216cb7c9c1, type: 2}
+  valuesRange: 10
 --- !u!114 &4076180091857932297
 MonoBehaviour:
   m_ObjectHideFlags: 0

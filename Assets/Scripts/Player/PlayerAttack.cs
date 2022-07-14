@@ -36,12 +36,11 @@ public class PlayerAttack : MonoBehaviour {
     void FixedUpdate() {
         this.PlaySwing();
 
-        if ((this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk0") ||
-            this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk1") ||
-            this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk2")) &&
+        if ((this.controller.state == PlayerController.State.Atk0 ||
+            this.controller.state == PlayerController.State.Atk1 ||
+            this.controller.state == PlayerController.State.Atk2) &&
             this.controller.animationProgress > 0.4f &&
             this.controller.animationProgress < 0.6f) {
-            Debug.Log("Attack! " + this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk0").ToString() + " " + this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk1").ToString() + " " + this.controller.animator.GetCurrentAnimatorStateInfo(0).IsName("Base.Atk2").ToString());
             this.Attack();
         } else {
             this.hitPlayed = false;

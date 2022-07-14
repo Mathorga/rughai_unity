@@ -177,6 +177,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsBounds: {fileID: 11400000, guid: 30d5791619507b449abc44bbebd87a41, type: 2}
+  valuesRange: 100
+  healthMod: 0
+  attackMod: 0
+  defenseMod: 0
+  energyMod: 0
+  critDamageMod: 0
+  critRateMod: 0
+  failDamageMod: 0
+  failRateMod: 0
+  speedMod: 0
+  fullMod: 0
+  avgMod: 0
+  health: 0
+  attack: 0
+  defense: 0
+  energy: 0
+  critDamage: 0
+  critRate: 0
+  failDamage: 0
+  failRate: 0
+  speed: 0
+  walkSpeed: 0
 --- !u!114 &7217740823070188765
 MonoBehaviour:
   m_ObjectHideFlags: 0
