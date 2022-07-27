@@ -33,7 +33,7 @@ public class WildColor : MonoBehaviour {
             this.spriteRenderer.material.SetFloat("_Hit", -1.0f);
         }
 
-        if (this.controller.state == IWild.State.Dead) {
+        if (this.controller.mode == IWild.Mode.Dead) {
             this.spriteRenderer.material.SetFloat("_Alive", -1.0f);
         }
     }

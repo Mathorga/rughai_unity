@@ -33,14 +33,9 @@ public class PlayerAttack : MonoBehaviour {
         this.hitPlayed = false;
     }
 
-    void Update() {
+    void FixedUpdate() {
         this.PlaySwing();
 
-        // if ((this.controller.state == PlayerController.State.Atk0 ||
-        //     this.controller.state == PlayerController.State.Atk1 ||
-        //     this.controller.state == PlayerController.State.Atk2) &&
-        //     this.controller.animationProgress > 0.4f &&
-        //     this.controller.animationProgress < 0.6f) {
         if ((this.controller.InAnimation("Atk0") ||
             this.controller.InAnimation("Atk1") ||
             this.controller.InAnimation("Atk2")) &&

@@ -2,10 +2,16 @@
 using UnityEngine;
 
 public class DwarfWildController : MonoBehaviour, IWild {
+    public IWild.Mode mode {
+        get;
+        set;
+    }
+
     public IWild.State state {
         get;
         set;
     }
+
     public float moveSpeed {
         get;
         private set;
@@ -30,24 +36,26 @@ public class DwarfWildController : MonoBehaviour, IWild {
     private ChaserController pathfinder;
     private CapsuleCollider2D capsCollider;
     private WildStats stats;
+    private Animator animator;
 
     void Start() {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.hitController = this.GetComponent<HitController>();
         this.pathfinder = this.GetComponent<ChaserController>();
         this.capsCollider = this.GetComponent<CapsuleCollider2D>();
-        this.active = true;
-        this.state = IWild.State.Idle;
         this.stats = this.GetComponent<WildStats>();
+        this.animator = this.GetComponent<Animator>();
+        this.active = true;
+        this.mode = IWild.Mode.Idle;
     }
 
     void Update() {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.speed / this.rb.drag;
 
-        // Fetch state.
-        if (this.state != IWild.State.Dead) {
-            this.state = IWild.State.Idle;
+        // Fetch mode.
+        if (this.mode != IWild.Mode.Dead) {
+            this.mode = IWild.Mode.Idle;
         }
     }
 
@@ -60,9 +68,9 @@ public class DwarfWildController : MonoBehaviour, IWild {
     }
 
     void ComputeForce() {
-        switch (this.state) {
-            case IWild.State.Idle:
-                if (this.active) {
+        switch (this.mode) {
+            case IWild.Mode.Idle:
+                if (this.active && !this.hitController.hit) {
                     // Get random length and direction.
                     float randomLen = Random.value;
                     float randomDir = Random.Range(0f, 360f);
@@ -80,7 +88,7 @@ public class DwarfWildController : MonoBehaviour, IWild {
                     this.StartCoroutine(this.Activate());
                 }
                 break;
-            case IWild.State.Chase:
+            case IWild.Mode.Chase:
                 if (this.pathfinder != null) {
                     // Compute length and direction based on the next computed pathfinding step.
                     Vector2 position = this.transform.position;
@@ -105,8 +113,8 @@ public class DwarfWildController : MonoBehaviour, IWild {
         // Disable collider.
         this.capsCollider.enabled = false;
 
-        // Set state.
-        this.state = IWild.State.Dead;
+        // Set dead mode.
+        this.mode = IWild.Mode.Dead;
     }
 
     IEnumerator Activate() {

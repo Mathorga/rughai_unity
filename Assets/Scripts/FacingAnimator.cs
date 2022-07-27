@@ -18,7 +18,7 @@ public class FacingAnimator : MonoBehaviour {
         this.stats = this.GetComponent<WildStats>();
     }
 
-    void FixedUpdate() {
+    void Update() {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.speed / this.rb.drag;
 

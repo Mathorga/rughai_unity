@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HitController : MonoBehaviour {
-    public int immuneTime;
+    // public int immuneTime;
 
     private float currentHealth;
-    private int timeSinceLastHit;
+    // private int timeSinceLastHit;
 
     private Rigidbody2D rb;
     private AudioSource audioSource;
@@ -14,6 +14,8 @@ public class HitController : MonoBehaviour {
 
     // Used to make the current object die.
     private ILiving controller;
+
+    private Animator animator;
 
     public bool hit {
         get;
@@ -26,6 +28,7 @@ public class HitController : MonoBehaviour {
         this.stats = this.GetComponent<WildStats>();
 
         this.controller = this.GetComponent<ILiving>();
+        this.animator = this.GetComponent<Animator>();
         this.hit = false;
 
         this.currentHealth = this.stats.health;
@@ -37,11 +40,15 @@ public class HitController : MonoBehaviour {
             this.controller.Die();
         }
 
-        if (this.timeSinceLastHit <= this.immuneTime) {
-            this.timeSinceLastHit++;
-        } else {
+        if (Utils.AnimationDone(this.animator, "Hit")) {
             this.hit = false;
         }
+
+        // if (this.timeSinceLastHit <= this.immuneTime) {
+        //     this.timeSinceLastHit++;
+        // } else {
+        //     this.hit = false;
+        // }
     }
 
     public void takeDamage(Transform source, float damage) {
@@ -55,7 +62,7 @@ public class HitController : MonoBehaviour {
             // Actual health damage.
             this.currentHealth -= damage;
 
-            this.timeSinceLastHit = 0;
+            // this.timeSinceLastHit = 0;
             this.hit = true;
         }
     }

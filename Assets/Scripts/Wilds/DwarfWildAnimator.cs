@@ -27,12 +27,17 @@ public class DwarfWildAnimator : MonoBehaviour {
         // Retrieve max velocity based on current speed and linear drag.
         float maxVelocity = this.stats.speed / this.rb.drag;
 
-        switch(this.controller.state) {
-            case IWild.State.Dead:
+        switch(this.controller.mode) {
+            case IWild.Mode.Dead:
                 this.animator.Play("Dead", 0, animationProgress);
                 break;
-            case IWild.State.Idle:
-                if (this.hitController.hit || this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
+            case IWild.Mode.Idle:
+                if (this.hitController.hit) {
+                    if (animationTime >= 1 && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("Hit")){
+                        this.animator.Play("Hit");
+                        
+                    }
+                } else if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
                     if (animationTime >= 1 && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("Idle0")){
                         this.animator.Play("Idle0");
                     }

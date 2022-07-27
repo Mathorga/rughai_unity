@@ -7,7 +7,7 @@ public static class Utils {
     private const int DIAGONAL_COST = 14;
 
     public static float AngleBetween(Vector2 v1, Vector2 v2) {
-     return Mathf.Atan2(v2.y - v1.y, v2.x - v1.x) * (180 / Mathf.PI);
+        return Mathf.Atan2(v2.y - v1.y, v2.x - v1.x) * (180 / Mathf.PI);
     }
 
     // Angle is in degrees.
@@ -34,7 +34,6 @@ public static class Utils {
     public static Vector3 offsetPosition(Vector3 target, float offset) {
         return target * offset;
     }
-    
 
     public static int ComputeHCost(int2 start, int2 end) {
         int xDistance = math.abs(start.x - end.x);
@@ -42,5 +41,16 @@ public static class Utils {
         int remaining = math.abs(xDistance - yDistance);
 
         return DIAGONAL_COST * math.min(xDistance, yDistance) + STRAIGHT_COST * remaining;
+    }
+
+    // Returns whether the given animation is currently in the given animation state.
+    public static bool InAnimation(Animator animator, string animationName) {
+        return animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
+    }
+
+    // Tells whether the animation with the given name has finished or not in the given animator.
+    public static bool AnimationDone(Animator animator, string animationName) {
+        float animationTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        return animationTime > 1.0f && InAnimation(animator, animationName);
     }
 }
