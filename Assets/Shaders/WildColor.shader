@@ -1,6 +1,6 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Custom/PaletteSwap" {
+Shader "Custom/WildColor" {
     Properties {
         [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
         // _Palette ("Palette", 2D) = "white" {}
@@ -53,6 +53,9 @@ Shader "Custom/PaletteSwap" {
             // Mutation rate (defines how much of the alternate palette should be used).
             float _MutationRate;
 
+            // Defines whether the wild is dead or not (< 0 means dead, > 0 means alive).
+            float _Alive;
+
             v2f vert(appdata_t IN) {
                 v2f OUT;
                 OUT.vertex = UnityObjectToClipPos(IN.vertex);
@@ -98,6 +101,11 @@ Shader "Custom/PaletteSwap" {
                 }
 
                 baseColor.rgb *= baseColor.a;
+
+                if (_Alive <= 0.0f) {
+                    baseColor.rgb *= 0.8f;
+                }
+
                 return baseColor;
             }
         ENDCG

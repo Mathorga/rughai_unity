@@ -159,7 +159,16 @@ public class PlayerController : MonoBehaviour {
 
     // Tells whether the animation with the given name has finished or not.
     private bool AnimationDone(string animationName) {
-        return this.animationTime > 1.0f && this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
+        return this.animationTime > 1.0f && this.InAnimation(animationName);
+    }
+
+    public bool InAnimation(string animationName) {
+        return this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
+    }
+
+    public float GetAnimationProgress() {
+        float animationTime = this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        return animationTime - Mathf.Floor(animationTime);
     }
 
     private void FindState() {
@@ -210,7 +219,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         // Play animation if not already playing.
-        if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName(animationName)) {
+        if (!this.InAnimation(animationName)) {
             // this.animator.Play(animationName, 0, 0.0f);
             this.animator.CrossFade(animationName, 0.0f, 0);
             foreach (Animator childAnimator in this.childAnimators) {
@@ -277,7 +286,7 @@ public class PlayerController : MonoBehaviour {
         this.PlayAnimation("Atk0", 1.0f);
 
         // Check if the animation being played is actually the one we're expecting.
-        bool inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk0");
+        bool inAnimation = this.InAnimation("Atk0");
 
         // Only move once during the attack.
         if (!this.movedAtk) {
@@ -319,7 +328,7 @@ public class PlayerController : MonoBehaviour {
         this.PlayAnimation("Atk1", 1.0f);
 
         // Check if the animation being played is actually the one we're expecting.
-        bool inAnimation = this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1");
+        bool inAnimation = this.InAnimation("Atk1");
 
         // Only move once during the attack.
         if (!this.movedAtk) {
@@ -334,7 +343,7 @@ public class PlayerController : MonoBehaviour {
         if (this.input.attack &&
             !this.comboFailed &&
             !this.atkCombo &&
-            this.animator.GetCurrentAnimatorStateInfo(0).IsName("Atk1")) {
+            this.InAnimation("Atk1")) {
             if (this.animationProgress > 0.5f &&
                 this.animationProgress < 0.9f) {
                 // Combo.
