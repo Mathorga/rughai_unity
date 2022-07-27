@@ -128,7 +128,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 6, y: 4}
+  m_Size: {x: 10, y: 6}
   m_Direction: 1
 --- !u!95 &518176885177068484
 Animator:
@@ -237,4 +237,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a77b723d2c4d8f419bf9c604f479607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  immuneTime: 15
+  immuneTime: 20

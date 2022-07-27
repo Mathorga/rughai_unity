@@ -55,6 +55,7 @@ Shader "Custom/WildColor" {
 
             // Defines whether the wild is dead or not (< 0 means dead, > 0 means alive).
             float _Alive;
+            float _Hit;
 
             v2f vert(appdata_t IN) {
                 v2f OUT;
@@ -104,6 +105,8 @@ Shader "Custom/WildColor" {
 
                 if (_Alive <= 0.0f) {
                     baseColor.rgb *= 0.8f;
+                } else if (_Hit >= 0.0f) {
+                    baseColor.rgb *= 1.8f;
                 }
 
                 return baseColor;

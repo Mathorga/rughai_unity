@@ -35,11 +35,10 @@ public class HitController : MonoBehaviour {
         if (this.currentHealth <= 0) {
             // Die.
             this.controller.Die();
-            // Destroy(this.gameObject);
         }
 
         if (this.timeSinceLastHit <= this.immuneTime) {
-            this.timeSinceLastHit += 1;
+            this.timeSinceLastHit++;
         } else {
             this.hit = false;
         }
