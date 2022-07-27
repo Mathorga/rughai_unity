@@ -353,6 +353,7 @@ public class PlayerController : MonoBehaviour {
                 this.SetState(State.AtkIdle);
             }
             this.comboFailed = false;
+            this.movedAtk = false;
         }
     }
 
