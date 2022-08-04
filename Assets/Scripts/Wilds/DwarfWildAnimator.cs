@@ -33,16 +33,15 @@ public class DwarfWildAnimator : MonoBehaviour {
                 break;
             case IWild.Mode.Idle:
                 if (this.hitController.hit) {
-                    if (animationTime >= 1 && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("Hit")){
+                    if (animationTime >= 1 && !Utils.InAnimation(this.animator, "Hit")){
                         this.animator.Play("Hit");
-                        
                     }
                 } else if (this.rb.velocity.magnitude < this.walkThreshold * maxVelocity) {
-                    if (animationTime >= 1 && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("Idle0")){
+                    if (animationTime >= 1 && !Utils.InAnimation(this.animator, "Idle0")){
                         this.animator.Play("Idle0");
                     }
                 } else {
-                    if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
+                    if (!Utils.InAnimation(this.animator, "Walk")) {
                         this.animator.Play("Walk", 0, animationProgress);
                     }
                 }

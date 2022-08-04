@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 3193973266944783911}
   - component: {fileID: 4076180091857932297}
   - component: {fileID: 518176885177068483}
+  - component: {fileID: 3790862983969170320}
   - component: {fileID: 8831112439794050960}
   - component: {fileID: 1763618671134197042}
-  - component: {fileID: 3790862983969170320}
   m_Layer: 3
   m_Name: DwarfBurr
   m_TagString: Untagged
@@ -200,6 +200,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 0.05
+--- !u!114 &3790862983969170320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518176885177068489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a77b723d2c4d8f419bf9c604f479607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8831112439794050960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,16 +237,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   palette: {fileID: 2800000, guid: d77fddf5b738ce845998e922bc7bb187, type: 3}
---- !u!114 &3790862983969170320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518176885177068489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a77b723d2c4d8f419bf9c604f479607, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  immuneTime: 15
